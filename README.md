@@ -1,6 +1,6 @@
 # Film Festival Planner
 
-A modern, single-page web application for planning your film festival schedule. Select films, manage screenings, and export your personalized schedule.
+A single-page web application for planning your film festival schedule. Select films, manage screenings, and export your personalized schedule.
 
 ## Features
 
