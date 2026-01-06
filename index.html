@@ -209,6 +209,7 @@
             display: flex;
             gap: 12px;
             align-items: center;
+            z-index: 10;
         }
 
         .control-group {
@@ -1653,8 +1654,8 @@
                 btn.classList.remove('active');
                 btn.setAttribute('aria-current', 'false');
             });
-            event.target.classList.add('active');
-            event.target.setAttribute('aria-current', 'true');
+            event.currentTarget.classList.add('active');
+            event.currentTarget.setAttribute('aria-current', 'true');
             
             const t = translations[lang];
             document.getElementById('headerTitle').textContent = t.headerTitle;
