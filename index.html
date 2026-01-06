@@ -266,6 +266,13 @@
 
         .theme-icon {
             display: block;
+            pointer-events: none;
+        }
+
+        /* Prevent SVG elements inside buttons from intercepting clicks */
+        button svg,
+        button svg * {
+            pointer-events: none;
         }
 
         .header-content {
