@@ -293,6 +293,104 @@ button svg * {
     margin-bottom: 40px;
 }
 
+/* Date Selector */
+.date-selector-container {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 24px var(--glass-shadow);
+}
+
+.date-selector-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.date-selector-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.date-select-all-btn {
+    padding: 8px 16px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    color: var(--text-secondary);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.date-select-all-btn:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.date-select-all-btn.deselect {
+    border-color: var(--accent-primary);
+    background: var(--accent-primary);
+    color: white;
+}
+
+.date-select-all-btn.deselect:hover {
+    background: var(--accent-secondary);
+    border-color: var(--accent-secondary);
+}
+
+.date-selector-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.date-selector-btn {
+    padding: 10px 16px;
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    background: var(--input-bg);
+    color: var(--text-secondary);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.date-selector-btn:hover {
+    border-color: var(--accent-primary);
+    color: var(--text-primary);
+    transform: translateY(-1px);
+}
+
+.date-selector-btn.active {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    border-color: var(--accent-primary);
+    color: white;
+    font-weight: 600;
+}
+
+.date-selector-info {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 8px;
+}
+
 .section-header {
     display: flex;
     align-items: center;

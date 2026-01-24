@@ -61,7 +61,11 @@ const translations = {
         optimizeTooltip: "Create optimal schedule without conflicts",
         optimized: "Schedule optimized",
         filmsIncluded: "films included",
-        priorityIncluded: "priority films included"
+        priorityIncluded: "priority films included",
+        availableDates: "Available dates",
+        selectAllDates: "Select all",
+        deselectAllDates: "Deselect all",
+        datesSelected: "dates selected"
     },
     fi: {
         headerTitle: "Elokuvafestivaali",
@@ -95,7 +99,11 @@ const translations = {
         optimizeTooltip: "Luo optimaalinen aikataulu ilman päällekkäisyyksiä",
         optimized: "Aikataulu optimoitu",
         filmsIncluded: "elokuvaa mukana",
-        priorityIncluded: "prioriteettielokuvaa mukana"
+        priorityIncluded: "prioriteettielokuvaa mukana",
+        availableDates: "Saatavilla olevat päivät",
+        selectAllDates: "Valitse kaikki",
+        deselectAllDates: "Poista valinnat",
+        datesSelected: "päivää valittu"
     }
 };
 
@@ -195,6 +203,25 @@ let excludedScreenings = new Set(); // Tracks removed screenings as "filmId-date
 let priorityFilms = new Set(); // Films marked as "must see"
 let searchQuery = '';
 let currentLang = 'fi';
+let availableDates = new Set(); // Dates the user is available (all by default)
+
+// Get all unique dates from festival data
+function getAllDates() {
+    const dates = new Set();
+    festivalData.forEach(film => {
+        film.screenings.forEach(screening => {
+            const dateKey = screening.date.split('T')[0];
+            dates.add(dateKey);
+        });
+    });
+    return Array.from(dates).sort();
+}
+
+// Initialize available dates (all dates by default)
+function initializeAvailableDates() {
+    const allDates = getAllDates();
+    allDates.forEach(date => availableDates.add(date));
+}
 
 function changeLanguage(lang, event) {
     currentLang = lang;
@@ -226,10 +253,11 @@ function changeLanguage(lang, event) {
     document.getElementById('optimizeBtn').title = t.optimizeTooltip;
     updateSelectAllButton();
     document.documentElement.lang = lang;
-    
+
+    renderDateSelector();
     renderFilms();
     renderSchedule();
-    
+
     // Re-render current view if not list
     if (currentView === 'calendar') {
         renderCalendarView();
@@ -250,16 +278,30 @@ function getFilteredFilms() {
         const titleB = typeof b.title === 'object' ? b.title[currentLang] : b.title;
         return cleanTitle(titleA).localeCompare(cleanTitle(titleB));
     };
-    
-    if (!searchQuery) return [...festivalData].sort(sortByTitle);
-    
-    return festivalData.filter(film => {
-        const title = typeof film.title === 'object' ? film.title[currentLang] : film.title;
-        const desc = typeof film.description === 'object' ? film.description[currentLang] : film.description;
-        return title.toLowerCase().includes(searchQuery) ||
-               film.director.toLowerCase().includes(searchQuery) ||
-               desc.toLowerCase().includes(searchQuery);
-    }).sort(sortByTitle);
+
+    // Filter films based on available dates and search query
+    let filteredFilms = festivalData.filter(film => {
+        // Check if film has at least one screening on an available date
+        const hasAvailableScreening = film.screenings.some(screening => {
+            const dateKey = screening.date.split('T')[0];
+            return availableDates.has(dateKey);
+        });
+
+        if (!hasAvailableScreening) return false;
+
+        // If there's a search query, also check that
+        if (searchQuery) {
+            const title = typeof film.title === 'object' ? film.title[currentLang] : film.title;
+            const desc = typeof film.description === 'object' ? film.description[currentLang] : film.description;
+            return title.toLowerCase().includes(searchQuery) ||
+                   film.director.toLowerCase().includes(searchQuery) ||
+                   desc.toLowerCase().includes(searchQuery);
+        }
+
+        return true;
+    });
+
+    return filteredFilms.sort(sortByTitle);
 }
 
 function toggleFilm(filmId) {
@@ -1127,7 +1169,86 @@ function toggleShowExcluded() {
     renderSchedule();
 }
 
+// Date filtering functions
+function toggleDate(dateKey) {
+    if (availableDates.has(dateKey)) {
+        availableDates.delete(dateKey);
+    } else {
+        availableDates.add(dateKey);
+    }
+    renderDateSelector();
+    renderFilms();
+}
+
+function toggleAllDates() {
+    const allDates = getAllDates();
+    const allSelected = allDates.every(date => availableDates.has(date));
+
+    if (allSelected) {
+        // Deselect all
+        availableDates.clear();
+        announce(currentLang === 'fi' ? 'Kaikki päivät poistettu' : 'All dates deselected');
+    } else {
+        // Select all
+        allDates.forEach(date => availableDates.add(date));
+        announce(currentLang === 'fi' ? 'Kaikki päivät valittu' : 'All dates selected');
+    }
+
+    renderDateSelector();
+    renderFilms();
+}
+
+function renderDateSelector() {
+    const container = document.getElementById('dateSelector');
+    if (!container) return;
+
+    const t = translations[currentLang];
+    const locale = currentLang === 'fi' ? 'fi-FI' : 'en-US';
+    const allDates = getAllDates();
+    const allSelected = allDates.every(date => availableDates.has(date));
+
+    const datesHtml = allDates.map(dateKey => {
+        const date = new Date(dateKey);
+        const isSelected = availableDates.has(dateKey);
+        const label = date.toLocaleDateString(locale, {
+            weekday: 'short',
+            day: 'numeric',
+            month: 'short'
+        });
+
+        return `
+            <button class="date-selector-btn ${isSelected ? 'active' : ''}"
+                    onclick="toggleDate('${dateKey}')"
+                    aria-pressed="${isSelected}">
+                ${label}
+            </button>
+        `;
+    }).join('');
+
+    const selectAllBtn = `
+        <button class="date-select-all-btn ${allSelected ? 'deselect' : ''}"
+                onclick="toggleAllDates()">
+            ${allSelected ? t.deselectAllDates : t.selectAllDates}
+        </button>
+    `;
+
+    container.innerHTML = `
+        <div class="date-selector-header">
+            <h3 class="date-selector-title">${t.availableDates}</h3>
+            ${selectAllBtn}
+        </div>
+        <div class="date-selector-buttons">
+            ${datesHtml}
+        </div>
+        <div class="date-selector-info">
+            ${availableDates.size} ${t.datesSelected}
+        </div>
+    `;
+}
+
 // Initial render
+initializeAvailableDates();
+renderDateSelector();
 renderFilms();
 renderSchedule();
 updateDownloadButton();
