@@ -412,19 +412,24 @@ function updateOptimizeButton() {
 
 function optimizeSchedule() {
     const t = translations[currentLang];
-    
-    // Get all possible screenings for selected films
+
+    // Get all possible screenings for selected films (only on available dates)
     let allPossibleScreenings = [];
     festivalData.forEach(film => {
         if (selectedFilms.has(film.id)) {
             const title = typeof film.title === 'object' ? film.title[currentLang] : film.title;
             const durationMatch = film.duration.match(/(\d+)/);
             const durationMinutes = durationMatch ? parseInt(durationMatch[1]) : 120;
-            
+
             film.screenings.forEach(screening => {
+                const dateKey = screening.date.split('T')[0];
+
+                // Only include screenings on available dates
+                if (!availableDates.has(dateKey)) return;
+
                 const startDate = new Date(screening.date);
                 const endDate = new Date(startDate.getTime() + durationMinutes * 60000);
-                
+
                 allPossibleScreenings.push({
                     filmId: film.id,
                     screeningId: `${film.id}-${screening.date}`,
@@ -984,17 +989,24 @@ function renderFilms() {
     grid.innerHTML = filteredFilms.map(film => {
         const title = typeof film.title === 'object' ? film.title[currentLang] : film.title;
         const desc = typeof film.description === 'object' ? film.description[currentLang] : film.description;
-        const screeningText = film.screenings.length === 1 ? t.screening : t.screenings;
+
+        // Count only screenings on available dates
+        const availableScreeningsCount = film.screenings.filter(screening => {
+            const dateKey = screening.date.split('T')[0];
+            return availableDates.has(dateKey);
+        }).length;
+
+        const screeningText = availableScreeningsCount === 1 ? t.screening : t.screenings;
         const isSelected = selectedFilms.has(film.id);
         const isPriority = priorityFilms.has(film.id);
-        
+
         return `
             <article class="film-card ${isSelected ? 'selected' : ''} ${isPriority ? 'priority' : ''}" 
                  role="listitem"
                  tabindex="0"
                  data-film-id="${film.id}"
                  aria-pressed="${isSelected}"
-                 aria-label="${title}, ${t.director} ${film.director}, ${film.duration}, ${film.screenings.length} ${screeningText}${isSelected ? ', valittu' : ''}${isPriority ? ', prioriteetti' : ''}"
+                 aria-label="${title}, ${t.director} ${film.director}, ${film.duration}, ${availableScreeningsCount} ${screeningText}${isSelected ? ', valittu' : ''}${isPriority ? ', prioriteetti' : ''}"
                  onclick="toggleFilm(${film.id})"
                  onkeydown="handleCardKeydown(event, ${film.id})">
                 <button class="priority-btn ${isPriority ? 'active' : ''}"
@@ -1016,7 +1028,7 @@ function renderFilms() {
                 <p class="film-description">${desc}</p>
                 <span class="screening-badge">
                     <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    ${film.screenings.length} ${screeningText}
+                    ${availableScreeningsCount} ${screeningText}
                 </span>
             </article>
         `;
@@ -1289,16 +1301,20 @@ function getAllScreenings(includeExcluded = false) {
             film.screenings.forEach(screening => {
                 const screeningId = `${film.id}-${screening.date}`;
                 const isExcluded = excludedScreenings.has(screeningId);
-                
+                const dateKey = screening.date.split('T')[0];
+
                 // Skip excluded unless we want to include them
                 if (isExcluded && !includeExcluded) return;
-                
+
+                // IMPORTANT: Only include screenings on available dates
+                if (!availableDates.has(dateKey)) return;
+
                 const title = typeof film.title === 'object' ? film.title[currentLang] : film.title;
                 const startDate = new Date(screening.date);
                 const durationMatch = film.duration.match(/(\d+)/);
                 const durationMinutes = durationMatch ? parseInt(durationMatch[1]) : 120;
                 const endDate = new Date(startDate.getTime() + durationMinutes * 60000);
-                
+
                 allScreenings.push({
                     filmId: film.id,
                     screeningId: screeningId,
