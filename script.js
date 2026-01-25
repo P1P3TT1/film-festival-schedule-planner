@@ -111,92 +111,1109 @@ const translations = {
 const festivalData = [
     {
         id: 1,
-        title: { en: "The Midnight Garden", fi: "Keskiyön Puutarha" },
-        director: "Sofia Chen",
-        duration: "118 min",
+        title: { en: "ABODE OF DAWN", fi: "ABODE OF DAWN" },
+        director: "Kristina Shtubert",
+        duration: "105 min",
         description: {
-            en: "A haunting tale of memory and loss set in a forgotten botanical garden.",
-            fi: "Koskettava tarina muistosta ja menetyksestä unohdetussa kasvitieteellisessä puutarhassa."
+            en: "A cult living in Siberia is led by Vissarion, a man who has proclaimed himself the Messiah. The observational documentary follows the isolated community over ten years, as everyday life wavers between faith, brainwashing, and hope.",
+            fi: "Siperiassa elävää kulttia johtaa Vissarion, messiaaksi julistautunut mies. Seurantadokumentti tarkastelee 10 vuoden ajan eristäytynyttä yhteisöä, jonka arki horjuu uskon, aivopesun ja toivon välillä."
         },
         screenings: [
-            { date: "2025-10-15T14:00", venue: "Main Theater" },
-            { date: "2025-10-16T20:30", venue: "Screen 2" },
-            { date: "2025-10-18T16:00", venue: "Main Theater" }
+            { date: "2026-02-04T20:30", venue: "Kinopalatsi 7" },
+            { date: "2026-02-05T20:00", venue: "Kinopalatsi 9" },
+            { date: "2026-02-07T17:30", venue: "Kinopalatsi 5" }
         ]
     },
     {
         id: 2,
-        title: { en: "Echoes of Tomorrow", fi: "Huomisen Kaiut" },
-        director: "Marcus Webb",
-        duration: "95 min",
+        title: { en: "AGATHA’S ALMANAC", fi: "AGATHA’S ALMANAC" },
+        director: "Amalie Atkins",
+        duration: "86 min",
         description: {
-            en: "A sci-fi thriller exploring the consequences of time manipulation.",
-            fi: "Sci-fi-jännäri, joka tutkii ajan manipuloinnin seurauksia."
+            en: "Amalie Atkins followed her grandmother Agatha’s simple, self-sufficient life on the family farm for six years. The result is a captivating portrait of a vanishing world.",
+            fi: "Amalie Atkins seurasi isoäitinsä Agathan yksinkertaista ja omavaraista elämää perheen maatilalla kuuden vuoden ajan. Lopputulos on hurmaava muotokuva katoavasta maailmasta. "
         },
         screenings: [
-            { date: "2025-10-15T18:30", venue: "Screen 2" },
-            { date: "2025-10-17T21:00", venue: "Main Theater" }
+            { date: "2026-02-03T21:45", venue: "Kinopalatsi 6" },
+            { date: "2026-02-07T15:30", venue: "Kinopalatsi 5" },
+            { date: "2026-02-08T12:45", venue: "Kiasma-teatteri" }
         ]
     },
     {
         id: 3,
-        title: { en: "Desert Roads", fi: "Aavikon Tiet" },
-        director: "Amira Hassan",
-        duration: "104 min",
+        title: { en: "AMATEURS’ PARADISE", fi: "AMATEURS’ PARADISE" },
+        director: "Janus Bragi Jakobsson",
+        duration: "86 min",
         description: {
-            en: "A road movie through the Sahara, following three strangers on a journey of self-discovery.",
-            fi: "Road movie Saharan halki, joka seuraa kolmea tuntematonta heidän itsensä löytämisen matkallaan."
+            en: "Four Icelandic men of different ages document their everyday lives on YouTube. The film explores the tension between recording life and performance.",
+            fi: "Neljä eri-ikäistä islantilaismiestä dokumentoi arkeaan Youtubessa. Elokuva pohtii elämän tallentamisen ja performanssin välistä jännitettä."
         },
         screenings: [
-            { date: "2025-10-16T15:00", venue: "Screen 3" },
-            { date: "2025-10-17T19:00", venue: "Screen 2" },
-            { date: "2025-10-19T14:30", venue: "Main Theater" }
+            { date: "2026-02-04T21:45", venue: "Kinopalatsi 5" },
+            { date: "2026-02-05T15:30", venue: "Cinema Orion" },
         ]
     },
     {
         id: 4,
-        title: { en: "The Last Symphony", fi: "Viimeinen Sinfonia" },
-        director: "Klaus Müller",
-        duration: "142 min",
+        title: { en: "AMOS A – EN TOLKNING AV EN FRAMGÅNGSSAGA", fi: "AMOS A – EN TOLKNING AV EN FRAMGÅNGSSAGA" },
+        director: "Anna Blom",
+        duration: "63 min",
         description: {
-            en: "An epic biographical drama about a composer's final masterpiece.",
-            fi: "Eeppinen elämäkerrallinen draama säveltäjän viimeisestä mestariteoksesta."
+            en: "Through rehearsals for a play about an enigmatic businessman and art patron, the film dives into 20th-century Finnish cultural history.",
+            fi: "Arvoituksellisesta bisnesmiehestä ja taidemesenaatista kertovan näytelmän harjoitusten kautta sukelletaan 1900-luvun suomalaiseen kulttuurihistoriaan."
         },
         screenings: [
-            { date: "2025-10-15T19:00", venue: "Main Theater" },
-            { date: "2025-10-18T20:00", venue: "Main Theater" }
+            { date: "2026-01-27T18:00", venue: "Kino Regina" },
+            { date: "2026-02-08T16:15", venue: "Kino Regina" },
         ]
     },
     {
         id: 5,
-        title: { en: "Neon Nights", fi: "Neoniyöt" },
-        director: "Yuki Tanaka",
-        duration: "88 min",
+        title: { en: "ANTIDOTE", fi: "ANTIDOTE" },
+        director: "James Jones",
+        duration: "92 min",
         description: {
-            en: "A vibrant exploration of Tokyo's underground music scene.",
-            fi: "Eloisa tutkielma Tokion underground-musiikkiskenestä."
+            en: "A journalist, a dissident, and a former insider each wage their own fight against Russia’s government, fully aware of the price they may have to pay.",
+            fi: "Toimittaja, toisinajattelija ja entinen sisäpiiriläinen käyvät kukin tahoillaan taistelua Venäjän hallintoa vastaan tietoisina hinnasta, jonka he saattavat joutua maksamaan. "
         },
         screenings: [
-            { date: "2025-10-16T22:00", venue: "Screen 2" },
-            { date: "2025-10-17T23:30", venue: "Screen 3" },
-            { date: "2025-10-19T21:00", venue: "Screen 2" }
+            { date: "2026-02-04T16:45", venue: "Bio Rex Lasipalatsi" },
+            { date: "2026-02-05T19:30", venue: "Kinopalatsi 5" },
+            { date: "2026-02-07T14:00", venue: "Maxim 2" },
         ]
     },
     {
         id: 6,
-        title: { en: "Whispers in the Wind", fi: "Kuiskauksia Tuulessa" },
-        director: "Elena Rodriguez",
-        duration: "101 min",
+        title: { en: "BEDROCK", fi: "BEDROCK" },
+        director: "Kinga Michalska",
+        duration: "103 min",
         description: {
-            en: "A poetic meditation on nature and human connection in rural Spain.",
-            fi: "Runollinen pohdinta luonnosta ja ihmisten välisestä yhteydestä maaseudun Espanjassa."
+            en: "The film explores the shadows of the past by visiting residential areas near Holocaust extermination camps along Poland’s border, where everyday life is still not free from violence.",
+            fi: "Elokuva tutkii menneisyyden varjoja vierailemalla asuinpaikoissa, jotka sijaitsevat holokaustin tuhoamisleirien läheisyydessä Puolan rajalla, jossa arki ei ole vieläkään vapaa väkivallasta. "
         },
         screenings: [
-            { date: "2025-10-15T16:30", venue: "Screen 3" },
-            { date: "2025-10-18T18:00", venue: "Screen 3" }
+            { date: "2026-02-04T18:30", venue: "Kinopalatsi 7" },
+            { date: "2026-02-06T21:00", venue: "Kino Regina" },
+            { date: "2026-02-07T16:00", venue: "Maxim 2" },
         ]
-    }
-];
+    },
+    {
+        id: 7,
+        title: { en: "BLAME", fi: "BLAME" },
+        director: "Christian Frei",
+        duration: "123 min",
+        description: {
+            en: "Three researchers spent years trying to warn the world about the threat of a new pandemic. When it finally broke out, they found themselves caught in the eye of the storm.",
+            fi: "Kolme tutkijaa yritti vuosikausia varoittaa maailmaa uuden pandemian uhasta. Kun pandemia lopulta puhkesi, joutuivat he itse pyörremyrskyn keskelle."
+        },
+        screenings: [
+            { date: "2026-02-04T16:15", venue: "Kino Regina" },
+            { date: "2026-02-06T21:00", venue: "Maxim 1" },
+            { date: "2026-02-08T19:15", venue: "Bio Rex Lasipalatsi" },
+        ]
+    },
+    {
+        id: 8,
+        title: { en: "CHILD OF DUST", fi: "CHILD OF DUST" },
+        director: "Weronika Mliszewska",
+        duration: "93 min",
+        description: {
+            en: "When Sang, a Vietnamese man, finds his American father decades after the war, he is forced to reconsider what family truly means – and his own identity.",
+            fi: "Kun vietnamilainen Sang löytää amerikkalaisen isänsä vuosikymmeniä sodan jälkeen, joutuu hän pohtimaan perheen todellista merkitystä ja omaa identiteettiään."
+        },
+        screenings: [
+            { date: "2026-02-06T14:00", venue: "Kinopalatsi 5" },
+            { date: "2026-02-07T19:00", venue: "Maxim 1" },
+            { date: "2026-02-08T17:15", venue: "Cinema Orion" },
+        ]
+    },
+    {
+        id: 9,
+        title: { en: "CLAUDIA HAS BAD DREAMS", fi: "CLAUDIA HAS BAD DREAMS" },
+        director: "Eleonora Sardo, Marco Zenoni",
+        duration: "68 min",
+        description: {
+            en: "In an intimate story, the director sets out on a pilgrimage with her sister, who is recovering from drug addiction. The film offers an honest portrayal of the complexity of family relationships in the shadow of addiction.",
+            fi: "Intiimissä tarinassa ohjaaja lähtee pyhiinvaellukselle huumeaddiktiosta toipuvan sisarensa kanssa. Elokuva kuvaa vilpittömästi perhesuhteiden monimutkaisuutta riippuvuuden varjossa."
+        },
+        screenings: [
+            { date: "2026-02-05T16:00", venue: "Cinema Orion" },
+        ]
+    },
+    {
+        id: 10,
+        title: { en: "COEXISTENCE, MY ASS!", fi: "COEXISTENCE, MY ASS!" },
+        director: "Amber Fares",
+        duration: "95 min",
+        description: {
+            en: "Israeli comedian Noam Shuster Eliassi fights for justice with humor. With sharp satire, Noam challenges audiences to face difficult truths—while pointing to the possibility of a different reality.",
+            fi: "Israelilainen koomikko Noam Shuster Eliassi taistelee oikeudenmukaisuuden puolesta huumorilla. Purevalla satiirilla Noam haastaa kohtaamaan vaikeita totuuksia, jotka muistuttavat toisenlaisen todellisuuden mahdollisuudesta."
+        },
+        screenings: [
+            { date: "2026-02-03T18:45", venue: "Cinema Orion" },
+            { date: "2026-02-07T11:00", venue: "Bio Rex Lasipalatsi" },
+            { date: "2026-02-08T21:00", venue: "Kinopalatsi 7" },
+        ]
+    },
+    {
+        id: 11,
+        title: { en: "CONFESSIONS OF A SWEDISH MAN", fi: "CONFESSIONS OF A SWEDISH MAN" },
+        director: "Hampus Linder",
+        duration: "97 min",
+        description: {
+            en: "Self-identified feminist Hampus Linder dives into the manosphere. His attempt to understand other men ultimately plunges him into an identity crisis.",
+            fi: "Feministiksi itsensä laskeva Hampus Linder sukeltaa manosfääriin. Yritys ymmärtää muita miehiä syöksee hänet lopulta identiteettikriisiin."
+        },
+        screenings: [
+            { date: "2026-01-27T15:00", venue: "Kino Regina" },
+            { date: "2026-02-04T20:30", venue: "Cinema Orion" },
+            { date: "2026-02-05T20:45", venue: "Maxim 1" },
+        ]
+    },
+    {
+        id: 12,
+        title: { en: "CUTTING THROUGH ROCKS", fi: "CUTTING THROUGH ROCKS" },
+        director: "Sara Khaki, Muhammad Reza Eyni",
+        duration: "94 min",
+        description: {
+            en: "Sara Shaverdi, who lives in rural Iran, is the first woman elected to her village council. In her free time, too, she fights discrimination by secretly teaching girls to ride motorcycles.",
+            fi: "Iranin maaseudulla elävä Sara Shaverdi on ensimmäinen kylänsä valtuustoon valittu nainen. Myös vapaa-ajallaan hän taistelee syrjintää vastaan opettamalla tytöille salaa moottoripyöräilyä."
+        },
+        screenings: [
+            { date: "2026-02-03T19:45", venue: "Kinopalatsi 6" },
+            { date: "2026-02-05T18:45", venue: "Maxim 1" },
+            { date: "2026-02-07T18:45", venue: "Kinopalatsi 6" },
+        ]
+    },
+    {
+        id: 13,
+        title: { en: "D IS FOR DISTANCE", fi: "D IS FOR DISTANCE" },
+        director: "Christopher Petit, Emma Matthews",
+        duration: "89 min",
+        description: {
+            en: "In an experimental, essayistic family portrait, the filmmaker couple runs up against society’s rigidity as they search for an effective treatment for their son’s epilepsy.",
+            fi: "Kokeellisessa, esseemuotoisessa perhekuvassa ohjaajapariskunta törmää yhteiskunnan joustamattomuuteen etsiessään poikansa epilepsiaan tepsivää hoitoa."
+        },
+        screenings: [
+            { date: "2026-02-06T18:30", venue: "Kinopalatsi 5" },
+            { date: "2026-02-07T13:15", venue: "Kinopalatsi 6" },
+            { date: "2026-02-08T16:30", venue: "Kinopalatsi 5" },
+        ]
+    },
+    {
+        id: 14,
+        title: { en: "DAJORI", fi: "DAJORI" },
+        director: "Martin Páv, Nicolas Kourek",
+        duration: "88 min",
+        description: {
+            en: "Marie, a Romani woman, struggles with poverty and marginalization and ends up caring not only for her own children but also for her sister’s kids.",
+            fi: "Romaninainen Marie kamppailee köyhyyden ja syrjäytymisen kanssa ja päätyy huolehtimaan omien lastensa lisäksi myös siskonsa lapsista."
+        },
+        screenings: [
+            { date: "2026-02-07T13:15", venue: "Kinopalatsi 7" },
+        ]
+    },
+    {
+        id: 15,
+        title: { en: "DEAR TOMORROW", fi: "DEAR TOMORROW" },
+        director: "Kaspar Astrup Schröder",
+        duration: "83 min",
+        description: {
+            en: "In Japan, loneliness is a national crisis. The film follows two people struggling with isolation as they try to regain control of their lives—with the help of volunteers, compassionate encounters, government measures, and even pet owls. In Japan, loneliness is a national crisis. The film follows two people struggling with isolation as they try to regain control of their lives—with the help of volunteers, compassionate encounters, government measures, and even pet owls.",
+            fi: "Japanissa yksinäisyys on kansallinen kriisi.Elokuva seuraa kahta eristyneisyyden kanssakamppailevaa ihmistä, jotka yrittävät saada elämänsä haltuun vapaaehtoisten tuen, myötätuntoisten kohtaamisten, hallituksen toimien ja jopa lemmikkipöllöjen avulla."
+        },
+        screenings: [
+            { date: "2026-02-03T18:00", venue: "Maxim 1" },
+            { date: "2026-02-07T19:45", venue: "Kinopalatsi 5" },
+            { date: "2026-02-08T21:45", venue: "Kinopalatsi 5" },
+        ]
+    },
+    {
+        id: 16,
+        title: { en: "DI’ANNO – IRON MAIDEN’S LOST SINGER", fi: "DI’ANNO – IRON MAIDEN’S LOST SINGER" },
+        director: "Wes Orhoski",
+        duration: "97 min",
+        description: {
+            en: "A film about the fragility and randomness of success—but also about friendship, fandom, and the power of music.",
+            fi: "Elokuva menestyksen hauraudesta ja sattumanvaraisuudesta, mutta myös ystävyydestä, faniudesta ja musiikin voimasta."
+        },
+        screenings: [
+            { date: "2026-02-07T18:00", venue: "Bio Rex Lasipalatsi" },
+            { date: "2026-02-08T20:45", venue: "Kinopalatsi 9" },
+        ]
+    },
+    {
+        id: 17,
+        title: { en: "DO YOU LOVE ME", fi: "DO YOU LOVE ME" },
+        director: "Lana Daher",
+        duration: "76 min",
+        description: {
+            en: "Archival footage spanning seven decades explores Lebanon’s collective psyche, forming a love letter to Beirut.",
+            fi: "Seitsemän vuosikymmenen ajalta koottu arkistomateriaali tutkii Libanonin kollektiivista psyykettä ja muodostaa rakkauskirjeen Beirutille."
+        },
+        screenings: [
+            { date: "2026-02-05T21:30", venue: "Kinopalatsi 5" },
+            { date: "2026-02-06T15:30", venue: "Kiasma-teatteri" },
+            { date: "2026-02-08T18:30", venue: "Maxim 1" },
+        ]
+    },
+    {
+        id: 18,
+        title: { en: "DOCPOINT X YLE TEEMA: SAIMAA-ILMIÖ", fi: "DOCPOINT X YLE TEEMA: SAIMAA-ILMIÖ" },
+        director: "Mika Kaurismäki, Aki Kaurismäki",
+        duration: "127 min",
+        description: {
+            en: "The Kaurismäki brothers’ documentary follows the 1981 summer concert tour on Lake Saimaa featuring Finnish rock legends Juice Leskinen Slam, Hassisen Kone, and Eppu Normaali.",
+            fi: "Kaurismäen veljesten dokumenttielokuva Suomi-rockin legendojen Juice Leskinen Slamin, Hassisen koneen ja Eppu Normaalin konserttikiertueesta kesäisellä Saimaalla vuonna 1981."
+        },
+        screenings: [
+            { date: "2026-02-04T21:00", venue: "Bio Rex Lasipalatsi"},
+        ]
+    },
+    {
+        id: 19,
+        title: { en: "THE FINNISH DOCUMENTARY GUILD PRESENTS: SHORT FILM GEMS", fi: "DOKUMENTTIKILTA ESITTÄÄ: LYHYTELOKUVIEN HELMIÄ" },
+        director: "",
+        duration: "81 min",
+        description: {
+            en: "A selection curated by the documentary makers’ association Dokumenttikilta, celebrating its 30th anniversary, brings together modern short-film classics that showcase the diverse range of creative Finnish documentary cinema. The screening features Hätäkutsu, Hei hei Tornio, Hyppääjä, Lumikko, and Star Shaped Scar.",
+            fi: "30-vuotisjuhlavuottaan viettävän tekijäjärjestö Dokumenttikillan kokoama valikoima lyhytelokuvien moderneja klassikoita, jotka edustavat luovan suomalaisen dokumenttielokuvan monimuotoista kirjoa. Näytöksessä esitetään Hätäkutsu, Hei hei Tornio, Hyppääjä, Lumikko ja Star Shaped Scar."
+        },
+        screenings: [
+            { date: "2026-02-04T14:45", venue: "Kiasma-teatteri"},
+        ]
+    },
+    {
+        id: 20,
+        title: { en: "ETNA", fi: "ETNA" },
+        director: "Sinna Virtanen",
+        duration: "75 min",
+        description: {
+            en: "A personal documentary about intergenerational trauma and working through it. In the film, a volcano evolves from a symbol of suppressed emotions into an active, living force.",
+            fi: "Henkilökohtainen dokumentti ylisukupolvisesta traumasta ja sen purkamisesta. Elokuvassa tulivuori kasvaa tukahdutettujen tunteiden symbolista eläväksi toimijaksi."
+        },
+        screenings: [
+            { date: "2026-02-04T18:15", venue: "Kinopalatsi 9"},
+            { date: "2026-02-06T18:50", venue: "Maxim 2"},
+            { date: "2026-02-08T13:00", venue: "Kinopalatsi 5"},
+        ]
+    },
+    {
+        id: 21,
+        title: { en: "FLYING SCENTS – OF PLANTS AND PEOPLE", fi: "FLYING SCENTS – OF PLANTS AND PEOPLE" },
+        director: "Antshi Von Moos",
+        duration: "66 min",
+        description: {
+            en: "In Zurich, a women-led research team investigates a chemical reaction that makes plants burst into bloom instantly. The film explores the complex interplay between plants, insects, and humans in a changing world where science and art intertwine.",
+            fi: "Zürichissä naisjohtoinen tutkimusryhmä selvittää kemiallista reaktiota, joka saa kasvit puhkeamaan kukkaan välittömästi. Elokuva tutkii kasvien, hyönteisten ja ihmisten moniulotteista vuorovaikutusta muuttuvassa maailmassa, jossa tiede ja taide kietoutuvat toisiinsa."
+        },
+        screenings: [
+            { date: "2026-02-05T16:15", venue: "Kinopalatsi 9"},
+            { date: "2026-02-06T19:30", venue: "Maxim 1"},
+        ]
+    },
+    {
+        id: 22,
+        title: { en: "GEN_", fi: "GEN_" },
+        director: "Gianluca Matarrese",
+        duration: "104 min",
+        description: {
+            en: "Italy’s strict government restrictions challenge the work of a doctor in the public healthcare system who provides fertility treatments and gender-affirming care. Forced to operate in a charged climate, the doctor finds the limits of both medical ethics and political correctness tested.",
+            fi: "Italian hallituksen tiukat rajoitukset haastavat julkisessa terveydenhuollossa lapsettomuus- ja sukupuolenkorjaushoitoja tarjoavan lääkärin työn. Hän joutuu toimimaan latautuneessa ilmapiirissä, joka koettelee sekä lääketieteellisen etiikan että poliittisen korrektiuden rajoja."
+        },
+        screenings: [
+            { date: "2026-02-04T14:30", venue: "Kinopalatsi 6"},
+            { date: "2026-02-07T18:15", venue: "Cinema Orion"},
+            { date: "2026-02-08T15:00", venue: "Kinopalatsi 7"},
+        ]
+    },
+    {
+        id: 23,
+        title: { en: "GEOGRAPHIES OF SOLITUDE", fi: "GEOGRAPHIES OF SOLITUDE" },
+        director: "Jacquelyn Mills",
+        duration: "104 min",
+        description: {
+            en: "Zoe Lucas has spent much of her life on a remote island in the Northwest Atlantic, studying its nature and wildlife. This playful, immersive portrait is a tribute to biodiversity.",
+            fi: "Zoe Lucas on viettänyt ison osan elämästään syrjäisellä saarella Luoteis-Atlantilla tutkien saaren luontoa ja eläimiä. Leikkisä ja immersiivinen henkilökuva on kunnianosoitus luonnon monimuotoisuudelle."
+        },
+        screenings: [
+            { date: "2026-02-07T14:00", venue: "Maxim 1"},
+            { date: "2026-02-08T14:00", venue: "Kino Regina"},
+        ]
+    },
+    {
+        id: 24,
+        title: { en: "GHOST ELEPHANTS", fi: "GHOST ELEPHANTS" },
+        director: "Werner Herzog",
+        duration: "99 min",
+        description: {
+            en: "A scientist believes that giant elephants live on Angola’s highlands. Werner Herzog follows his expedition and asks: is it sometimes better if we don’t succeed in our attempts?",
+            fi: "Tieteilijä uskoo, että Angolan ylängöillä elää jättiläisnorsuja. Werner Herzog seuraa hänen tutkimusmatkaansa ja esittää kysymyksen: onko joskus parempi, jos emme onnistukaan yrityksissämme?"
+        },
+        screenings: [
+            { date: "2026-02-03T20:30", venue: "Bio Rex Lasipalatsi"},
+            { date: "2026-02-07T14:45", venue: "Kino Regina"},
+            { date: "2026-02-08T15:15", venue: "Cinema Orion"},
+        ]
+    },
+    {
+        id: 25,
+        title: { en: "HACKING HATE", fi: "HACKING HATE" },
+        director: "Simon Klose",
+        duration: "88 min",
+        description: {
+            en: "In this thriller-like film, journalist My Lindgren goes undercover online in far-right circles to investigate how hate is monetized and democracy is undermined.",
+            fi: "Trillerimäisessä elokuvassa toimittaja My Lindgren soluttautuu äärioikeistoon internetissä tutkiakseen, kuinka vihalla tehdään rahaa ja horjutetaan demokratiaa. "
+        },
+        screenings: [
+            { date: "2026-02-07T16:15", venue: "Cinema Orion"},
+            { date: "2026-02-08T11:00", venue: "Bio Rex Lasipalatsi"},
+        ]
+    },
+    {
+        id: 26,
+        title: { en: "HOW DEEP IS YOUR LOVE", fi: "HOW DEEP IS YOUR LOVE" },
+        director: "Eleanor Mortimer",
+        duration: "100 min",
+        description: {
+            en: "The deep sea is the planet’s last unknown frontier. Biologists study its creatures—like something from another world—but time is running out, as deep-sea mining threatens fragile ecosystems.",
+            fi: "Syvänmeren alueet ovat maapallon viimeinen tuntematon kolkka. Biologit tutkivat alueen eläimiä, jotka ovat kuin toiselta planeetalta. Aika käy kuitenkin vähiin, sillä syvänmeren kaivostoiminta uhkaa hauraita ekosysteemejä."
+        },
+        screenings: [
+            { date: "2026-02-04T16:15", venue: "Kinopalatsi 9"},
+            { date: "2026-02-08T18:00", venue: "Kino Regina"},
+        ]
+    },
+    {
+        id: 27,
+        title: { en: "HOW TO BUILD A LIBRARY", fi: "HOW TO BUILD A LIBRARY" },
+        director: "Christopher King, Maia Lekow",
+        duration: "98 min",
+        description: {
+            en: "Two Kenyan women set out to restore a decaying old library—once reserved for whites only—transforming it into a vibrant cultural center.",
+            fi: "Kaksi kenialaisnaista ryhtyy kunnostamaan rapistunutta ja vanhaa, aiemmin vain valkoisille tarkoitettua kirjastoa eläväiseksi kulttuurikeskukseksi."
+        },
+        screenings: [
+            { date: "2026-02-05T20:30", venue: "Cinema Orion"},
+            { date: "2026-02-06T15:45", venue: "Kinopalatsi 7"},
+            { date: "2026-02-07T12:00", venue: "Cinema Orion"},
+        ]
+    },
+    {
+        id: 28,
+        title: { en: "I LOST SIGHT OF THE LANDSCAPE", fi: "I LOST SIGHT OF THE LANDSCAPE" },
+        director: "Sophie Bédard Marcotte",
+        duration: "85 min",
+        description: {
+            en: "The film follows two artistic processes in parallel: the creation of a stage production and the making of a film about it. Intimate and open, the documentary captures rare moments from the making of art that are seldom seen publicly.",
+            fi: "Elokuvassa seurataan rinnakkain kahta taiteellista prosessia: teatteriesityksen ja siitä kertovan elokuvan syntyä. Intiimi ja avoin dokumentti onnistuu vangitsemaan taiteen tekemisestä hetkiä, joita nähdään harvoin julkisesti."
+        },
+        screenings: [
+            { date: "2026-02-04T18:00", venue: "Kinopalatsi 6"},
+            { date: "2026-02-08T10:30", venue: "Kiasma-teatteri"},
+        ]
+    },
+    {
+        id: 29,
+        title: { en: "I LOST SIGHT OF THE LANDSCAPE", fi: "I LOST SIGHT OF THE LANDSCAPE" },
+        director: "Sophie Bédard Marcotte",
+        duration: "85 min",
+        description: {
+            en: "The film follows two artistic processes in parallel: the creation of a stage production and the making of a film about it. Intimate and open, the documentary captures rare moments from the making of art that are seldom seen publicly.",
+            fi: "Elokuvassa seurataan rinnakkain kahta taiteellista prosessia: teatteriesityksen ja siitä kertovan elokuvan syntyä. Intiimi ja avoin dokumentti onnistuu vangitsemaan taiteen tekemisestä hetkiä, joita nähdään harvoin julkisesti."
+        },
+        screenings: [
+            { date: "2026-02-04T18:00", venue: "Kinopalatsi 6"},
+            { date: "2026-02-08T10:30", venue: "Kiasma-teatteri"},
+        ]
+    },
+    {
+        id: 30,
+        title: { en: "ILOVERUSS", fi: "ILOVERUSS" },
+        director: "Tova Mozard",
+        duration: "87 min",
+        description: {
+            en: "Swedish filmmaker Tova Mozard filmed various artistic experiments with her friend Russell over twenty years, while also documenting his everyday life as a Hollywood film extra. What does life look like amid Hollywood’s iconic landscapes when your paycheck is slim?",
+            fi: "Ruotsalainen Tova Mozard kuvasi 20 vuoden ajan erilaisia taiteellisia kokeiluja ystävänsä Russellin kanssa ja tallensi samalla tämän arkea Hollywood-elokuvien avustajana. Miltä näyttää elämä Hollywoodin ikonisissa maisemissa, kun palkkapussi on kevyt?"
+        },
+        screenings: [
+            { date: "2026-02-04T18:00", venue: "Cinema Orion"},
+            { date: "2026-02-05T21:00", venue: "Kino Regina"},
+            { date: "2026-02-07T16:45", venue: "Kinopalatsi 6"},
+        ]
+    },
+    {
+        id: 31,
+        title: { en: "IMAGO", fi: "IMAGO" },
+        director: "Déni Oumar Pitsaev",
+        duration: "109 min",
+        description: {
+            en: "Déni, who grew up in France, inherits land in Georgia. In his native Chechnya, relatives he barely knows are waiting for him. Everyone seems to be asking the same question: when are you going to get married?",
+            fi: "Ranskassa kasvanut Déni perii maata Georgiassa. Synnyinseuduillaan Tšetšeniassa häntä odottavat perheenjäsenet, joita hän hädin tuskin tuntee. Kaikkien huulilla tuntuu olevan sama kysymys: milloin menet naimisiin?"
+        },
+        screenings: [
+            { date: "2026-02-06T16:00", venue: "Kinopalatsi 9"},
+            { date: "2026-02-07T20:30", venue: "Cinema Orion"},
+            { date: "2026-02-08T19:00", venue: "Kinopalatsi 6"},
+        ]
+    },
+    {
+        id: 32,
+        title: { en: "IN HELL WITH IVO", fi: "IN HELL WITH IVO" },
+        director: "Kristina Nikolova",
+        duration: "78 min",
+        description: {
+            en: "Art has saved the life of Bulgarian queer artist Ivo Dimchev. Now he transforms the raw nerves of life and society into singular musical performances.",
+            fi: "Taide on pelastanut bulgarialaisen queer-taiteilija Ivo Dimchevin elämän. Nyt hän muuttaa elämän ja yhteiskunnan kipupisteet ainutlaatuisiksi musiikkiesityksiksi."
+        },
+        screenings: [
+            { date: "2026-02-06T18:00", venue: "Savoy-teatteri"},
+            { date: "2026-02-07T20:45", venue: "Maxim 2"},
+            { date: "2026-02-08T20:00", venue: "Kinopalatsi 5"},
+        ]
+    },
+    {
+        id: 33,
+        title: { en: "JOHN LILLY AND THE EARTH COINCIDENCE CONTROL OFFICE", fi: "JOHN LILLY AND THE EARTH COINCIDENCE CONTROL OFFICE" },
+        director: "Michael Almereyda, Courtney Stephens",
+        duration: "89 min",
+        description: {
+            en: "John C. Lilly studied consciousness using controversial methods, and over the decades his psychedelic experiments transformed him from a scientist into a mystic.",
+            fi: "John C. Lilly tutki tietoisuutta kiistanalaisilla metodeilla ja muuttui psykedeelisten kokeilujen myötä vuosikymmenien saatossa tiedemiehestä mystikoksi."
+        },
+        screenings: [
+            { date: "2026-02-04T20:45", venue: "Maxim 2"},
+            { date: "2026-02-07T11:45", venue: "Kiasma-teatteri"},
+            { date: "2026-02-08T21:00", venue: "Cinema Orion"},
+        ]
+    },
+    {
+        id: 34,
+        title: { en: "KABUL, BETWEEN PRAYERS", fi: "KABUL, BETWEEN PRAYERS" },
+        director: "Aboozar Amini",
+        duration: "102 min",
+        description: {
+            en: "A young Taliban fighter struggles to balance religion, family life, and the pressures of everyday existence in Afghanistan.",
+            fi: "Nuori taleban-sotilas tasapainoilee uskonnon, perhe-elämän ja arjen ristipaineissa Afganistanissa."
+        },
+        screenings: [
+            { date: "2026-02-03T20:45", venue: "Kinopalatsi 5"},
+            { date: "2026-02-06T20:45", venue: "Kinopalatsi 9"},
+            { date: "2026-02-08T17:00", venue: "Bio Rex Lasipalatsi"},
+        ]
+    },
+    {
+        id: 35,
+        title: { en: "KHARTOUM", fi: "KHARTOUM" },
+        director: "Anas Saeed, Rawia Alhag, Ibrahim Snoopy, Timeea M. Ahmed, Phil Cox",
+        duration: "80 min",
+        description: {
+            en: "This empathetic film, which innovatively uses technology, portrays life amid the chaos of war. Five people who fled Khartoum when Sudan’s war broke out share their stories of survival and freedom.",
+            fi: "Innovatiivisesti teknologiaa hyödyntävä, ihmisläheinen elokuva kuvaa elämää sodan aiheuttaman kaaoksen keskellä. Viisi Khartumista Sudanin sodan puhjetessa paennutta kertovat tarinansa selviytymisestä ja vapaudesta."
+        },
+        screenings: [
+            { date: "2026-02-04T16:00", venue: "Cinema Orion"},
+            { date: "2026-02-05T17:15", venue: "Maxim 2"},
+            { date: "2026-02-08T16:30", venue: "Maxim 1"},
+        ]
+    },
+    {
+        id: 36,
+        title: { en: "KING MATT THE FIRST", fi: "KING MATT THE FIRST" },
+        director: "Jaśmina Wójcik",
+        duration: "74 min",
+        description: {
+            en: "In a visually enchanting film, we dive into the wonders of childhood—and the bittersweet longing it leaves behind.",
+            fi: "Visuaalisesti lumoavassa elokuvassa sukelletaan lapsuuden ihmeisiin ja sen jättämään haikeuteen."
+        },
+        screenings: [
+            { date: "2026-01-27T13:00", venue: "Kino Regina"},
+            { date: "2026-02-07T15:15", venue: "Kinopalatsi 7"},
+        ]
+    },
+    {
+        id: 37,
+        title: { en: "IN FULL AGREEMENT", fi: "KORVIA HUUMAAVA HILJAISUUS" },
+        director: "Panu Suuronen",
+        duration: "75 min",
+        description: {
+            en: "The film examines how the war in Ukraine has reshaped the identity and sense of belonging of Russian-speaking Finns—forcing them to re-evaluate family ties, their homeland, their background, and their place in Finland.",
+            fi: "Elokuva tarkastelee, miten Ukrainan sota on muuttanut venäjänkielisten suomalaisten identiteettiä ja kuulumisen kokemusta Suomessa, jossa perhe, kotimaa sekä oma tausta ja paikka joutuvat uudelleen määritellyiksi."
+        },
+        screenings: [
+            { date: "2026-02-04T20:30", venue: "Kinopalatsi 9"},
+            { date: "2026-02-06T17:15", venue: "Maxim 2"},
+            { date: "2026-02-08T17:00", venue: "Kinopalatsi 9"},
+        ]
+    },
+    {
+        id: 38,
+        title: { en: "WHEN THE SAXOPHONE BURNS", fi: "KUN SAKSOFONI PALAA" },
+        director: "Petri Luukkainen",
+        duration: "120 min",
+        description: {
+            en: "When the alternative is to stop playing altogether, Timo Lassy returns to the original source of joy. In this jazz-soaked blend of portrait and concert film, he searches for his own voice—alone with his saxophone.",
+            fi: "Kun vaihtoehtona on soittamisen lopettaminen, Timo Lassy palaa ilon alkulähteelle. Jazzinhuuruisessa muotokuvan ja konserttielokuvan yhdistelmässä hän etsii omaa ääntään yksin saksofoninsa kanssa."
+        },
+        screenings: [
+            { date: "2026-02-03T19:45", venue: "Maxim 1"},
+            { date: "2026-02-06T20:15", venue: "Cinema Orion"},
+        ]
+    },
+    {
+        id: 39,
+        title: { en: "LIGHT MEMORIES", fi: "LIGHT MEMORIES" },
+        director: "Misha Vallejo",
+        duration: "80 min",
+        description: {
+            en: "In this personal exploration of absent fathers, the director delves into buried family secrets and intergenerational trauma.",
+            fi: "Ohjaaja tutkii poissaolevia isiä tässä henkilökohtaisessa kuvauksessa haudatuista perhesalaisuuksista ja ylisukupolvisista traumoista."
+        },
+        screenings: [
+            { date: "2026-02-04T16:00", venue: "Kinopalatsi 5"},
+            { date: "2026-02-06T17:45", venue: "Kiasma-teatteri"},
+            { date: "2026-02-08T14:30", venue: "Maxim 1"},
+        ]
+    },
+    {
+        id: 40,
+        title: { en: "NATIONAL SHORTS COMPETITION 1: THE VERGE OF NEW", fi: "LYHYTELOKUVAKILPAILU 1: UUDEN ÄÄRELLÄ" },
+        director: "",
+        duration: "76 min",
+        description: {
+            en: "In this screening, the films All the Light That Remains, Feeling Defensive (Part 1), Human Machine, Good Night Monster and Spirits challenge the conventional forms of documentary cinema.",
+            fi: "Näytöksen elokuvissa Kaikki jäljelle jäävä valo, Puolustuskannalla, Human Machine, Mörkö ja Vuoiŋŋat haastetaan dokumenttielokuvan totuttuja muotoja."
+        },
+        screenings: [
+            { date: "2026-02-05T16:00", venue: "Kinopalatsi 6"},
+            { date: "2026-02-08T20:00", venue: "Maxim 2"},
+        ]
+    },
+    {
+        id: 41,
+        title: { en: "NATIONAL SHORTS COMPETITION 2: SIDE BY SIDE", fi: "LYHYTELOKUVAKILPAILU 2: Rinnakkain" },
+        director: "",
+        duration: "90 min",
+        description: {
+            en: "In Lonely Rider, Watchful, Speeding, of Course, Homesick, Invasive Species, 20 Meters from Russia, and Letter 1 / AIR, different forms of coexistence are explored—from a skate park to Finland’s eastern border.",
+            fi: "Elokuvissa Lonely Rider, Watchful, Vauhtipyrähdys, Homesick, Vieraslaji, 20 metriä Venäjältä ja Kirja 1 / ILMA tarkastellaan erilaisia rinnakkaiseloja aina skeittiparkilta Suomen itärajalle."
+        },
+        screenings: [
+            { date: "2026-02-05T18:15", venue: "Kinopalatsi 6"},
+            { date: "2026-02-08T17:45", venue: "Maxim 2"},
+        ]
+    },
+    {
+        id: 42,
+        title: { en: "NATIONAL SHORTS COMPETITION 3: FLASHBACKS", fi: "LYHYTELOKUVAKILPAILU 3: Takaumia" },
+        director: "",
+        duration: "67 min",
+        description: {
+            en: "In this screening, the viewer is immersed in worlds of vanishing communal spaces, memories and dreams, and a great entertainment artist through the films Simo Was Here, Am I Calling You at a Bad Time?, The Ghost Feel Hour, Smoking Spot, Diving Wombs, Equal Dust and John 9:25.",
+            fi: "Näytöksessä katsoja uppoutuu katoavien yhteisöllisten paikkojen, muistojen ja unelmien sekä suuren viihdetaitelijan maailmoihin elokuvissa Simo kävi täällä, En kai huonoon aikaan soittele?, Aavetuntohetki, Tupakkapaikka, Sukeltavat kohdut, Elämä ja yö sekä John 9:25."
+        },
+        screenings: [
+            { date: "2026-02-05T20:45", venue: "Kinopalatsi 6"},
+            { date: "2026-02-08T16:00", venue: "Maxim 2"},
+        ]
+    },
+    {
+        id: 43,
+        title: { en: "MOVE YA BODY: THE BIRTH OF HOUSE", fi: "MOVE YA BODY: THE BIRTH OF HOUSE" },
+        director: "Elegance Bratton",
+        duration: "92 min",
+        description: {
+            en: "A gripping documentary about the rise of house music from Chicago’s underground clubs. The sound that went on to conquer the world began as experiments by a small group working with limited resources.",
+            fi: "Vangitseva dokumentti, joka käsittelee house-musiikin nousua Chicagon underground-klubeilta. Maailman valloittanut soundi sai alkunsa pienen ryhmän rajatuilla resursseilla tehdyistä kokeiluista."
+        },
+        screenings: [
+            { date: "2026-02-05T21:00", venue: "Maxim 1"},
+            { date: "2026-02-06T20:30", venue: "Bio Rex Lasipalatsi"},
+            { date: "2026-02-07T21:00", venue: "Maxim 1"},
+        ]
+    },
+    {
+        id: 44,
+        title: { en: "MY BOYFRIEND THE FASCIST", fi: "MY BOYFRIEND THE FASCIST" },
+        director: "Matthias Lintner",
+        duration: "96 min",
+        description: {
+            en: "A filmmaker documents her Cuban boyfriend’s shift to the political right after becoming disillusioned with socialism – while trying to hold on to her own principles, and to love.",
+            fi: "Elokuvantekijä dokumentoi sosialismiin pettyneen kuubalaisen poikaystävänsä muuttumista oikeistolaiseksi yrittäen samalla pitää kiinni omista periaatteistaan – ja rakkaudesta."
+        },
+        screenings: [
+            { date: "2026-02-06T21:00", venue: "Kinopalatsi 6"},
+            { date: "2026-02-07T17:00", venue: "Kino Regina"},
+        ]
+    },
+    {
+        id: 45,
+        title: { en: "INVISIBLE ENEMY", fi: "NÄKYMÄTÖN VIHOLLINEN" },
+        director: "Einari Paakkanen, Ann-Mari Lehtonen",
+        duration: "75 min",
+        description: {
+            en: "Two Finnish volunteer soldiers who fought in Ukraine undergo trauma therapy in an effort to find their way back to civilian life.",
+            fi: "Kaksi Ukrainassa taistellutta suomalaista vapaaehtoissotilasta käyvät läpi traumaterapiaa löytääkseen tiensä takaisin siviilielämään."
+        },
+        screenings: [
+            { date: "2026-02-05T18:30", venue: "Bio Rex Lasipalatsi"},
+            { date: "2026-02-06T20:40", venue: "Maxim 2"},
+            { date: "2026-02-08T13:30", venue: "Kinopalatsi 9"},
+        ]
+    },
+    {
+        id: 46,
+        title: { en: "NATCHEZ", fi: "NATCHEZ" },
+        director: "Suzannah Herbert",
+        duration: "88 min",
+        description: {
+            en: "Natchez, Mississippi, thrives on tourists who come to romanticize the pre–Civil War era. But some locals challenge the notion that those “good old days” were ever truly idyllic.",
+            fi: "Mississippin Natchez elää turisteista, jotka saapuvat kaupunkiin romantisoimaan sisällissotaa edeltävää aikaa. Osa paikallisista kuitenkin haastaa ajatuksen entisten aikojen auvoisuudesta."
+        },
+        screenings: [
+            { date: "2026-02-04T19:45", venue: "Maxim 1"},
+            { date: "2026-02-07T18:45", venue: "Kinopalatsi 9"},
+            { date: "2026-02-08T13:00", venue: "Bio Rex Lasipalatsi"},
+        ]
+    },
+    {
+        id: 47,
+        title: { en: "NO MERCY", fi: "NO MERCY" },
+        director: "Isa Willinger",
+        duration: "104 min",
+        description: {
+            en: "In this documentary on the female gaze and the history of women and non-binary filmmakers, bold voices from different eras take the stage as the director searches for an answer to the question: “Do women make harsher films?”",
+            fi: "Naisen katsetta ja nais- ja ei-binääristen elokuvantekijöiden historiaa käsittelevässä dokumentissa ääneen pääsevät rohkeat ja räväkät tekijät eri aikakausilta, kun ohjaaja etsii vastausta kysymykseen ”Tekevätkö naiset rankempia elokuvia?”"
+        },
+        screenings: [
+            { date: "2026-02-05T20:45", venue: "Bio Rex Lasipalatsi"},
+            { date: "2026-02-06T13:30", venue: "Kinopalatsi 7"},
+            { date: "2026-02-07T13:00", venue: "Kinopalatsi 9"},
+        ]
+    },
+    {
+        id: 48,
+        title: { en: "NORTH SOUTH MAN WOMAN", fi: "NORTH SOUTH MAN WOMAN" },
+        director: "Morten Traavik, Sun Kim",
+        duration: "93 min",
+        description: {
+            en: "North Korean women are building new lives in South Korea—but is marriage to a local man really a shortcut to happiness?",
+            fi: "Pohjoiskorealaiset naiset rakentavat uutta elämää Etelä-Koreassa, mutta onko avioliitto paikallisen miehen kanssa oikotie onneen?"
+        },
+        screenings: [
+            { date: "2026-02-06T21:00", venue: "Kinopalatsi 5"},
+            { date: "2026-02-07T17:00", venue: "Kinopalatsi 7"},
+            { date: "2026-02-08T15:00", venue: "Bio Rex Lasipalatsi"},
+        ]
+    },
+    {
+        id: 49,
+        title: { en: "NOTES OF A TRUE CRIMINAL", fi: "NOTES OF A TRUE CRIMINAL" },
+        director: "Alexander Rodnyansky, Andriy Alferov",
+        duration: "117 min",
+        description: {
+            en: "Using archival material, a Ukrainian filmmaker weaves together collective and personal history, examining Ukraine’s past through the lens of Russian imperialism.",
+            fi: "Ukrainalainen elokuvantekijä nivoo arkistomateriaalin avulla yhteen kollektiivisen ja henkilökohtaisen historian ja tarkastelee Ukrainan historiaa osana venäläistä imperialismia."
+        },
+        screenings: [
+            { date: "2026-02-05T16:00", venue: "Bio Rex Lasipalatsi"},
+            { date: "2026-02-07T13:15", venue: "Kinopalatsi 5"},
+            { date: "2026-02-08T11:00", venue: "Cinema Orion"},
+        ]
+    },
+    {
+        id: 50,
+        title: { en: "ONLY ON EARTH", fi: "ONLY ON EARTH" },
+        director: "Robin Petré",
+        duration: "93 min",
+        description: {
+            en: "In an immersive, visually striking documentary, we follow people and animals struggling to survive amid wildfires in southern Galicia during an exceptionally hot, dry summer.",
+            fi: "Immersiivisessä, visuaalisesti pysäyttävässä dokumentissa seurataan, kuinka ihmiset ja eläimet pyrkivät selviytymään maastopalojen keskellä eteläisessä Galiciassa historiallisen kuumana ja kuivana kesänä."
+        },
+        screenings: [
+            { date: "2026-02-05T16:00", venue: "Kinopalatsi 7"},
+            { date: "2026-02-06T18:00", venue: "Kinopalatsi 7"},
+            { date: "2026-02-08T14:00", venue: "Maxim 2"},
+        ]
+    },
+    {
+        id: 51,
+        title: { en: "DAYS OF WONDER", fi: "PÄIVIEN LUMO" },
+        director: "Karin Pennanen",
+        duration: "87 min",
+        description: {
+            en: "A personal portrait of the director’s reclusive uncle, whose home—after his death—reveals an astonishing lifetime of artistic work.",
+            fi: "Henkilökohtainen kuvaus ohjaajan erakkona eläneestä sedästä, jonka kotoa paljastuu tämän kuoltua uskomaton taiteellinen elämäntyö."
+        },
+        screenings: [
+            { date: "2026-02-03T18:00", venue: "Bio Rex Lasipalatsi"},
+            { date: "2026-02-06T17:15", venue: "Kinopalatsi 6"},
+            { date: "2026-02-08T18:15", venue: "Kinopalatsi 5"},
+        ]
+    },
+    {
+        id: 52,
+        title: { en: "PREDATORS", fi: "PREDATORS" },
+        director: "David Osit",
+        duration: "96 min",
+        description: {
+            en: "The film examines the 2000s hit series To Catch a Predator, which set out to catch pedophiles in the act. It also reflects on the ethics of true crime and asks uncomfortable questions about what we consider just punishment.",
+            fi: "Elokuva tarkastelee 2000-luvun To Catch A Predator -hittisarjaa, jossa pyritään saamaan pedofiilit kiinni rysän päältä. Samalla se pohtii true crime -etiikkaa ja esittää epämiellyttäviä kysymyksiä käsityksestämme oikeudenmukaisesta rangaistuksesta."
+        },
+        screenings: [
+            { date: "2026-02-03T18:45", venue: "Kinopalatsi 5"},
+            { date: "2026-02-07T20:30", venue: "Bio Rex Lasipalatsi"},
+        ]
+    },
+    {
+        id: 53,
+        title: { en: "QUEER AS PUNK", fi: "QUEER AS PUNK" },
+        director: "Yihwen Chen",
+        duration: "88 min",
+        description: {
+            en: "In Malaysia, where LGBTQIA rights are forbidden, trans man Faris defies social norms with his punk band. Shh...Diam! embodies resilience, resistance, and a rebellious punk ethos, performing amid the constraints of a restrictive society.",
+            fi: "LGBTQIA-oikeudet kieltävässä Malesiassa transmies Faris uhmaa normeja punkbändinsä kanssa. Shh...Diam! -yhtye osoittaa sitkeyttä, vastarintaa ja kapinallista punkeetosta esiintymällä yhteiskunnallisten rajoitusten keskellä."
+        },
+        screenings: [
+            { date: "2026-02-05T17:00", venue: "Maxim 1" },
+            { date: "2026-02-07T21:45", venue: "Kinopalatsi 5" },
+            { date: "2026-02-08T20:30", venue: "Maxim 1" },
+        ]
+    },
+    {
+        id: 54,
+        title: { en: "REDLIGHT TO LIMELIGHT", fi: "REDLIGHT TO LIMELIGHT" },
+        director: "Bipuljit Basu",
+        duration: "100 min",
+        description: {
+            en: "A bold group of Indian sex workers and their families begin making short films to change their lives and inspire others. The documentary highlights the power of communal creativity and filmmaking.",
+            fi: "Rohkea joukko intialaisia seksityöntekijöitä perheineen alkaa tehdä lyhytelokuvia muuttaakseen elämäänsä ja inspiroidakseen muita. Dokumentti korostaa yhteisöllisen luovuuden ja elokuvanteon merkitystä."
+        },
+        screenings: [
+            { date: "2026-02-04T20:15", venue: "Kinopalatsi 5" },
+            { date: "2026-02-07T19:00", venue: "Kinopalatsi 7" },
+        ]
+    },
+    {
+        id: 55,
+        title: { en: "ROCK OUT", fi: "ROCK OUT" },
+        director: "Dustin Lance Black",
+        duration: "118 min",
+        description: {
+            en: "The film uncovers rock history’s forgotten queer trailblazers and ties their stories to the experience of Dustin Lance Black’s brother, who feels out of place in a hypermasculine music culture.",
+            fi: "Elokuva paljastaa rockin historian unohdetut queer-vaikuttajat ja yhdistää heidän tarinansa Dustin Lance Blackin veljen kokemukseen kuulumattomuudesta hypermaskuliinisessa musiikkikulttuurissa."
+        },
+        screenings: [
+            { date: "2026-02-07T20:45", venue: "Kinopalatsi 6" },
+            { date: "2026-02-08T21:15", venue: "Kinopalatsi 6" },
+        ]
+    },
+    {
+        id: 56,
+        title: { en: "SEEDS", fi: "SEEDS" },
+        director: "Brittany Shyne",
+        duration: "123 min",
+        description: {
+            en: "Shot through an intimate lens in black and white, the film offers a glimpse into the lives of African American farmers in the U.S. South, revealing the fragility of inheritance and the significance of land ownership.",
+            fi: "Intiimin linssin läpi kuvattu, mustavalkoinen elokuva kurkistaa Yhdysvaltojen eteläosien afroamerikkalaisten maanviljelijöiden elämään paljastaen perinnön haurauden ja maanomistuksen merkityksen."
+        },
+        screenings: [
+            { date: "2026-02-04T20:00", venue: "Kino Regina" },
+            { date: "2026-02-06T16:00", venue: "Kinopalatsi 5" },
+            { date: "2026-02-08T13:15", venue: "Kinopalatsi 6" },
+        ]
+    },
+    {
+        id: 57,
+        title: { en: "SHARDS OF LIGHT", fi: "SHARDS OF LIGHT" },
+        director: "Mila Teshaieva, Marcus Lenz",
+        duration: "93 min",
+        description: {
+            en: "A timely film that begins with the liberation of Bucha and delves into Ukraine’s war trauma, exploring a nation’s transformed everyday life and identity.",
+            fi: "Ajankohtainen elokuva alkaa Buchan vapauttamisesta ja pureutuu Ukrainan sotatrauman sekä kansakunnan muuttuneen arjen ja identiteetin käsittelyyn."
+        },
+        screenings: [
+            { date: "2026-02-04T16:00", venue: "Kinopalatsi 6" },
+            { date: "2026-02-07T16:45", venue: "Maxim 1" },
+        ]
+    },
+    {
+        id: 58,
+        title: { en: "SILENT LEGACY", fi: "SILENT LEGACY - KATSEIDEN ALLA" },
+        director: "Jenni Kivistö, Jussi Rastas",
+        duration: "93 min",
+        description: {
+            en: "Burkina Faso–born choreographer Sibiry, who lives in Finland, explores his migrant identity between two realities as he tries to reclaim a lost sense of belonging with his home village.",
+            fi: "Suomessa asuva burkinafasolainen koreografi Sibiry käsittelee siirtolaisen identiteettiään kahden todellisuuden välissä ja yrittää saada takaisin kadotetun yhteenkuuluvuuden tunteen kotikylänsä kanssa."
+        },
+        screenings: [
+            { date: "2026-02-06T17:15", venue: "Kino Regina" },
+            { date: "2026-02-07T15:00", venue: "Kinopalatsi 6" },
+        ]
+    },
+    {
+        id: 59,
+        title: { en: "SINGING WINGS", fi: "SINGING WINGS" },
+        director: "Hemen Khaledi",
+        duration: "73 min",
+        description: {
+            en: "An elderly Kurdish woman takes in an injured stork. This metaphorical film explores the parallels between human and animal migrations.",
+            fi: "Iäkäs kurdinainen ottaa hoiviinsa haavoittuneen haikaran. Vertauskuvallinen elokuva tutkii ihmisten ja eläinten muuttoliikkeiden yhtäläisyyksiä."
+        },
+        screenings: [
+            { date: "2026-02-04T19:15", venue: "Maxim 2" },
+            { date: "2026-02-06T20:30", venue: "Kinopalatsi 7" },
+            { date: "2026-02-08T15:45", venue: "Kinopalatsi 6" },
+        ]
+    },
+    {
+        id: 60,
+        title: { en: "SIRENS CALL", fi: "SIRENS CALL" },
+        director: "Miriam Gossing, Lina Sieckmann",
+        duration: "121 min",
+        description: {
+            en: "A visually striking sci-fi/documentary hybrid dives into the world of merfolk. In this eccentric subculture, dazzling costumes go hand in hand with self-acceptance, queer activism, and anti-racism.",
+            fi: "Visuaalisesti näyttävä tieteisfiktion ja dokumenttielokuvan hybridi sukeltaa merenväen pariin. Omalaatuisessa alakulttuurissa on häikäisevien asujen lisäksi kyse itsensä hyväksymisestä, queer-aktivismista ja antirasismista."
+        },
+        screenings: [
+            { date: "2026-02-04T17:15", venue: "Maxim 1" },
+            { date: "2026-02-07T18:15", venue: "Maxim 2" },
+            { date: "2026-02-08T14:45", venue: "Kiasma-teatteri" },
+        ]
+    },
+    {
+        id: 61,
+        title: { en: "SOUTH: SIR ERNEST SHACKLETON’S GLORIOUS EPIC OF THE ANTARCTIC", fi: "SOUTH: SIR ERNEST SHACKLETON’S GLORIOUS EPIC OF THE ANTARCTIC" },
+        director: "Frank Hurley",
+        duration: "81 min",
+        description: {
+            en: "One of the world’s first feature-length documentaries follows Sir Ernest Shackleton’s ill-fated Antarctic expedition of 1914–1916. The silent-film screening is accompanied live by Kiri Ra! (Lau Nau, Matti Bye & Linda Fredriksson).",
+            fi: "Yksi maailman ensimmäisistä täyspitkistä dokumenttielokuvista seuraa Sir Ernest Shackletonin epäonnista Etelämantereen tutkimusmatkaa vuosina 1914–1916. Mykkäelokuvanäytöstä säestää Kiri Ra! (Lau Nau, Matti Bye & Linda Fredriksson)."
+        },
+        screenings: [
+            { date: "2026-02-05T19:00", venue: "Kino Regina" },
+        ]
+    },
+    {
+        id: 62,
+        title: { en: "SYNTHETIC SINCERITY", fi: "SYNTHETIC SINCERITY" },
+        director: "Marc Isaacs",
+        duration: "70 min",
+        description: {
+            en: "Researchers try to teach AI what it means to be human using Marc Isaacs’s documentaries. This philosophical study of the relationship between people and machines blends fictional scenes with gently absurd humor.",
+            fi: "Tutkijat opettavat tekoälylle inhimillisyyttä Marc Isaacsin dokumenttien avulla. Filosofinen tutkielma ihmisten ja koneiden suhteesta yhdistää fiktiivisiä kohtauksia ja lempeän absurdia huumoria."
+        },
+        screenings: [
+            { date: "2026-02-03T17:00", venue: "Cinema Orion" },
+            { date: "2026-02-07T15:30", venue: "Kiasma-teatteri" },
+            { date: "2026-02-08T13:30", venue: "Cinema Orion" },
+        ]
+    },
+    {
+        id: 63,
+        title: { en: "THE DIALOGUE POLICE", fi: "THE DIALOGUE POLICE" },
+        director: "Susanna Edwards",
+        duration: "90 min",
+        description: {
+            en: "A gripping film from democracy’s front line follows a uniquely Swedish institution: dialogue police officers who work to ensure everyone has the right to express their views.",
+            fi: "Mukaansatempaava elokuva demokratian etulinjasta seuraa ruotsalaista erikoisuutta, dialogipoliisia, jotka työskentelevät varmistaakseen, että kaikilla on oikeus sanoa mielipiteensä."
+        },
+        screenings: [
+            { date: "2026-02-05T16:30", venue: "Kinopalatsi 5" },
+            { date: "2026-02-07T14:15", venue: "Cinema Orion" },
+            { date: "2026-02-08T18:45", venue: "Kinopalatsi 9" },
+        ]
+    },
+    {
+        id: 64,
+        title: { en: "THE GOLDEN SPURTLE", fi: "THE GOLDEN SPURTLE" },
+        director: "Constantine Costi",
+        duration: "75 min",
+        description: {
+            en: "For those competing for the world championship in oatmeal, there’s something magical about this humble grey dish. This warm documentary follows the contest that draws participants from around the world to a small Scottish village.",
+            fi: "Kaurapuuron maailmanmestaruudesta kilpaileville harmaassa herkussa on taikaa. Sympaattinen dokumentti seuraa kilpailua, joka kerää pieneen skotlantilaiskylään osallistujia ympäri maailmaa."
+        },
+        screenings: [
+            { date: "2026-02-05T17:15", venue: "Maxim 1" },
+            { date: "2026-02-07T18:15", venue: "Maxim 2" },
+            { date: "2026-02-08T14:45", venue: "Kiasma-teatteri" },
+        ]
+    },
+    {
+        id: 65,
+        title: { en: "THE GROUND BENEATH OUR FEET", fi: "THE GROUND BENEATH OUR FEET" },
+        director: "Yrsa Roca Fannberg",
+        duration: "82 min",
+        description: {
+            en: "Shot on film, this warm-hearted portrait of a Reykjavík nursing home makes room for the small wonders of everyday life and is filled with a love of life—for as long as it lasts.",
+            fi: "Filmille kuvattu lämminhenkinen elokuva reykjavíkiläisestä vanhainkodista antaa tilaa arjen pienille ihmeille ja on täynnä rakkautta elämään, niin kauan kuin sitä kestää."
+        },
+        screenings: [
+            { date: "2026-02-05T18:00", venue: "Kinopalatsi 7" },
+            { date: "2026-02-06T17:45", venue: "Cinema Orion" },
+            { date: "2026-02-08T17:15", venue: "Kinopalatsi 6" },
+        ]
+    },
+    {
+        id: 66,
+        title: { en: "THE LONG ROAD TO THE DIRECTOR’S CHAIR", fi: "THE LONG ROAD TO THE DIRECTOR’S CHAIR" },
+        director: "Vibeke Løkkeberg",
+        duration: "70 min",
+        description: {
+            en: "Archival footage shot in 1973, capturing the early days of the feminist film movement in Berlin, resurfaces fifty years later as a dialogue with struggles that are still unfinished.",
+            fi: "Vuonna 1973 kuvattu arkistomateriaali feministisen elokuvaliikkeen alkuvaiheista Berliinissä avautuu 50 vuoden jälkeen vuoropuheluksi yhä keskeneräisten taistelujen kanssa."
+        },
+        screenings: [
+            { date: "2026-02-05T17:15", venue: "Kino Regina" },
+            { date: "2026-02-06T19:30", venue: "Kino Regina" },
+        ]
+    },
+    {
+        id: 67,
+        title: { en: "THE MEMORY OF BUTTERFLIES", fi: "THE MEMORY OF BUTTERFLIES" },
+        director: "Tatiana Fuentes Sadowski",
+        duration: "77 min",
+        description: {
+            en: "A photograph more than a century old sets off a hypnotic journey into Peru’s past, shadowed by the colonialism brought into the rainforest during the Amazon rubber boom.",
+            fi: "Yli satavuotias valokuva käynnistää hypnoottisen matkan Perun menneisyyteen, jota varjostaa Amazonin kumibuumin aikana viidakkoon tuotu kolonialismi."
+        },
+        screenings: [
+            { date: "2026-02-03T18:00", venue: "Kinopalatsi 6" },
+            { date: "2026-02-07T13:45", venue: "Kiasma-teatteri" },
+            { date: "2026-02-08T13:15", venue: "Kinopalatsi 7" },
+        ]
+    },
+    {
+        id: 68,
+        title: { en: "TRUTH OR DARE", fi: "TOTUUS VAI TEHTÄVÄ" },
+        director: "Tonislav Hristov",
+        duration: "85 min",
+        description: {
+            en: "The documentary follows in parallel a Bulgarian journalist investigating fake news and an engineer running for office who spreads conservative conspiracy theories.",
+            fi: "Dokumentti seuraa rinnakkain valeuutisia tutkivaa bulgarialaista journalistia sekä vaaleissa ehdokkaaksi lähtevää insinööriä, joka levittää konservatiivisia salaliittoteorioita."
+        },
+        screenings: [
+            { date: "2026-02-05T17:45", venue: "Kinopalatsi 9" },
+            { date: "2026-02-06T19:15", venue: "Kinopalatsi 6" },
+            { date: "2026-02-08T14:45", venue: "Kinopalatsi 5" },
+        ]
+    },
+    {
+        id: 69,
+        title: { en: "UNDER THE FLAGS, THE SUN", fi: "UNDER THE FLAGS, THE SUN" },
+        director: "Juanjo Pereira",
+        duration: "90 min",
+        description: {
+            en: "Rare archival footage paints a portrait of Alfredo Stroessner’s 35-year dictatorship in Paraguay and exposes the hidden structures of his rule—whose effects are still felt today.",
+            fi: "Harvinainen arkistomateriaali rakentaa kuvan Stroessnerin 35-vuotisesta diktatuurista Paraguayassa ja paljastaa diktaattorin vallan piilotetut rakenteet, joiden vaikutukset tuntuvat edelleen."
+        },
+        screenings: [
+            { date: "2026-02-06T18:45", venue: "Kinopalatsi 9" },
+            { date: "2026-02-07T19:00", venue: "Kino Regina" },
+            { date: "2026-02-08T17:15", venue: "Kinopalatsi 7" },
+        ]
+    },
+    {
+        id: 70,
+        title: { en: "A NEW SET OF EYES: STUDENT FILMS FROM FINLAND", fi: "UUSIN SILMIN: OPISKELIJAELOKUVIA SUOMESTA" },
+        director: "",
+        duration: "90 min",
+        description: {
+            en: "A screening showcasing some of the year’s best student films features the short documentaries Aeternus Florere, Dancers Only, Between Us, Scent of an Ancestral Dream and Drawn in Water.",
+            fi: "Vuoden parhaita opiskelijaelokuvia yhteen kokoavassa näytöksessä esitetään lyhytdokumentit Aeternus Florere, Dancers Only, Meidän kesken, Scent of an Ancestral Dream ja Veteen piirretty."
+        },
+        screenings: [
+            { date: "2026-02-06T17:00", venue: "Maxim 1" },
+            { date: "2026-02-07T15:00", venue: "Kinopalatsi 9" },
+        ]
+    },
+    {
+        id: 71,
+        title: { en: "THE LAST CHAPTER", fi: "VIIMEINEN KOTIMAA" },
+        director: "Mohamed El Aboudi",
+        duration: "83 min",
+        description: {
+            en: "Three immigrants of African descent face an unexpected culture shock: what is it like to grow old far from your roots—and to navigate a strained relationship with your children who have grown up in Finland?",
+            fi: "Kolme afrikkalaistaustaista maahanmuuttajaa kohtaa odottamattoman kulttuurishokin: millaista on vanheta kaukana juuristaan ja käsitellä jännitteistä suhdetta omiin Suomessa kasvaneisiin lapsiin?"
+        },
+        screenings: [
+            { date: "2026-02-04T17:00", venue: "Maxim 2" },
+            { date: "2026-02-06T15:30", venue: "Kinopalatsi 6" },
+            { date: "2026-02-08T15:15", venue: "Kinopalatsi 9" },
+        ]
+    },
+    {
+        id: 72,
+        title: { en: "WE LIVE HERE", fi: "WE LIVE HERE" },
+        director: "Zhanana Kurmasheva",
+        duration: "80 min",
+        description: {
+            en: "A visually striking documentary follows three generations grappling with the burden of the past on the fringes of an abandoned nuclear test site in Kazakhstan.",
+            fi: "Visuaalisesti säväyttävä dokumentti seuraa kolmen eri sukupolven taistelua menneisyyden painolastin kanssa hylätyn ydinkoealueen liepeillä Kazakstanissa."
+        },
+        screenings: [
+            { date: "2026-02-07T17:00", venue: "Kinopalatsi 9" },
+            { date: "2026-02-08T19:15", venue: "Cinema Orion" },
+        ]
+    },
+    {
+        id: 73,
+        title: { en: "WITH HASAN IN GAZA", fi: "WITH HASAN IN GAZA" },
+        director: "Kamal Aljafri",
+        duration: "106 min",
+        description: {
+            en: "In 2001, Kamal Aljafri travels across Gaza with a local guide in search of a former prison companion from a decade earlier. The documentary is a heartbreaking tribute to everything that has been erased.",
+            fi: "Vuonna 2001 Kamal Aljafri matkaa paikallisoppaan kanssa halki Gazan etsiessään vuosikymmenen takaista vankilatoveriaan. Dokumentti on sydäntäsärkevä kunnianosoitus kaikelle poispyyhitylle."
+        },
+        screenings: [
+            { date: "2026-02-03T20:45", venue: "Cinema Orion" },
+            { date: "2026-02-04T18:45", venue: "Bio Rex Lasipalatsi" },
+        ]
+    },
+    {
+        id: 74,
+        title: { en: "WRITING LIFE – ANNIE ERNAUX THROUGH THE EYES OF HIGH SCHOOL STUDENTS", fi: "WRITING LIFE – ANNIE ERNAUX THROUGH THE EYES OF HIGH SCHOOL STUDENTS" },
+        director: "Claire Simon",
+        duration: "90 min",
+        description: {
+            en: "Claire Simon’s film Writing Life begins in French classrooms where Annie Ernaux is read aloud. The reading is attentive and slightly cautious. Now and then someone stumbles over a word and chuckles—more at themselves than at the text—then continues. During breaks, the corridors fill with laughter and movement, but in class the talk sharpens and comes into focus. The film glides from one school to another and from one group to the next, never lingering on any single person, following the flow of the conversations.",
+            fi: "Claire Simonin elokuva Writing Life alkaa ranskalaisista luokkahuoneista, joissa luetaan ääneen Annie Ernaux’ta. Lukeminen on tarkkaa ja hieman varovaista. Välillä joku kompastuu sanaan ja naurahtaa, enemmän itselleen kuin tekstille, ja jatkaa. Välitunnilla käytävät täyttyvät naurusta ja liikkeestä, mutta tunnilla puhe kirkastuu. Elokuva liukuu koulusta toiseen ja ryhmästä seuraavaan pysähtymättä kehenkään yksittäiseen, seuraten keskustelujen kulkua."
+        },
+        screenings: [
+            { date: "2026-02-07T16:00", venue: "Bio Rex Lasipalatsi" },
+        ]
+    },
+    {
+        id: 75,
+        title: { en: "YINTAH", fi: "YINTAH" },
+        director: "Brenda Michell, Michael Toledano, Jennifer Wickham",
+        duration: "110 min",
+        description: {
+            en: "An Indigenous community protects its lands from the Canadian government and major corporations. Spanning more than a decade, the documentary portrays resistance—and the entanglement of colonization, capitalism, and the climate crisis.",
+            fi: "Alkuperäiskansa suojelee maitaan Kanadan hallitukselta ja suuryrityksiltä. Yli vuosikymmenen ajalle sijoittuva dokumentti on kuvaus vastarinnasta sekä kolonisaation, kapitalismin ja ilmastokriisin limittymisestä."
+        },
+        screenings: [
+            { date: "2026-02-03T17:30", venue: "Kiasma-teatteri" },
+            { date: "2026-02-04T16:00", venue: "Kinopalatsi 7" },
+            { date: "2026-02-06T18:00", venue: "Bio Rex Lasipalatsi" },
+        ]
+    },
+    {
+        id: 76,
+        title: { en: "ZLATAN’S NOSE", fi: "ZLATAN’S NOSE" },
+        director: "Nils Toftenow, Mathias Rosberg, Olle Toftenow",
+        duration: "84 min",
+        description: {
+            en: "The Swedish film begins as a true-crime documentary about the stolen nose of Zlatan’s statue, but grows into a compelling portrait of the private detective investigating the case.",
+            fi: "Ruotsalaisteos alkaa true crime -dokumenttina Zlatanin patsaan varastetusta nenästä, mutta kasvaa vetäväksi henkilökuvaksi asiaa selvittävästä yksityisetsivästä."
+        },
+        screenings: [
+            { date: "2026-02-03T17:00", venue: "Kinopalatsi 5" },
+            { date: "2026-02-05T19:10", venue: "Maxim 2" },
+            { date: "2026-02-08T19:15", venue: "Kinopalatsi 7" },
+        ]
+    },
+]
 
 let selectedFilms = new Set();
 let excludedScreenings = new Set(); // Tracks removed screenings as "filmId-dateString"
