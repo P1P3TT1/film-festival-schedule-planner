@@ -30,7 +30,7 @@ initTheme();
 // Translations
 const translations = {
     en: {
-        headerTitle: "Film Festival",
+        headerTitle: "DocPoint 2026",
         headerSubtitle: "Select films and create your schedule",
         filmsTitle: "Films",
         scheduleTitle: "Your Schedule",
@@ -68,7 +68,7 @@ const translations = {
         datesSelected: "dates selected"
     },
     fi: {
-        headerTitle: "Elokuvafestivaali",
+        headerTitle: "DocPoint 2026",
         headerSubtitle: "Valitse elokuvat ja luo oma aikataulusi",
         filmsTitle: "Elokuvat",
         scheduleTitle: "Aikataulusi",
