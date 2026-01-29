@@ -514,20 +514,6 @@ const festivalData = [
         ]
     },
     {
-        id: 29,
-        title: { en: "I LOST SIGHT OF THE LANDSCAPE", fi: "I LOST SIGHT OF THE LANDSCAPE" },
-        director: "Sophie Bédard Marcotte",
-        duration: "85 min",
-        description: {
-            en: "The film follows two artistic processes in parallel: the creation of a stage production and the making of a film about it. Intimate and open, the documentary captures rare moments from the making of art that are seldom seen publicly.",
-            fi: "Elokuvassa seurataan rinnakkain kahta taiteellista prosessia: teatteriesityksen ja siitä kertovan elokuvan syntyä. Intiimi ja avoin dokumentti onnistuu vangitsemaan taiteen tekemisestä hetkiä, joita nähdään harvoin julkisesti."
-        },
-        screenings: [
-            { date: "2026-02-04T18:00", venue: "Kinopalatsi 6"},
-            { date: "2026-02-08T10:30", venue: "Kiasma-teatteri"},
-        ]
-    },
-    {
         id: 30,
         title: { en: "ILOVERUSS", fi: "ILOVERUSS" },
         director: "Tova Mozard",
