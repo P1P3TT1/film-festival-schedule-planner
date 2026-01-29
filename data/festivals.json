@@ -1,22 +1,5 @@
 [
   {
-    "id": "Placeholder",
-    "name": "Festival",
-    "year": "2026",
-    "displayName": {
-      "en": "Festival 2026",
-      "fi": "Festival 2026"
-    },
-    "subtitle": {
-      "en": "Select films and create your schedule",
-      "fi": "Valitse elokuvat ja luo oma aikataulusi"
-    },
-    "dataFile": "data/festival.json",
-    "startDate": "2026-03-03",
-    "endDate": "2026-03-08"
-  },
-  
-  {
     "id": "docpoint2026",
     "name": "DocPoint",
     "year": "2026",
@@ -32,4 +15,6 @@
     "startDate": "2026-02-03",
     "endDate": "2026-02-08"
   }
+
+  
 ]
