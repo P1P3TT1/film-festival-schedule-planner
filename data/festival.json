@@ -1,0 +1,30 @@
+[
+    {
+    "id": 1,
+    "title": {
+      "en": "ABODE OF DAWN",
+      "fi": "ABODE OF DAWN"
+    },
+    "director": "Kristina Shtubert",
+    "duration": "105 min",
+    "description": {
+      "en": "A cult living in Siberia is led by Vissarion, a man who has proclaimed himself the Messiah. The observational documentary follows the isolated community over ten years, as everyday life wavers between faith, brainwashing, and hope.",
+      "fi": "Siperiassa elävää kulttia johtaa Vissarion, messiaaksi julistautunut mies. Seurantadokumentti tarkastelee 10 vuoden ajan eristäytynyttä yhteisöä, jonka arki horjuu uskon, aivopesun ja toivon välillä."
+    },
+    "screenings": [
+      {
+        "date": "2026-02-04T20:30",
+        "venue": "Kinopalatsi 7"
+      },
+      {
+        "date": "2026-02-05T20:00",
+        "venue": "Kinopalatsi 9"
+      },
+      {
+        "date": "2026-02-07T17:30",
+        "venue": "Kinopalatsi 5"
+      }
+    ]
+  }
+
+]
