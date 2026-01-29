@@ -717,11 +717,13 @@ function downloadPDF() {
         return false;
     };
     
-    // Title
+    // Title - use festival name
+    const festivalName = currentFestival?.displayName?.[currentLang] || currentFestival?.name || 'Festival';
+    const pdfTitle = currentLang === 'fi' ? `${festivalName} aikataulu` : `${festivalName} Schedule`;
     doc.setFontSize(24);
     doc.setFont('helvetica', 'bold');
     doc.setTextColor(99, 102, 241);
-    doc.text(t.pdfTitle, pageWidth / 2, yPos, { align: 'center' });
+    doc.text(pdfTitle, pageWidth / 2, yPos, { align: 'center' });
     yPos += 12;
     
     // Generated date
