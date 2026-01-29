@@ -1,28 +1,41 @@
 # Film Festival Schedule Planner
 
-A modern, single-page web application for planning your film festival schedule. Select films, manage screenings, and export your personalized schedule. Currently uses DocPoint 2026 festival data.
+A modern web application for planning your film festival schedule. Select films, manage screenings, optimize your schedule, and export to iCal or PDF. Supports multiple festivals with dynamic data loading.
 
 ## Features
+
+### Festival Selection
+- **Multiple Festivals** - Switch between different festivals using the dropdown selector
+- **Dynamic Data Loading** - Festival data loaded from JSON files for easy updates
+- Currently supports: DocPoint 2026 (more festivals can be added to [festivals.json](data/festivals.json))
+
+### Date Filtering
+- **Available Dates** - Select which dates you'll be attending the festival
+- **Smart Filtering** - Films and screenings automatically filtered by selected dates
+- **Quick Selection** - Select/deselect all dates with one click
 
 ### Film Management
 - **Browse Films** - View all available festival films with details (director, duration, description)
 - **Search** - Filter films by title, director, or description
 - **Select/Deselect** - Click on film cards to add or remove from your schedule
 - **Priority Marking** - Star films as "must see" for schedule optimization
+- **Screening Management** - Remove individual screenings while keeping the film selected
 
 ### Schedule Views
 - **List View** - Chronological list of all selected screenings
-- **Calendar View** - Week-based calendar grid showing screenings
-- **Day View** - Detailed daily breakdown with timeline
+- **Calendar View** - Day-by-day breakdown with overlap warnings
+- **Day View** - Detailed timeline visualization with hour-by-hour layout
+- **Overlap Detection** - Visual warnings for conflicting screenings
 
 ### Schedule Optimization
 - Smart algorithm to create conflict-free schedules
 - Prioritizes "must see" films when resolving conflicts
 - Uses weighted interval scheduling for optimal selection
+- Automatically excludes conflicting screenings
 
 ### Export Options
 - **iCal Export** - Download `.ics` file to import into any calendar app
-- **PDF Export** - Generate a printable PDF of your schedule
+- **PDF Export** - Generate a printable PDF matching your current view (list, calendar, or day)
 
 ### Internationalization
 - Full support for Finnish (FI) and English (EN)
@@ -44,31 +57,48 @@ A modern, single-page web application for planning your film festival schedule. 
 
 ### Usage
 
-Simply open `index.html` in any modern web browser. No build process or server required.
+The application loads festival data dynamically, so it must be served via a web server (not opened directly as a local file).
 
 ```bash
 # Clone the repository
 git clone <repository-url>
 cd film-schedule-planner
 
-# Open in browser
-open index.html
-# or
-xdg-open index.html  # Linux
-start index.html     # Windows
+# Start a local web server (choose one):
+
+# Python 3
+python -m http.server 8000
+
+# Python 2
+python -m SimpleHTTPServer 8000
+
+# Node.js (if you have npx)
+npx serve
+
+# PHP
+php -S localhost:8000
+
+# Then open in browser:
+# http://localhost:8000
 ```
 
 ### Requirements
 
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 - JavaScript enabled
+- Web server (for local development)
 
 ## Project Structure
 
 ```
 film-schedule-planner/
-├── index.html    # Complete single-page application
-└── README.md     # This file
+├── index.html              # Main HTML structure
+├── styles.css              # All styling
+├── script.js               # Application logic
+├── data/
+│   ├── festivals.json      # List of available festivals
+│   └── docpoint2026.json   # DocPoint 2026 festival data
+└── README.md               # This file
 ```
 
 ## Technology Stack
@@ -87,39 +117,55 @@ film-schedule-planner/
 - Smooth hover and focus animations
 - Gradient accent colors
 
-## Sample Data
+## Festival Data
 
-The app includes 6 sample films with multiple screening times:
+The app currently includes data for:
+- **DocPoint 2026** - Documentary film festival (February 3-8, 2026)
 
-1. The Midnight Garden / Keskiyön Puutarha
-2. Echoes of Tomorrow / Huomisen Kaiut
-3. Desert Roads / Aavikon Tiet
-4. The Last Symphony / Viimeinen Sinfonia
-5. Neon Nights / Neoniyöt
-6. Whispers in the Wind / Kuiskauksia Tuulessa
+## Adding New Festivals
 
-## Customization
+To add a new festival:
 
-To add your own festival data, modify the `festivalData` array in the JavaScript section:
+1. Create a JSON data file in the [data/](data/) directory with your festival's films:
 
-```javascript
-const festivalData = [
+```json
+[
     {
-        id: 1,
-        title: { en: "Film Title", fi: "Elokuvan nimi" },
-        director: "Director Name",
-        duration: "120 min",
-        description: {
-            en: "English description",
-            fi: "Suomenkielinen kuvaus"
+        "id": 1,
+        "title": { "en": "Film Title", "fi": "Elokuvan nimi" },
+        "director": "Director Name",
+        "duration": "120 min",
+        "description": {
+            "en": "English description",
+            "fi": "Suomenkielinen kuvaus"
         },
-        screenings: [
-            { date: "2025-10-15T14:00", venue: "Main Theater" },
-            { date: "2025-10-16T20:30", venue: "Screen 2" }
+        "screenings": [
+            { "date": "2026-10-15T14:00", "venue": "Main Theater" },
+            { "date": "2026-10-16T20:30", "venue": "Screen 2" }
         ]
+    }
+]
+```
+
+2. Add your festival to [data/festivals.json](data/festivals.json):
+
+```json
+{
+    "id": "yourfestival2026",
+    "name": "Your Festival",
+    "year": "2026",
+    "displayName": {
+        "en": "Your Festival 2026",
+        "fi": "Your Festival 2026"
     },
-    // ... more films
-];
+    "subtitle": {
+        "en": "Select films and create your schedule",
+        "fi": "Valitse elokuvat ja luo oma aikataulusi"
+    },
+    "dataFile": "data/yourfestival2026.json",
+    "startDate": "2026-10-15",
+    "endDate": "2026-10-20"
+}
 ```
 
 ## Browser Support
