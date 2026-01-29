@@ -1020,9 +1020,9 @@ const festivalData = [
             fi: "Kaurapuuron maailmanmestaruudesta kilpaileville harmaassa herkussa on taikaa. Sympaattinen dokumentti seuraa kilpailua, joka kerää pieneen skotlantilaiskylään osallistujia ympäri maailmaa."
         },
         screenings: [
-            { date: "2026-02-05T17:15", venue: "Maxim 1" },
-            { date: "2026-02-07T18:15", venue: "Maxim 2" },
-            { date: "2026-02-08T14:45", venue: "Kiasma-teatteri" },
+            { date: "2026-02-05T20:30", venue: "Kinopalatsi 7" },
+            { date: "2026-02-06T16:00", venue: "Cinema Orion" },
+            { date: "2026-02-08T14:45", venue: "Kinopalatsi 9" },
         ]
     },
     {
