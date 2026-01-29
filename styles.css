@@ -202,7 +202,11 @@ body {
     z-index: 10;
 }
 
-.festival-selector {
+.festival-dropdown {
+    position: relative;
+}
+
+.festival-dropdown-btn {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     color: rgba(255, 255, 255, 0.95);
@@ -215,21 +219,68 @@ body {
     cursor: pointer;
     transition: all 0.2s ease;
     outline: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.festival-selector:hover {
+.festival-dropdown-btn:hover {
     background: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
 }
 
-.festival-selector:focus {
+.festival-dropdown-btn:focus {
     background: rgba(255, 255, 255, 0.25);
     border-color: rgba(255, 255, 255, 0.4);
 }
 
-.festival-selector option {
+.dropdown-arrow {
+    transition: transform 0.2s ease;
+}
+
+.festival-dropdown.open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.festival-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 100%;
     background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.festival-dropdown.open .festival-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.festival-dropdown-item {
+    padding: 10px 16px;
     color: var(--text-primary);
+    cursor: pointer;
+    transition: background 0.15s ease;
+    white-space: nowrap;
+}
+
+.festival-dropdown-item:hover {
+    background: var(--selected-bg);
+}
+
+.festival-dropdown-item.selected {
+    background: var(--selected-bg);
+    font-weight: 600;
 }
 
 .control-group {

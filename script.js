@@ -92,14 +92,47 @@ function updateHeadersForFestival() {
 
 // Populate festival selector dropdown
 function populateFestivalSelector() {
-    const selector = document.getElementById('festivalSelector');
-    if (!selector) return;
+    const menu = document.getElementById('festivalDropdownMenu');
+    const btnText = document.getElementById('festivalDropdownText');
+    if (!menu) return;
 
-    selector.innerHTML = availableFestivals.map(festival => {
+    menu.innerHTML = availableFestivals.map(festival => {
         const displayText = `${festival.name} ${festival.year}`;
-        const selected = currentFestival && currentFestival.id === festival.id ? 'selected' : '';
-        return `<option value="${festival.id}" ${selected}>${displayText}</option>`;
+        const selectedClass = currentFestival && currentFestival.id === festival.id ? 'selected' : '';
+        return `<div class="festival-dropdown-item ${selectedClass}" data-festival-id="${festival.id}" onclick="selectFestival('${festival.id}')">${displayText}</div>`;
     }).join('');
+
+    // Update button text
+    if (currentFestival && btnText) {
+        btnText.textContent = `${currentFestival.name} ${currentFestival.year}`;
+    }
+}
+
+// Toggle festival dropdown
+function toggleFestivalDropdown() {
+    const dropdown = document.getElementById('festivalDropdown');
+    const btn = document.getElementById('festivalDropdownBtn');
+    if (dropdown) {
+        dropdown.classList.toggle('open');
+        btn.setAttribute('aria-expanded', dropdown.classList.contains('open'));
+    }
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+    const dropdown = document.getElementById('festivalDropdown');
+    if (dropdown && !dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+        document.getElementById('festivalDropdownBtn')?.setAttribute('aria-expanded', 'false');
+    }
+});
+
+// Select festival from dropdown
+async function selectFestival(festivalId) {
+    const dropdown = document.getElementById('festivalDropdown');
+    dropdown?.classList.remove('open');
+    document.getElementById('festivalDropdownBtn')?.setAttribute('aria-expanded', 'false');
+    await changeFestival(festivalId);
 }
 
 // Change festival when user selects from dropdown
@@ -116,6 +149,7 @@ async function changeFestival(festivalId) {
         searchQuery = '';
 
         // Update UI
+        populateFestivalSelector(); // Update dropdown to show selected
         updateHeadersForFestival();
         initializeAvailableDates();
         renderDateSelector();
@@ -1655,4 +1689,15 @@ document.addEventListener('mousemove', (e) => {
         card.style.setProperty('--mouse-x', `${x}px`);
         card.style.setProperty('--mouse-y', `${y}px`);
     });
+});
+
+// Festival dropdown toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdownBtn = document.getElementById('festivalDropdownBtn');
+    if (dropdownBtn) {
+        dropdownBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleFestivalDropdown();
+        });
+    }
 });

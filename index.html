@@ -19,9 +19,17 @@
     <div class="container">
         <header class="header">
             <div class="header-controls">
-                <select id="festivalSelector" class="festival-selector" onchange="changeFestival(this.value)" aria-label="Valitse festivaali">
-                    <!-- Options populated by JavaScript -->
-                </select>
+                <div class="festival-dropdown" id="festivalDropdown">
+                    <button class="festival-dropdown-btn" id="festivalDropdownBtn" aria-haspopup="listbox" aria-expanded="false">
+                        <span id="festivalDropdownText">Festival</span>
+                        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="festival-dropdown-menu" id="festivalDropdownMenu" role="listbox">
+                        <!-- Options populated by JavaScript -->
+                    </div>
+                </div>
                 <div class="control-group" role="group" aria-label="Kielivalinta">
                     <button class="control-btn active" onclick="changeLanguage('fi', event)" aria-current="true" lang="fi">FI</button>
                     <button class="control-btn" onclick="changeLanguage('en', event)" aria-current="false" lang="en">EN</button>
