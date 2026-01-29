@@ -1,0 +1,18 @@
+[
+  {
+    "id": "docpoint2026",
+    "name": "DocPoint",
+    "year": "2026",
+    "displayName": {
+      "en": "DocPoint 2026",
+      "fi": "DocPoint 2026"
+    },
+    "subtitle": {
+      "en": "Select films and create your schedule",
+      "fi": "Valitse elokuvat ja luo oma aikataulusi"
+    },
+    "dataFile": "data/docpoint2026.json",
+    "startDate": "2026-02-03",
+    "endDate": "2026-02-08"
+  }
+]

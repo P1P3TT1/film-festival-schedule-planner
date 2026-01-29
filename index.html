@@ -19,6 +19,9 @@
     <div class="container">
         <header class="header">
             <div class="header-controls">
+                <select id="festivalSelector" class="festival-selector" onchange="changeFestival(this.value)" aria-label="Valitse festivaali">
+                    <!-- Options populated by JavaScript -->
+                </select>
                 <div class="control-group" role="group" aria-label="Kielivalinta">
                     <button class="control-btn active" onclick="changeLanguage('fi', event)" aria-current="true" lang="fi">FI</button>
                     <button class="control-btn" onclick="changeLanguage('en', event)" aria-current="false" lang="en">EN</button>
