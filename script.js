@@ -34,11 +34,17 @@ let currentFestival = null;
 // Load available festivals from festivals.json
 async function loadFestivals() {
     try {
+        console.log('Loading festivals from data/festivals.json...');
         const response = await fetch('data/festivals.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         availableFestivals = await response.json();
+        console.log('Festivals loaded:', availableFestivals.length);
         return availableFestivals;
     } catch (error) {
         console.error('Error loading festivals:', error);
+        alert('Failed to load festival list. Please make sure the page is served via a web server (not opened as a local file).');
         return [];
     }
 }
@@ -52,12 +58,18 @@ async function loadFestivalData(festivalId) {
     }
 
     try {
+        console.log('Loading festival data from:', festival.dataFile);
         const response = await fetch(festival.dataFile);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         festivalData = await response.json();
         currentFestival = festival;
+        console.log('Festival data loaded:', festivalData.length, 'films');
         return true;
     } catch (error) {
         console.error('Error loading festival data:', error);
+        alert(`Failed to load festival data for ${festival.name}. Please check the console for details.`);
         return false;
     }
 }
@@ -115,8 +127,17 @@ async function changeFestival(festivalId) {
 
 // Initialize the application
 async function initializeApp() {
+    console.log('Initializing application...');
+
     // Load festivals list
     await loadFestivals();
+
+    if (availableFestivals.length === 0) {
+        console.error('No festivals available');
+        document.getElementById('headerTitle').textContent = 'Error Loading Data';
+        document.getElementById('headerSubtitle').textContent = 'Please make sure this page is accessed via a web server';
+        return;
+    }
 
     // Populate festival selector
     populateFestivalSelector();
