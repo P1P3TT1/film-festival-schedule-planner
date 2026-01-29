@@ -163,7 +163,6 @@ const festivalData = [
             fi: "Arvoituksellisesta bisnesmiehestä ja taidemesenaatista kertovan näytelmän harjoitusten kautta sukelletaan 1900-luvun suomalaiseen kulttuurihistoriaan."
         },
         screenings: [
-            { date: "2026-01-27T18:00", venue: "Kino Regina" },
             { date: "2026-02-08T16:15", venue: "Kino Regina" },
         ]
     },
@@ -265,7 +264,6 @@ const festivalData = [
             fi: "Feministiksi itsensä laskeva Hampus Linder sukeltaa manosfääriin. Yritys ymmärtää muita miehiä syöksee hänet lopulta identiteettikriisiin."
         },
         screenings: [
-            { date: "2026-01-27T15:00", venue: "Kino Regina" },
             { date: "2026-02-04T20:30", venue: "Cinema Orion" },
             { date: "2026-02-05T20:45", venue: "Maxim 1" },
         ]
@@ -613,7 +611,6 @@ const festivalData = [
             fi: "Visuaalisesti lumoavassa elokuvassa sukelletaan lapsuuden ihmeisiin ja sen jättämään haikeuteen."
         },
         screenings: [
-            { date: "2026-01-27T13:00", venue: "Kino Regina"},
             { date: "2026-02-07T15:15", venue: "Kinopalatsi 7"},
         ]
     },
