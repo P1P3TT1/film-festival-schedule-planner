@@ -22,12 +22,12 @@ This directory contains tools to convert CSV files into the JSON format required
 | Column | Description | Example |
 |--------|-------------|---------|
 | ID | Unique film ID (integer) | 1 |
-| Title_EN | English title | ABODE OF DAWN |
-| Title_FI | Finnish title | ABODE OF DAWN |
-| Director | Director name | Kristina Shtubert |
+| Title_EN | English title | Film |
+| Title_FI | Finnish title | Elokuva |
+| Director | Director name | John Smith |
 | Duration | Film duration | 105 min |
-| Description_EN | English description | A cult living in Siberia... |
-| Description_FI | Finnish description | Siperiassa elävää kulttia... |
+| Description_EN | English description | Description... |
+| Description_FI | Finnish description | Kuvaus... |
 
 **Tips:**
 - Use Excel or Google Sheets to edit the CSV
@@ -42,7 +42,7 @@ This directory contains tools to convert CSV files into the JSON format required
 | Film_ID | Reference to film ID | 1 |
 | Date | Screening date (YYYY-MM-DD) | 2026-02-04 |
 | Time | Screening time (HH:MM) | 20:30 |
-| Venue | Theater/venue name | Kinopalatsi 7 |
+| Venue | Theater/venue name | Cinema Palace |
 
 **Tips:**
 - Each row is one screening
