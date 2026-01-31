@@ -186,11 +186,26 @@ async function initializeApp() {
             populateFestivalSelector(); // Update selector to show selected festival
             updateHeadersForFestival();
             initializeAvailableDates();
+            initializeFilmsViewSwitcher();
             renderFilms();
             renderSchedule();
             renderDateSelector();
         }
     }
+}
+
+// Initialize films view switcher based on saved preference
+function initializeFilmsViewSwitcher() {
+    document.querySelectorAll('.films-view-switcher .view-btn').forEach(btn => {
+        const btnView = btn.getAttribute('data-view');
+        if (btnView === currentFilmsView) {
+            btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
+        } else {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+        }
+    });
 }
 
 // Translations
@@ -231,7 +246,13 @@ const translations = {
         availableDates: "Available dates",
         selectAllDates: "Select all",
         deselectAllDates: "Deselect all",
-        datesSelected: "dates selected"
+        datesSelected: "dates selected",
+        viewCards: "Cards",
+        viewTable: "Table",
+        viewCompactList: "List",
+        title: "Title",
+        duration: "Duration",
+        select: "Select"
     },
     fi: {
         headerTitle: "",
@@ -269,7 +290,13 @@ const translations = {
         availableDates: "Saatavilla olevat päivät",
         selectAllDates: "Valitse kaikki",
         deselectAllDates: "Poista valinnat",
-        datesSelected: "päivää valittu"
+        datesSelected: "päivää valittu",
+        viewCards: "Kortit",
+        viewTable: "Taulukko",
+        viewCompactList: "Lista",
+        title: "Nimi",
+        duration: "Kesto",
+        select: "Valitse"
     }
 };
 
@@ -281,6 +308,7 @@ let priorityFilms = new Set(); // Films marked as "must see"
 let searchQuery = '';
 let currentLang = 'fi';
 let availableDates = new Set(); // Dates the user is available (all by default)
+let currentFilmsView = localStorage.getItem('filmsView') || 'cards'; // 'cards', 'table', or 'list'
 
 // Get all unique dates from festival data
 function getAllDates() {
@@ -325,6 +353,8 @@ function changeLanguage(lang, event) {
     document.getElementById('viewCalendarText').textContent = t.viewCalendar;
     document.getElementById('viewDayText').textContent = t.viewDay;
     document.getElementById('downloadPdfBtnText').textContent = t.downloadPdf;
+    document.getElementById('viewCardsText').textContent = t.viewCards;
+    document.getElementById('viewTableText').textContent = t.viewTable;
     document.getElementById('optimizeBtnText').textContent = t.optimizeSchedule;
     document.getElementById('optimizeBtn').title = t.optimizeTooltip;
     updateSelectAllButton();
@@ -1049,37 +1079,35 @@ function renderPdfDayView(doc, screenings, t, locale, margin, contentWidth, page
     });
 }
 
-function renderFilms() {
-    const grid = document.getElementById('filmsGrid');
-    const filteredFilms = getFilteredFilms();
-    const t = translations[currentLang];
-    
-    if (filteredFilms.length === 0) {
-        grid.innerHTML = `
-            <div class="no-results" role="listitem">
-                <h3>${t.noFilmsFound}</h3>
-                <p>${t.tryDifferentSearch}</p>
-            </div>
-        `;
-        return;
-    }
-    
-    grid.innerHTML = filteredFilms.map(film => {
-        const title = typeof film.title === 'object' ? film.title[currentLang] : film.title;
-        const desc = typeof film.description === 'object' ? film.description[currentLang] : film.description;
+// Helper functions for film rendering
+function getFilmTitle(film) {
+    return typeof film.title === 'object' ? film.title[currentLang] : film.title;
+}
 
-        // Count only screenings on available dates
-        const availableScreeningsCount = film.screenings.filter(screening => {
-            const dateKey = screening.date.split('T')[0];
-            return availableDates.has(dateKey);
-        }).length;
+function getFilmDescription(film) {
+    return typeof film.description === 'object' ? film.description[currentLang] : film.description;
+}
+
+function getAvailableScreeningsCount(film) {
+    return film.screenings.filter(screening => {
+        const dateKey = screening.date.split('T')[0];
+        return availableDates.has(dateKey);
+    }).length;
+}
+
+// Cards view renderer
+function renderCardsView(films, t) {
+    return films.map(film => {
+        const title = getFilmTitle(film);
+        const desc = getFilmDescription(film);
+        const availableScreeningsCount = getAvailableScreeningsCount(film);
 
         const screeningText = availableScreeningsCount === 1 ? t.screening : t.screenings;
         const isSelected = selectedFilms.has(film.id);
         const isPriority = priorityFilms.has(film.id);
 
         return `
-            <article class="film-card ${isSelected ? 'selected' : ''} ${isPriority ? 'priority' : ''}" 
+            <article class="film-card ${isSelected ? 'selected' : ''} ${isPriority ? 'priority' : ''}"
                  role="listitem"
                  tabindex="0"
                  data-film-id="${film.id}"
@@ -1111,6 +1139,194 @@ function renderFilms() {
             </article>
         `;
     }).join('');
+}
+
+// Table row renderer
+function renderTableRow(film, t) {
+    const title = getFilmTitle(film);
+    const desc = getFilmDescription(film);
+    const availableScreeningsCount = getAvailableScreeningsCount(film);
+    const isSelected = selectedFilms.has(film.id);
+    const isPriority = priorityFilms.has(film.id);
+
+    return `
+        <tr class="film-row ${isSelected ? 'selected' : ''} ${isPriority ? 'priority' : ''}"
+            data-film-id="${film.id}"
+            tabindex="0"
+            onclick="toggleFilm(${film.id})"
+            onkeydown="handleRowKeydown(event, ${film.id})"
+            aria-label="${title}">
+            <td class="priority-cell" onclick="event.stopPropagation()">
+                <button class="priority-btn-table ${isPriority ? 'active' : ''}"
+                        onclick="togglePriority(${film.id}, event)"
+                        aria-label="${isPriority ? t.removePriority : t.mustSee}"
+                        title="${isPriority ? t.removePriority : t.mustSee}">
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="${isPriority ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                    </svg>
+                </button>
+            </td>
+            <td class="title-cell">
+                <div class="title-wrapper">
+                    <span class="film-title-text">${title}</span>
+                    ${isPriority ? `<span class="priority-badge-inline">${t.mustSee}</span>` : ''}
+                </div>
+                <div class="film-description-table">${desc}</div>
+            </td>
+            <td class="director-cell">${film.director}</td>
+            <td class="duration-cell">${film.duration}</td>
+            <td class="screenings-cell">
+                <span class="screening-count">${availableScreeningsCount}</span>
+            </td>
+            <td class="select-cell">
+                ${isSelected ? '<span class="checkmark-table">✓</span>' : ''}
+            </td>
+        </tr>
+    `;
+}
+
+// Table view renderer
+function renderTableView(films, t) {
+    return `
+        <table class="films-table" role="table">
+            <thead>
+                <tr>
+                    <th scope="col" class="priority-header">
+                        <span class="visually-hidden">${t.mustSee}</span>
+                        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                    </th>
+                    <th scope="col">${t.title}</th>
+                    <th scope="col">${t.director}</th>
+                    <th scope="col">${t.duration}</th>
+                    <th scope="col">${t.screenings}</th>
+                    <th scope="col">
+                        <span class="visually-hidden">${t.select}</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                ${films.map(film => renderTableRow(film, t)).join('')}
+            </tbody>
+        </table>
+    `;
+}
+
+// Compact list view renderer
+function renderListView(films, t) {
+    return films.map(film => {
+        const title = getFilmTitle(film);
+        const desc = getFilmDescription(film);
+        const availableScreeningsCount = getAvailableScreeningsCount(film);
+        const screeningText = availableScreeningsCount === 1 ? t.screening : t.screenings;
+        const isSelected = selectedFilms.has(film.id);
+        const isPriority = priorityFilms.has(film.id);
+
+        return `
+            <div class="film-list-item ${isSelected ? 'selected' : ''} ${isPriority ? 'priority' : ''}"
+                 role="listitem"
+                 tabindex="0"
+                 data-film-id="${film.id}"
+                 onclick="toggleFilm(${film.id})"
+                 onkeydown="handleCardKeydown(event, ${film.id})"
+                 aria-label="${title}, ${film.director}, ${film.duration}, ${availableScreeningsCount} ${screeningText}">
+                <button class="priority-btn ${isPriority ? 'active' : ''}"
+                        onclick="togglePriority(${film.id}, event)"
+                        aria-label="${isPriority ? t.removePriority : t.mustSee}"
+                        title="${isPriority ? t.removePriority : t.mustSee}">
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="${isPriority ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                    </svg>
+                </button>
+                <div class="film-list-content">
+                    <div class="film-list-header">
+                        <h3 class="film-list-title">${title}</h3>
+                        <div class="film-list-meta">
+                            <span class="meta-item">${film.director}</span>
+                            <span class="meta-separator">•</span>
+                            <span class="meta-item">${film.duration}</span>
+                            <span class="meta-separator">•</span>
+                            <span class="meta-item">${availableScreeningsCount} ${screeningText}</span>
+                        </div>
+                    </div>
+                    <p class="film-list-description">${desc}</p>
+                </div>
+                ${isSelected ? '<span class="checkmark-list" aria-hidden="true">✓</span>' : ''}
+                ${isPriority ? `<span class="priority-badge-list">${t.mustSee}</span>` : ''}
+            </div>
+        `;
+    }).join('');
+}
+
+// Main orchestrator function
+function renderFilms() {
+    const container = document.getElementById('filmsGrid');
+    const filteredFilms = getFilteredFilms();
+    const t = translations[currentLang];
+
+    if (filteredFilms.length === 0) {
+        container.innerHTML = `
+            <div class="no-results" role="listitem">
+                <h3>${t.noFilmsFound}</h3>
+                <p>${t.tryDifferentSearch}</p>
+            </div>
+        `;
+        return;
+    }
+
+    // Update container class for layout switching
+    container.className = `films-${currentFilmsView}`;
+
+    // Delegate to view-specific renderer
+    switch(currentFilmsView) {
+        case 'cards':
+            container.innerHTML = renderCardsView(filteredFilms, t);
+            break;
+        case 'table':
+            container.innerHTML = renderTableView(filteredFilms, t);
+            break;
+        case 'list':
+            container.innerHTML = renderListView(filteredFilms, t);
+            break;
+    }
+}
+
+// View switcher function
+function switchFilmsView(view, event) {
+    currentFilmsView = view;
+    localStorage.setItem('filmsView', view);
+
+    // Update button states
+    document.querySelectorAll('.films-view-switcher .view-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
+    });
+    event.currentTarget.classList.add('active');
+    event.currentTarget.setAttribute('aria-pressed', 'true');
+
+    // Re-render with new view
+    renderFilms();
+}
+
+// Keyboard navigation for table rows
+function handleRowKeydown(event, filmId) {
+    if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleFilm(filmId);
+    } else if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        const nextRow = event.target.nextElementSibling;
+        if (nextRow && nextRow.classList.contains('film-row')) {
+            nextRow.focus();
+        }
+    } else if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        const prevRow = event.target.previousElementSibling;
+        if (prevRow && prevRow.classList.contains('film-row')) {
+            prevRow.focus();
+        }
+    }
 }
 
 function togglePriority(filmId, event) {
