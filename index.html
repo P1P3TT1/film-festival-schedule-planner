@@ -124,7 +124,16 @@
         <!-- Live region for screen reader announcements -->
         <div id="srAnnouncement" class="sr-announcement" role="status" aria-live="polite" aria-atomic="true"></div>
 
-        <section class="section">
+        <!-- Floating jump to schedule button (mobile only) -->
+        <button id="jumpToScheduleBtn" class="jump-to-schedule-btn" onclick="jumpToSchedule()" aria-label="Jump to schedule">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="7 13 12 18 17 13"></polyline>
+                <polyline points="7 6 12 11 17 6"></polyline>
+            </svg>
+            <span id="jumpToScheduleText">Aikatauluun</span>
+        </button>
+
+        <section class="section" id="scheduleSection">
             <div class="section-header">
                 <h2 class="section-title" id="scheduleTitle">Aikataulusi</h2>
                 <div class="view-switcher" role="group" aria-label="Näkymän valinta">

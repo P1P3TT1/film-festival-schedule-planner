@@ -252,7 +252,8 @@ const translations = {
         viewCompactList: "List",
         title: "Title",
         duration: "Duration",
-        select: "Select"
+        select: "Select",
+        jumpToSchedule: "To Schedule"
     },
     fi: {
         headerTitle: "",
@@ -296,7 +297,8 @@ const translations = {
         viewCompactList: "Lista",
         title: "Nimi",
         duration: "Kesto",
-        select: "Valitse"
+        select: "Valitse",
+        jumpToSchedule: "Aikatauluun"
     }
 };
 
@@ -357,6 +359,8 @@ function changeLanguage(lang, event) {
     document.getElementById('viewTableText').textContent = t.viewTable;
     document.getElementById('optimizeBtnText').textContent = t.optimizeSchedule;
     document.getElementById('optimizeBtn').title = t.optimizeTooltip;
+    document.getElementById('jumpToScheduleText').textContent = t.jumpToSchedule;
+    document.getElementById('jumpToScheduleBtn').setAttribute('aria-label', t.jumpToSchedule);
     updateSelectAllButton();
     document.documentElement.lang = lang;
 
@@ -1919,3 +1923,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Jump to schedule button functionality
+function jumpToSchedule() {
+    const scheduleSection = document.getElementById('scheduleSection');
+    if (scheduleSection) {
+        scheduleSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+function updateJumpButtonVisibility() {
+    const jumpBtn = document.getElementById('jumpToScheduleBtn');
+    const scheduleSection = document.getElementById('scheduleSection');
+
+    if (!jumpBtn || !scheduleSection) return;
+
+    // Only show on mobile/tablet (max-width: 1024px)
+    if (window.innerWidth > 1024) {
+        jumpBtn.classList.remove('visible');
+        return;
+    }
+
+    // Get positions
+    const scrollPosition = window.scrollY;
+    const scheduleSectionTop = scheduleSection.offsetTop;
+    const viewportHeight = window.innerHeight;
+
+    // Show button if:
+    // 1. User has scrolled down at least 300px
+    // 2. Schedule section is not yet visible in viewport
+    const shouldShow = scrollPosition > 300 && (scrollPosition + viewportHeight) < (scheduleSectionTop + 200);
+
+    if (shouldShow) {
+        jumpBtn.classList.add('visible');
+    } else {
+        jumpBtn.classList.remove('visible');
+    }
+}
+
+// Add scroll listener for jump button
+window.addEventListener('scroll', updateJumpButtonVisibility);
+window.addEventListener('resize', updateJumpButtonVisibility);
