@@ -1789,20 +1789,46 @@ button svg * {
     }
 
     .header {
-        padding: 60px 24px 32px;
+        padding: 70px 16px 24px;
         border-radius: 20px;
     }
 
     .header h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        margin-bottom: 4px;
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    .header p {
+        font-size: 0.95rem;
+        padding-right: 0;
     }
 
     .header-controls {
         top: 12px;
         right: 12px;
+        left: 12px;
         flex-wrap: wrap;
         justify-content: flex-end;
-        gap: 8px;
+        gap: 6px;
+        max-width: calc(100% - 24px);
+    }
+
+    .control-btn {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .festival-dropdown-btn {
+        font-size: 0.85rem;
+        padding: 6px 12px;
     }
 
     .films-cards {
@@ -1840,6 +1866,57 @@ button svg * {
         justify-content: center;
         gap: 12px;
         min-width: auto;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .header {
+        padding: 65px 12px 20px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .header p {
+        font-size: 0.85rem;
+        opacity: 0.9;
+    }
+
+    .header-controls {
+        top: 8px;
+        right: 8px;
+        left: 8px;
+        gap: 4px;
+    }
+
+    .control-btn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .theme-toggle {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .festival-dropdown-btn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .view-switcher {
+        width: 100%;
+        justify-content: center;
     }
 }
 
