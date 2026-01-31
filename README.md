@@ -1,6 +1,8 @@
 # Film Festival Schedule Planner
 
-A modern web application for planning your film festival schedule. Select films, manage screenings, optimize your schedule, and export to iCal or PDF. Supports multiple festivals with dynamic data loading.
+A modern, responsive web application for planning your film festival schedule with multiple viewing modes and smart optimization. Browse films in cards, table, or list view, manage screenings, optimize your schedule, and export to iCal or PDF. Fully accessible with keyboard navigation and screen reader support.
+
+**Key Features:** Multiple view types • Smart schedule optimization • Conflict detection • Mobile-optimized • iCal & PDF export • Bilingual support (FI/EN) • Dark mode
 
 ## Features
 
@@ -14,10 +16,14 @@ A modern web application for planning your film festival schedule. Select films,
 - **Smart Filtering** - Films and screenings automatically filtered by selected dates
 - **Quick Selection** - Select/deselect all dates with one click
 
-### Film Management
-- **Browse Films** - View all available festival films with details (director, duration, description)
+### Film Browsing & Management
+- **Multiple View Types** - Switch between three different viewing modes:
+  - **Cards View** - Visual glassmorphic cards with full descriptions (default)
+  - **Table View** - Data-dense table with sortable columns for quick scanning
+  - **Compact List View** - Mobile-optimized horizontal layout with inline metadata
+- **View Persistence** - Your preferred view is saved and restored on reload
 - **Search** - Filter films by title, director, or description
-- **Select/Deselect** - Click on film cards to add or remove from your schedule
+- **Select/Deselect** - Click on films to add or remove from your schedule
 - **Priority Marking** - Star films as "must see" for schedule optimization
 - **Screening Management** - Remove individual screenings while keeping the film selected
 
@@ -47,11 +53,19 @@ A modern web application for planning your film festival schedule. Select films,
 - Theme preference saved in local storage
 - Smooth animated transitions
 
+### Mobile Experience
+- **Floating Navigation** - "Jump to Schedule" button appears when scrolling through films on mobile
+- **Responsive Design** - Optimized layouts for mobile, tablet, and desktop
+- **Touch-Friendly** - All controls sized appropriately for touch interaction
+- **Adaptive Header** - Header controls scale and reposition on narrow viewports to prevent overlap
+- **Table Scrolling** - Horizontal scroll for table view on small screens
+
 ### Accessibility
-- Keyboard navigation support
-- Screen reader announcements for actions
-- Focus visible states
-- Reduced motion support (`prefers-reduced-motion`)
+- **Keyboard Navigation** - Full keyboard support with Tab, Space, Enter, and Arrow keys
+- **Screen Reader Support** - Announcements for all actions and state changes
+- **ARIA Labels** - Proper roles and labels throughout the interface
+- **Focus Management** - Clear focus indicators and logical tab order
+- **Reduced Motion** - Respects `prefers-reduced-motion` user preference
 
 ## Getting Started
 
@@ -111,11 +125,13 @@ film-schedule-planner/
 
 ## Design Features
 
-- Glassmorphism UI with backdrop blur effects
-- Animated gradient background
-- Responsive grid layout
-- Smooth hover and focus animations
-- Gradient accent colors
+- **Glassmorphism UI** - Translucent backgrounds with backdrop blur effects throughout
+- **Animated Gradient Background** - Dynamic gradient with subtle noise texture
+- **Multiple Layout Modes** - Cards grid, data table, and compact list views
+- **Responsive Design** - Fully adaptive from mobile (320px) to desktop (1920px+)
+- **Smooth Animations** - Hover effects, transitions, and state changes
+- **Gradient Accents** - Color gradients for buttons, badges, and highlights
+- **Theme Support** - Seamless light/dark mode with persistent preference
 
 ## Festival Data
 
