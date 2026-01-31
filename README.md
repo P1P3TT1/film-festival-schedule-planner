@@ -111,7 +111,12 @@ film-schedule-planner/
 ├── script.js               # Application logic
 ├── data/
 │   ├── festivals.json      # List of available festivals
-│   └── docpoint2026.json   # DocPoint 2026 festival data
+│   ├── docpoint2026.json   # DocPoint 2026 festival data
+│   ├── template_films.csv  # CSV template for film data
+│   └── template_screenings.csv  # CSV template for screenings
+├── scripts/
+│   ├── csv_to_json.py      # CSV to JSON converter
+│   └── README.md           # Data generation guide
 └── README.md               # This file
 ```
 
@@ -138,11 +143,54 @@ film-schedule-planner/
 The app currently includes data for:
 - **DocPoint 2026** - Documentary film festival (February 3-8, 2026)
 
+**Adding your own festival data is easy!** Use the included CSV templates and converter script to quickly generate festival data from spreadsheets. See the [Adding New Festivals](#adding-new-festivals) section below.
+
 ## Adding New Festivals
 
-To add a new festival:
+### Easy Method: CSV to JSON Converter (Recommended)
 
-1. Create a JSON data file in the [data/](data/) directory with your festival's films:
+The easiest way to add festival data is using the CSV-to-JSON converter:
+
+1. **Edit the CSV templates** in Excel or Google Sheets:
+   - [data/template_films.csv](data/template_films.csv) - Film information
+   - [data/template_screenings.csv](data/template_screenings.csv) - Screening times
+
+2. **Run the converter script**:
+   ```bash
+   python scripts/csv_to_json.py data/yourfestival_films.csv data/yourfestival_screenings.csv data/yourfestival2026.json
+   ```
+
+3. **Add to festivals list** in [data/festivals.json](data/festivals.json):
+   ```json
+   {
+       "id": "yourfestival2026",
+       "name": "Your Festival",
+       "year": "2026",
+       "displayName": {
+           "en": "Your Festival 2026",
+           "fi": "Your Festival 2026"
+       },
+       "subtitle": {
+           "en": "Select films and create your schedule",
+           "fi": "Valitse elokuvat ja luo oma aikataulusi"
+       },
+       "dataFile": "data/yourfestival2026.json",
+       "startDate": "2026-10-15",
+       "endDate": "2026-10-20"
+   }
+   ```
+
+**Benefits:**
+- No manual JSON editing required
+- Easy to copy-paste data from festival websites
+- Can use Google Sheets for collaborative data entry
+- Automatic validation and error checking
+
+See [scripts/README.md](scripts/README.md) for detailed instructions and examples.
+
+### Manual Method: Direct JSON Editing
+
+You can also create JSON files directly. The expected format:
 
 ```json
 [
@@ -161,27 +209,6 @@ To add a new festival:
         ]
     }
 ]
-```
-
-2. Add your festival to [data/festivals.json](data/festivals.json):
-
-```json
-{
-    "id": "yourfestival2026",
-    "name": "Your Festival",
-    "year": "2026",
-    "displayName": {
-        "en": "Your Festival 2026",
-        "fi": "Your Festival 2026"
-    },
-    "subtitle": {
-        "en": "Select films and create your schedule",
-        "fi": "Valitse elokuvat ja luo oma aikataulusi"
-    },
-    "dataFile": "data/yourfestival2026.json",
-    "startDate": "2026-10-15",
-    "endDate": "2026-10-20"
-}
 ```
 
 ## Browser Support
