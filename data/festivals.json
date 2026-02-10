@@ -1,5 +1,22 @@
 [
   {
+    "id": "nightvisions_spring2026",
+    "name": "Night Visions",
+    "year": "2026",
+    "displayName": {
+      "en": "Night Visions 2026",
+      "fi": "Night Visions 2026"
+    },
+    "subtitle": {
+      "en": "Coming soon: March 25–29, 2026",
+      "fi": "Tulossa pian: 25.–29.3.2026"
+    },
+    "dataFile": "data/nightvisions_spring2026.json",
+    "startDate": "2026-03-025",
+    "endDate": "2026-03-29"
+  },
+
+  {
     "id": "docpoint2026",
     "name": "DocPoint",
     "year": "2026",
