@@ -9,7 +9,6 @@ A modern, responsive web application for planning your film festival schedule wi
 ### Festival Selection
 - **Multiple Festivals** - Switch between different festivals using the dropdown selector
 - **Dynamic Data Loading** - Festival data loaded from JSON files for easy updates
-- Currently supports: DocPoint 2026 (more festivals can be added to [festivals.json](data/festivals.json))
 
 ### Date Filtering
 - **Available Dates** - Select which dates you'll be attending the festival
@@ -139,9 +138,6 @@ film-schedule-planner/
 - **Theme Support** - Seamless light/dark mode with persistent preference
 
 ## Festival Data
-
-The app currently includes data for:
-- **DocPoint 2026** - Documentary film festival (February 3-8, 2026)
 
 **Adding your own festival data is easy!** Use the included CSV templates and converter script to quickly generate festival data from spreadsheets. See the [Adding New Festivals](#adding-new-festivals) section below.
 
