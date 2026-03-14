@@ -2,17 +2,813 @@
   {
     "id": 1,
     "title": {
-      "en": "Coming soon",
-      "fi": "Coming soon"
+      "en": "Affection",
+      "fi": "Affection"
     },
-    "director": "",
-    "duration": "",
+    "director": "BT Meza",
+    "duration": "89 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/affection/",
     "description": {
       "en": "",
       "fi": ""
     },
     "screenings": [
-      
+      {
+        "date": "2026-03-26T15:00",
+        "venue": "Cinema Orion"
+      },
+      {
+        "date": "2026-03-28T12:00",
+        "venue": "Bio Rex Lasipalatsi"
+      },
+      {
+        "date": "2026-03-29T01:30",
+        "venue": "Gilda 3"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "Opening Film: Alpha",
+      "fi": "Avajaiselokuva: Alpha"
+    },
+    "director": "Julia Ducournau",
+    "duration": "128 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/alpha/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-25T18:25",
+        "venue": "Bio Rex Lasipalatsi"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "Astro-Zombies",
+      "fi": "Astro-Zombies"
+    },
+    "director": "Ted V. Mikels",
+    "duration": "92 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/astro-zombies/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-25T18:40",
+        "venue": "WHS Teatteri Union"
+      },
+      {
+        "date": "2026-03-27T21:30",
+        "venue": "WHS Teatteri Union"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "At the Earth’s Core",
+      "fi": "At the Earth’s Core"
+    },
+    "director": "Kevin Connor",
+    "duration": "89 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/at-the-earths-core/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-26T19:15",
+        "venue": "WHS Teatteri Union"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": {
+      "en": "A Better Tomorrow",
+      "fi": "A Better Tomorrow"
+    },
+    "director": "John Woo",
+    "duration": "95 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/a-better-tomorrow/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-28T21:00",
+        "venue": "Bio Rex Lasipalatsi"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": {
+      "en": "Captain Kronos: Vampire Hunter",
+      "fi": "Captain Kronos: Vampire Hunter"
+    },
+    "director": "Brian Clemens",
+    "duration": "91 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/captain-kronos-vampire-hunter/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-27T16:45",
+        "venue": "Bio Rex Lasipalatsi"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": {
+      "en": "Closing Film: Challenge of the Lady Ninja",
+      "fi": "Päätöselokuva: Challenge of the Lady Ninja"
+    },
+    "director": "Tso-Nam Lee",
+    "duration": "100 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/challenge-of-the-lady-ninja/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-29T09:20",
+        "venue": "Gilda 1"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": {
+      "en": "ChaO",
+      "fi": "ChaO"
+    },
+    "director": "Yasuhiro Aoki",
+    "duration": "90 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/chao/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-26T15:15",
+        "venue": "Bio Rex Lasipalatsi"
+      },
+      {
+        "date": "2026-03-27T14:45",
+        "venue": "Cinema Orion"
+      },
+      {
+        "date": "2026-03-28T12:10",
+        "venue": "Cinema Orion"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": {
+      "en": "The Curse",
+      "fi": "The Curse"
+    },
+    "director": "Kenichi Ugana",
+    "duration": "94 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/the-curse/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-25T21:10",
+        "venue": "Cinema Orion"
+      },
+      {
+        "date": "2026-03-29T01:25",
+        "venue": "Gilda 1"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": {
+      "en": "Deathgasm II: Goremageddon",
+      "fi": "Deathgasm II: Goremageddon"
+    },
+    "director": "Jason Lei Howden",
+    "duration": "102 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/deathgasm-ii-goremageddon/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-27T23:30",
+        "venue": "Bio Rex Lasipalatsi"
+      },
+      {
+        "date": "2026-03-28T23:15",
+        "venue": "Bio Rex Lasipalatsi"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": {
+      "en": "Deathstalker",
+      "fi": "Deathstalker"
+    },
+    "director": "Steve Kostanski",
+    "duration": "102 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/deathstalker/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-26T17:00",
+        "venue": "Bio Rex Lasipalatsi"
+      },
+      {
+        "date": "2026-03-27T21:20",
+        "venue": "Bio Rex Lasipalatsi"
+      },
+      {
+        "date": "2026-03-29T03:20",
+        "venue": "Gilda 1"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": {
+      "en": "Dog 51",
+      "fi": "Dog 51"
+    },
+    "director": "Cédric Jimenez",
+    "duration": "102 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/dog-51/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-27T16:45",
+        "venue": "Cinema Orion"
+      },
+      {
+        "date": "2026-03-28T14:10",
+        "venue": "Bio Rex Lasipalatsi"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": {
+      "en": "Dolly",
+      "fi": "Dolly"
+    },
+    "director": "Rod Blackhurst",
+    "duration": "83 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/dolly/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-27T23:30",
+        "venue": "WHS Teatteri Union"
+      },
+      {
+        "date": "2026-03-29T07:35",
+        "venue": "Gilda 3"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": {
+      "en": "Faster, Pussycat! Kill! Kill!",
+      "fi": "Faster, Pussycat! Kill! Kill!"
+    },
+    "director": "Russ Meyer",
+    "duration": "83 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/faster-pussycat-kill-kill/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-26T21:45",
+        "venue": "WHS Teatteri Union"
+      },
+      {
+        "date": "2026-03-27T19:30",
+        "venue": "Cinema Orion"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": {
+      "en": "Fucktoys",
+      "fi": "Fucktoys"
+    },
+    "director": "Annapurna Sriram",
+    "duration": "106 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/fucktoys/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-25T21:15",
+        "venue": "WHS Teatteri Union"
+      },
+      {
+        "date": "2026-03-28T16:10",
+        "venue": "Bio Rex Lasipalatsi"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": {
+      "en": "The Golden Voyage of Sinbad",
+      "fi": "The Golden Voyage of Sinbad"
+    },
+    "director": "Gordon Hessler",
+    "duration": "88 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/the-golden-voyage-of-sinbad/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-28T14:00",
+        "venue": "Cinema Orion"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": {
+      "en": "Grind",
+      "fi": "Grind"
+    },
+    "director": "Ed Dougherty; Brea Grant; Chelsea Stardust",
+    "duration": "104 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/grind/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-27T23:30",
+        "venue": "Cinema Orion"
+      },
+      {
+        "date": "2026-03-29T03:15",
+        "venue": "Gilda 3"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": {
+      "en": "Kraken",
+      "fi": "Kraken"
+    },
+    "director": "Pål Øie",
+    "duration": "100 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/kraken/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-27T19:00",
+        "venue": "Bio Rex Lasipalatsi"
+      },
+      {
+        "date": "2026-03-28T23:10",
+        "venue": "Gilda 3"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": {
+      "en": "Kreator – Hate & Hope",
+      "fi": "Kreator – Hate & Hope"
+    },
+    "director": "Cordula Kablitz-Post",
+    "duration": "110 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/kreator-hate-hope/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-26T17:00",
+        "venue": "Cinema Orion"
+      },
+      {
+        "date": "2026-03-28T14:00",
+        "venue": "WHS Teatteri Union"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": {
+      "en": "Maniac",
+      "fi": "Maniac"
+    },
+    "director": "William Lustig",
+    "duration": "87 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/maniac/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-28T18:30",
+        "venue": "Cinema Orion"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": {
+      "en": "Mum, I’m Alien Pregnant",
+      "fi": "Mum, I’m Alien Pregnant"
+    },
+    "director": "Sean Wallace; Jordan Mark Windsor",
+    "duration": "95 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/mum-im-alien-pregnant/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-26T21:40",
+        "venue": "Bio Rex Lasipalatsi"
+      },
+      {
+        "date": "2026-03-29T07:30",
+        "venue": "Gilda 1"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": {
+      "en": "OBEX",
+      "fi": "OBEX"
+    },
+    "director": "Albert Birney",
+    "duration": "90 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/obex/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-25T18:45",
+        "venue": "Cinema Orion"
+      },
+      {
+        "date": "2026-03-27T19:00",
+        "venue": "WHS Teatteri Union"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": {
+      "en": "Obsession",
+      "fi": "Obsession"
+    },
+    "director": "Curry Barker",
+    "duration": "108 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/obsession/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-28T18:40",
+        "venue": "Bio Rex Lasipalatsi"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": {
+      "en": "Rave On",
+      "fi": "Rave On"
+    },
+    "director": "Nikias Chryssos; Viktor Jakovleski",
+    "duration": "80 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/rave-on/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-26T19:25",
+        "venue": "Cinema Orion"
+      },
+      {
+        "date": "2026-03-28T21:10",
+        "venue": "WHS Teatteri Union"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "title": {
+      "en": "Ready or Not 2: Here I Come",
+      "fi": "Ready or Not 2: Here I Come"
+    },
+    "director": "Tyler Gillett; Matt Bettinelli-Olpin",
+    "duration": "104 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/ready-or-not-2-here-i-come/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-26T19:30",
+        "venue": "Bio Rex Lasipalatsi"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": {
+      "en": "The Room",
+      "fi": "The Room"
+    },
+    "director": "Tommy Wiseau",
+    "duration": "99 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/the-room/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-27T21:20",
+        "venue": "Cinema Orion"
+      },
+      {
+        "date": "2026-03-28T21:00",
+        "venue": "Cinema Orion"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": {
+      "en": "Saccharine",
+      "fi": "Saccharine"
+    },
+    "director": "Natalie Erika James",
+    "duration": "112 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/saccharine/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-25T16:10",
+        "venue": "Bio Rex Lasipalatsi"
+      },
+      {
+        "date": "2026-03-27T16:40",
+        "venue": "WHS Teatteri Union"
+      },
+      {
+        "date": "2026-03-28T23:10",
+        "venue": "Cinema Orion"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "title": {
+      "en": "Self-Help",
+      "fi": "Self-Help"
+    },
+    "director": "Erik Bloomquist",
+    "duration": "85 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/self-help/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-27T14:50",
+        "venue": "Bio Rex Lasipalatsi"
+      },
+      {
+        "date": "2026-03-29T05:25",
+        "venue": "Gilda 1"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "title": {
+      "en": "Sicko",
+      "fi": "Sicko"
+    },
+    "director": "Aitore Zholdaskali",
+    "duration": "101 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/sicko/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-25T16:20",
+        "venue": "Cinema Orion"
+      },
+      {
+        "date": "2026-03-28T16:15",
+        "venue": "WHS Teatteri Union"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "title": {
+      "en": "$POSITIONS",
+      "fi": "$POSITIONS"
+    },
+    "director": "Brandon Daley",
+    "duration": "97 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/positions/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-26T15:00",
+        "venue": "WHS Teatteri Union"
+      },
+      {
+        "date": "2026-03-29T05:30",
+        "venue": "Gilda 3"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "title": {
+      "en": "Tango Europa",
+      "fi": "Tango Europa"
+    },
+    "director": "Bennett Jones",
+    "duration": "103 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/tango-europa/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-26T21:40",
+        "venue": "Cinema Orion"
+      },
+      {
+        "date": "2026-03-28T18:40",
+        "venue": "WHS Teatteri Union"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "title": {
+      "en": "Theatre of Horrors: The Sordid Story of Paris’ Grand Guignol",
+      "fi": "Theatre of Horrors: The Sordid Story of Paris’ Grand Guignol"
+    },
+    "director": "David Gregory",
+    "duration": "90 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/theatre-of-horrors-the-sordid-story-of-paris-grand-guignol/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-28T12:00",
+        "venue": "WHS Teatteri Union"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "title": {
+      "en": "They Will Kill You",
+      "fi": "They Will Kill You"
+    },
+    "director": "Kiril Sokolov",
+    "duration": "94 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/they-will-kill-you/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-25T21:15",
+        "venue": "Bio Rex Lasipalatsi"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "title": {
+      "en": "The True Beauty of Being Bitten by a Tick",
+      "fi": "The True Beauty of Being Bitten by a Tick"
+    },
+    "director": "Pete Ohs",
+    "duration": "80 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/the-true-beauty-of-being-bitten-by-a-tick/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-26T17:15",
+        "venue": "WHS Teatteri Union"
+      },
+      {
+        "date": "2026-03-28T16:30",
+        "venue": "Cinema Orion"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "title": {
+      "en": "Tura!",
+      "fi": "Tura!"
+    },
+    "director": "Cody Jarrett",
+    "duration": "105 min",
+    "url": "https://www.nightvisions.info/wp/portfolio/tura/",
+    "description": {
+      "en": "",
+      "fi": ""
+    },
+    "screenings": [
+      {
+        "date": "2026-03-25T16:10",
+        "venue": "WHS Teatteri Union"
+      },
+      {
+        "date": "2026-03-27T14:30",
+        "venue": "WHS Teatteri Union"
+      }
     ]
   }
 ]
