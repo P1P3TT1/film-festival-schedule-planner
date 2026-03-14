@@ -2,7 +2,7 @@
 
 A modern, responsive web application for planning your film festival schedule with multiple viewing modes and smart optimization. Browse films in cards, table, or list view, manage screenings, optimize your schedule, and export to iCal or PDF. Fully accessible with keyboard navigation and screen reader support.
 
-**Key Features:** Multiple view types • Smart schedule optimization • Conflict detection • Mobile-optimized • iCal & PDF export • Bilingual support (FI/EN) • Dark mode
+**Key Features:** Multiple view types • Smart schedule optimization • Conflict detection • Mobile-optimized • iCal & PDF export • Bilingual support (FI/EN) • Dark mode • Festival page links
 
 ## Features
 
@@ -24,6 +24,7 @@ A modern, responsive web application for planning your film festival schedule wi
 - **Search** - Filter films by title, director, or description
 - **Select/Deselect** - Click on films to add or remove from your schedule
 - **Priority Marking** - Star films as "must see" for schedule optimization
+- **Festival Page Links** - Optional external link icon next to film titles, linking to the film's page on the festival website (shown on hover tooltip)
 - **Screening Management** - Remove individual screenings while keeping the film selected
 
 ### Schedule Views
@@ -110,9 +111,11 @@ film-schedule-planner/
 ├── script.js               # Application logic
 ├── data/
 │   ├── festivals.json      # List of available festivals
-│   ├── docpoint2026.json   # DocPoint 2026 festival data
-│   ├── template_films.csv  # CSV template for film data
-│   └── template_screenings.csv  # CSV template for screenings
+│   ├── nightvisions_spring2026.json  # Night Visions Spring 2026 data
+│   ├── templates/
+│   │   ├── template_films.csv        # CSV template for film data
+│   │   └── template_screenings.csv   # CSV template for screenings
+│   └── archive/            # Archived past festival data
 ├── scripts/
 │   ├── csv_to_json.py      # CSV to JSON converter
 │   └── README.md           # Data generation guide
@@ -148,8 +151,8 @@ film-schedule-planner/
 The easiest way to add festival data is using the CSV-to-JSON converter:
 
 1. **Edit the CSV templates** in Excel or Google Sheets:
-   - [data/template_films.csv](data/template_films.csv) - Film information
-   - [data/template_screenings.csv](data/template_screenings.csv) - Screening times
+   - [data/templates/template_films.csv](data/templates/template_films.csv) - Film information (includes optional URL column for festival page links)
+   - [data/templates/template_screenings.csv](data/templates/template_screenings.csv) - Screening times
 
 2. **Run the converter script**:
    ```bash
@@ -195,6 +198,7 @@ You can also create JSON files directly. The expected format:
         "title": { "en": "Film Title", "fi": "Elokuvan nimi" },
         "director": "Director Name",
         "duration": "120 min",
+        "url": "https://festival-website.com/films/film-title",
         "description": {
             "en": "English description",
             "fi": "Suomenkielinen kuvaus"
@@ -206,6 +210,8 @@ You can also create JSON files directly. The expected format:
     }
 ]
 ```
+
+> **Note:** The `url` field is optional. If provided, a link icon appears next to the film title linking to the film's page on the festival website.
 
 ## Browser Support
 
