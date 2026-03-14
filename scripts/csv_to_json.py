@@ -21,7 +21,7 @@ def read_films_csv(filepath):
     films = []
 
     try:
-        with open(filepath, 'r', encoding='utf-8') as f:
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
             for row in reader:
                 try:
@@ -44,6 +44,11 @@ def read_films_csv(filepath):
                     },
                     'screenings': []  # Will be populated from screenings CSV
                 }
+
+                # Optional URL field
+                url = row.get('URL', '').strip()
+                if url:
+                    film['url'] = url
                 films.append(film)
 
         print(f"[OK] Read {len(films)} films from {filepath}")
@@ -63,7 +68,7 @@ def read_screenings_csv(filepath):
     screenings_by_film = defaultdict(list)
 
     try:
-        with open(filepath, 'r', encoding='utf-8') as f:
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
             screening_count = 0
 

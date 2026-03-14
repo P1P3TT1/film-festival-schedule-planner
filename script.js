@@ -237,6 +237,7 @@ const translations = {
         selectAll: "Select all",
         deselectAll: "Deselect all",
         mustSee: "Must see",
+        festivalPage: "Festival page",
         removePriority: "Remove priority",
         optimizeSchedule: "Optimize",
         optimizeTooltip: "Create optimal schedule without conflicts",
@@ -282,6 +283,7 @@ const translations = {
         selectAll: "Valitse kaikki",
         deselectAll: "Poista valinnat",
         mustSee: "Pakko nähdä",
+        festivalPage: "Festivaalisivu",
         removePriority: "Poista prioriteetti",
         optimizeSchedule: "Optimoi",
         optimizeTooltip: "Luo optimaalinen aikataulu ilman päällekkäisyyksiä",
@@ -1128,7 +1130,7 @@ function renderCardsView(films, t) {
                     </svg>
                 </button>
                 <div class="film-card-header">
-                    <h3 class="film-title">${title}${isPriority ? `<span class="priority-badge">${t.mustSee}</span>` : ''}</h3>
+                    <h3 class="film-title">${title}${film.url ? `<a class="film-link" href="${film.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="${title} - ${t.festivalPage || 'Festival page'}"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span class="film-link-text">${t.festivalPage || 'Festival page'}</span></a>` : ''}${isPriority ? `<span class="priority-badge">${t.mustSee}</span>` : ''}</h3>
                     ${isSelected ? '<span class="checkmark" aria-hidden="true">✓</span>' : ''}
                 </div>
                 <div class="film-meta">
@@ -1173,6 +1175,7 @@ function renderTableRow(film, t) {
             <td class="title-cell">
                 <div class="title-wrapper">
                     <span class="film-title-text">${title}</span>
+                    ${film.url ? `<a class="film-link film-link-table" href="${film.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="${title} - ${t.festivalPage || 'Festival page'}"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span class="film-link-text">${t.festivalPage || 'Festival page'}</span></a>` : ''}
                     ${isPriority ? `<span class="priority-badge-inline">${t.mustSee}</span>` : ''}
                 </div>
                 <div class="film-description-table">${desc}</div>
@@ -1245,7 +1248,7 @@ function renderListView(films, t) {
                 </button>
                 <div class="film-list-content">
                     <div class="film-list-header">
-                        <h3 class="film-list-title">${title}</h3>
+                        <h3 class="film-list-title">${title}${film.url ? `<a class="film-link film-link-table" href="${film.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="${title} - ${t.festivalPage || 'Festival page'}"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span class="film-link-text">${t.festivalPage || 'Festival page'}</span></a>` : ''}</h3>
                         <div class="film-list-meta">
                             <span class="meta-item">${film.director}</span>
                             <span class="meta-separator">•</span>

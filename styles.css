@@ -1196,6 +1196,56 @@ button svg * {
     margin-bottom: 16px;
 }
 
+.film-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    color: var(--accent-primary);
+    background: rgba(var(--accent-primary-rgb, 99, 102, 241), 0.1);
+    text-decoration: none;
+    margin-left: 8px;
+    vertical-align: middle;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.film-link:hover {
+    background: rgba(var(--accent-primary-rgb, 99, 102, 241), 0.2);
+    transform: scale(1.1);
+}
+
+.film-link .film-link-text {
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-primary, #1a1a2e);
+    color: var(--text-primary, #fff);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+}
+
+.film-link:hover .film-link-text {
+    opacity: 1;
+}
+
+.film-link-table {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 6px;
+}
+
 .screening-badge {
     display: inline-flex;
     align-items: center;
