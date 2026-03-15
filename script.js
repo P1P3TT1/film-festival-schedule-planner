@@ -864,7 +864,7 @@ function renderPdfCalendarView(doc, screenings, t, locale, margin, contentWidth,
     // Group by date - calendar style
     const byDate = {};
     screenings.forEach(screening => {
-        const dateKey = screening.startDate.toISOString().split('T')[0];
+        const dateKey = screening.dateStr.split('T')[0];
         if (!byDate[dateKey]) {
             byDate[dateKey] = [];
         }
@@ -951,7 +951,7 @@ function renderPdfDayView(doc, screenings, t, locale, margin, contentWidth, page
     // Group screenings by date
     const byDate = {};
     screenings.forEach(screening => {
-        const dateKey = screening.startDate.toISOString().split('T')[0];
+        const dateKey = screening.dateStr.split('T')[0];
         if (!byDate[dateKey]) {
             byDate[dateKey] = [];
         }
@@ -1691,7 +1691,7 @@ function renderCalendarView() {
     // Group by date
     const byDate = {};
     allScreenings.forEach(screening => {
-        const dateKey = screening.startDate.toISOString().split('T')[0];
+        const dateKey = screening.dateStr.split('T')[0];
         if (!byDate[dateKey]) {
             byDate[dateKey] = [];
         }
@@ -1774,7 +1774,7 @@ function renderDayView() {
     }
     
     // Get unique dates
-    const dates = [...new Set(allScreenings.map(s => s.startDate.toISOString().split('T')[0]))];
+    const dates = [...new Set(allScreenings.map(s => s.dateStr.split('T')[0]))];
     
     if (!selectedDay || !dates.includes(selectedDay)) {
         selectedDay = dates[0];
@@ -1801,7 +1801,7 @@ function renderDayView() {
     
     // Filter screenings for selected day
     const dayScreenings = allScreenings.filter(s => 
-        s.startDate.toISOString().split('T')[0] === selectedDay
+        s.dateStr.split('T')[0] === selectedDay
     );
     
     // Find time range
