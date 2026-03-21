@@ -2,7 +2,7 @@
 
 A modern, responsive web application for planning your film festival schedule with multiple viewing modes and smart optimization. Browse films in cards, table, or list view, manage screenings, optimize your schedule, and export to iCal or PDF. Fully accessible with keyboard navigation and screen reader support.
 
-**Key Features:** Multiple view types • Smart schedule optimization • Conflict detection • Mobile-optimized • iCal & PDF export • Bilingual support (FI/EN) • Dark mode • Festival page links
+**Key Features:** Multiple view types • Smart schedule optimization • Conflict detection • Mobile-optimized • iCal & PDF export • Bilingual support (FI/EN) • Dark mode • Festival page links • Film release years
 
 ## Features
 
@@ -24,6 +24,7 @@ A modern, responsive web application for planning your film festival schedule wi
 - **Search** - Filter films by title, director, or description
 - **Select/Deselect** - Click on films to add or remove from your schedule
 - **Priority Marking** - Star films as "must see" for schedule optimization
+- **Release Year** - Film release year displayed across all view types (cards, table, list)
 - **Festival Page Links** - Optional external link icon next to film titles, linking to the film's page on the festival website (shown on hover tooltip)
 - **Screening Management** - Remove individual screenings while keeping the film selected
 
@@ -151,7 +152,7 @@ film-schedule-planner/
 The easiest way to add festival data is using the CSV-to-JSON converter:
 
 1. **Edit the CSV templates** in Excel or Google Sheets:
-   - [data/templates/template_films.csv](data/templates/template_films.csv) - Film information (includes optional URL column for festival page links)
+   - [data/templates/template_films.csv](data/templates/template_films.csv) - Film information (includes Year column and optional URL column for festival page links)
    - [data/templates/template_screenings.csv](data/templates/template_screenings.csv) - Screening times
 
 2. **Run the converter script**:
@@ -197,6 +198,7 @@ You can also create JSON files directly. The expected format:
         "id": 1,
         "title": { "en": "Film Title", "fi": "Elokuvan nimi" },
         "director": "Director Name",
+        "year": "2026",
         "duration": "120 min",
         "url": "https://festival-website.com/films/film-title",
         "description": {
@@ -211,7 +213,7 @@ You can also create JSON files directly. The expected format:
 ]
 ```
 
-> **Note:** The `url` field is optional. If provided, a link icon appears next to the film title linking to the film's page on the festival website.
+> **Note:** The `year` and `url` fields are optional. If `year` is provided, it is displayed in all film views. If `url` is provided, a link icon appears next to the film title linking to the film's page on the festival website.
 
 ## Browser Support
 

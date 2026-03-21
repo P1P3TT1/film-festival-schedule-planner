@@ -37,6 +37,7 @@ def read_films_csv(filepath):
                         'fi': row['Title_FI'].strip()
                     },
                     'director': row['Director'].strip(),
+                    'year': row.get('Year', '').strip(),
                     'duration': row['Duration'].strip(),
                     'description': {
                         'en': row['Description_EN'].strip(),
@@ -59,7 +60,7 @@ def read_films_csv(filepath):
         sys.exit(1)
     except KeyError as e:
         print(f"Error: Missing required column in films CSV: {e}")
-        print("Required columns: ID, Title_EN, Title_FI, Director, Duration, Description_EN, Description_FI")
+        print("Required columns: ID, Title_EN, Title_FI, Director, Year, Duration, Description_EN, Description_FI")
         sys.exit(1)
 
 

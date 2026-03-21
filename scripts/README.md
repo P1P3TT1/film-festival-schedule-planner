@@ -25,9 +25,11 @@ This directory contains tools to convert CSV files into the JSON format required
 | Title_EN | English title | Film |
 | Title_FI | Finnish title | Elokuva |
 | Director | Director name | John Smith |
+| Year | Release year (optional) | 2025 |
 | Duration | Film duration | 105 min |
 | Description_EN | English description | Description... |
 | Description_FI | Finnish description | Kuvaus... |
+| URL | Festival page link (optional) | https://... |
 
 **Tips:**
 - Use Excel or Google Sheets to edit the CSV
@@ -58,9 +60,9 @@ Open Excel or Google Sheets and create two sheets:
 
 **Films:**
 ```
-ID | Title_EN | Title_FI | Director | Duration | Description_EN | Description_FI
-1  | Film One | Elokuva 1 | Director A | 90 min | English desc | Finnish desc
-2  | Film Two | Elokuva 2 | Director B | 120 min | English desc | Finnish desc
+ID | Title_EN | Title_FI | Director | Year | Duration | Description_EN | Description_FI | URL
+1  | Film One | Elokuva 1 | Director A | 2025 | 90 min | English desc | Finnish desc | https://...
+2  | Film Two | Elokuva 2 | Director B | 1987 | 120 min | English desc | Finnish desc | https://...
 ```
 
 **Screenings:**

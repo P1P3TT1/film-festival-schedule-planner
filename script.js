@@ -252,6 +252,7 @@ const translations = {
         viewTable: "Table",
         viewCompactList: "List",
         title: "Title",
+        year: "Year",
         duration: "Duration",
         select: "Select",
         jumpToSchedule: "To Schedule"
@@ -298,6 +299,7 @@ const translations = {
         viewTable: "Taulukko",
         viewCompactList: "Lista",
         title: "Nimi",
+        year: "Vuosi",
         duration: "Kesto",
         select: "Valitse",
         jumpToSchedule: "Aikatauluun"
@@ -1135,6 +1137,7 @@ function renderCardsView(films, t) {
                 </div>
                 <div class="film-meta">
                     <span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg> ${film.director}</span>
+                    ${film.year ? `<span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> ${film.year}</span>` : ''}
                     <span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12,6 12,12 16,14"></polyline></svg> ${film.duration}</span>
                 </div>
                 <p class="film-description">${desc}</p>
@@ -1181,6 +1184,7 @@ function renderTableRow(film, t) {
                 <div class="film-description-table">${desc}</div>
             </td>
             <td class="director-cell">${film.director}</td>
+            <td class="year-cell">${film.year || ''}</td>
             <td class="duration-cell">${film.duration}</td>
             <td class="screenings-cell">
                 <span class="screening-count">${availableScreeningsCount}</span>
@@ -1206,6 +1210,7 @@ function renderTableView(films, t) {
                     </th>
                     <th scope="col">${t.title}</th>
                     <th scope="col">${t.director}</th>
+                    <th scope="col">${t.year}</th>
                     <th scope="col">${t.duration}</th>
                     <th scope="col">${t.screenings}</th>
                     <th scope="col">
@@ -1251,6 +1256,8 @@ function renderListView(films, t) {
                         <h3 class="film-list-title">${title}${film.url ? `<a class="film-link film-link-table" href="${film.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="${title} - ${t.festivalPage || 'Festival page'}"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span class="film-link-text">${t.festivalPage || 'Festival page'}</span></a>` : ''}</h3>
                         <div class="film-list-meta">
                             <span class="meta-item">${film.director}</span>
+                            ${film.year ? `<span class="meta-separator">•</span>
+                            <span class="meta-item">${film.year}</span>` : ''}
                             <span class="meta-separator">•</span>
                             <span class="meta-item">${film.duration}</span>
                             <span class="meta-separator">•</span>
