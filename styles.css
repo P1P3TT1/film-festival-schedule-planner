@@ -707,14 +707,41 @@ button svg * {
 
 /* Search Filters */
 .filter-toggle-btn {
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: var(--input-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-toggle-btn:hover {
+    border-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.filter-toggle-btn.active {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
 }
 
 .search-filters {
-    display: flex;
+    display: none;
     gap: 24px;
     margin-top: 12px;
     flex-wrap: wrap;
+}
+
+.search-filters.visible {
+    display: flex;
 }
 
 .filter-group {
@@ -768,6 +795,110 @@ button svg * {
 .filter-separator {
     color: var(--text-muted);
     font-size: 0.85rem;
+}
+
+/* Genre filter chips in filter panel */
+.filter-group-genre {
+    flex-basis: 100%;
+}
+
+.genre-chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+}
+
+.genre-filter-chip {
+    padding: 4px 12px;
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+    background: var(--input-bg);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.genre-filter-chip:hover {
+    border-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.genre-filter-chip.active {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: #fff;
+}
+
+.genre-clear-link {
+    background: none;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    color: var(--accent-primary);
+    cursor: pointer;
+    padding: 4px 8px;
+    text-decoration: underline;
+}
+
+.genre-clear-link:hover {
+    opacity: 0.8;
+}
+
+/* Filter badge on toggle button */
+.filter-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 9px;
+    background: var(--accent-primary);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+/* Genre display in card view */
+.film-genres {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.genre-chip {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    background: var(--accent-primary);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.genre-extra {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* Genre display in list and table views */
+.film-genres-list,
+.film-genres-table {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 2px;
 }
 
 /* Films container - base styles and view variants */
@@ -1983,41 +2114,9 @@ button svg * {
         min-width: auto;
     }
 
-    .filter-toggle-btn {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        margin-top: 10px;
-        padding: 8px 14px;
-        background: var(--input-bg);
-        border: 1px solid var(--glass-border);
-        border-radius: 10px;
-        font-family: 'DM Sans', sans-serif;
-        font-size: 0.85rem;
-        font-weight: 500;
-        color: var(--text-secondary);
-        cursor: pointer;
-        transition: all 0.2s ease;
-    }
-
-    .filter-toggle-btn:hover {
-        border-color: var(--accent-primary);
-        color: var(--text-primary);
-    }
-
-    .filter-toggle-btn.active {
-        border-color: var(--accent-primary);
-        color: var(--accent-primary);
-    }
-
     .search-filters {
-        display: none;
         flex-direction: column;
         gap: 12px;
-    }
-
-    .search-filters.visible {
-        display: flex;
     }
 }
 

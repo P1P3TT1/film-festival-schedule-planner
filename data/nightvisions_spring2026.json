@@ -9,6 +9,19 @@
     "year": "2025",
     "duration": "89 min",
     "url": "https://www.nightvisions.info/wp/portfolio/affection/",
+    "genres": {
+      "en": [
+        "Science Fiction",
+        "Horror",
+        "Thriller"
+      ],
+      "fi": [
+        "Sci-fi",
+        "Kauhu",
+        "Trilleri"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1339210-affection",
     "description": {
       "en": "",
       "fi": ""
@@ -38,6 +51,17 @@
     "year": "2025",
     "duration": "128 min",
     "url": "https://www.nightvisions.info/wp/portfolio/alpha/",
+    "genres": {
+      "en": [
+        "Drama",
+        "Horror"
+      ],
+      "fi": [
+        "Draama",
+        "Kauhu"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/person/1392433-julia-ducournau",
     "description": {
       "en": "",
       "fi": ""
@@ -59,6 +83,17 @@
     "year": "1968",
     "duration": "92 min",
     "url": "https://www.nightvisions.info/wp/portfolio/astro-zombies/",
+    "genres": {
+      "en": [
+        "Horror",
+        "Science Fiction"
+      ],
+      "fi": [
+        "Kauhu",
+        "Sci-fi"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/27831-the-astro-zombies",
     "description": {
       "en": "",
       "fi": ""
@@ -77,13 +112,26 @@
   {
     "id": 4,
     "title": {
-      "en": "At the Earth’s Core",
-      "fi": "At the Earth’s Core"
+      "en": "At the Earth's Core",
+      "fi": "At the Earth's Core"
     },
     "director": "Kevin Connor",
     "year": "1976",
     "duration": "89 min",
     "url": "https://www.nightvisions.info/wp/portfolio/at-the-earths-core/",
+    "genres": {
+      "en": [
+        "Adventure",
+        "Fantasy",
+        "Science Fiction"
+      ],
+      "fi": [
+        "Seikkailu",
+        "Fantasia",
+        "Sci-fi"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/26398-at-the-earth-s-core",
     "description": {
       "en": "",
       "fi": ""
@@ -105,6 +153,19 @@
     "year": "1986",
     "duration": "95 min",
     "url": "https://www.nightvisions.info/wp/portfolio/a-better-tomorrow/",
+    "genres": {
+      "en": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "fi": [
+        "Toiminta",
+        "Rikos",
+        "Draama"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/11471",
     "description": {
       "en": "",
       "fi": ""
@@ -126,6 +187,17 @@
     "year": "1974",
     "duration": "91 min",
     "url": "https://www.nightvisions.info/wp/portfolio/captain-kronos-vampire-hunter/",
+    "genres": {
+      "en": [
+        "Horror",
+        "Adventure"
+      ],
+      "fi": [
+        "Kauhu",
+        "Seikkailu"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/18979-captain-kronos-vampire-hunter",
     "description": {
       "en": "",
       "fi": ""
@@ -147,6 +219,19 @@
     "year": "1983",
     "duration": "100 min",
     "url": "https://www.nightvisions.info/wp/portfolio/challenge-of-the-lady-ninja/",
+    "genres": {
+      "en": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "fi": [
+        "Toiminta",
+        "Seikkailu",
+        "Trilleri"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/157389-challenge-of-the-lady-ninja",
     "description": {
       "en": "",
       "fi": ""
@@ -168,6 +253,18 @@
     "year": "2025",
     "duration": "90 min",
     "url": "https://www.nightvisions.info/wp/portfolio/chao/",
+    "genres": {
+      "en": [
+        "Animation",
+        "Comedy",
+        "Fantasy"
+      ],
+      "fi": [
+        "Animaatio",
+        "Komedia",
+        "Fantasia"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -197,6 +294,14 @@
     "year": "2025",
     "duration": "94 min",
     "url": "https://www.nightvisions.info/wp/portfolio/the-curse/",
+    "genres": {
+      "en": [
+        "Horror"
+      ],
+      "fi": [
+        "Kauhu"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -222,6 +327,16 @@
     "year": "2025",
     "duration": "102 min",
     "url": "https://www.nightvisions.info/wp/portfolio/deathgasm-ii-goremageddon/",
+    "genres": {
+      "en": [
+        "Comedy",
+        "Horror"
+      ],
+      "fi": [
+        "Komedia",
+        "Kauhu"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -247,6 +362,19 @@
     "year": "2025",
     "duration": "102 min",
     "url": "https://www.nightvisions.info/wp/portfolio/deathstalker/",
+    "genres": {
+      "en": [
+        "Fantasy",
+        "Action",
+        "Adventure"
+      ],
+      "fi": [
+        "Fantasia",
+        "Toiminta",
+        "Seikkailu"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1253000-deathstalker",
     "description": {
       "en": "",
       "fi": ""
@@ -276,6 +404,21 @@
     "year": "2025",
     "duration": "102 min",
     "url": "https://www.nightvisions.info/wp/portfolio/dog-51/",
+    "genres": {
+      "en": [
+        "Thriller",
+        "Science Fiction",
+        "Crime",
+        "Action"
+      ],
+      "fi": [
+        "Trilleri",
+        "Sci-fi",
+        "Rikos",
+        "Toiminta"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1266798-chien-51",
     "description": {
       "en": "",
       "fi": ""
@@ -301,6 +444,17 @@
     "year": "2025",
     "duration": "83 min",
     "url": "https://www.nightvisions.info/wp/portfolio/dolly/",
+    "genres": {
+      "en": [
+        "Horror",
+        "Thriller"
+      ],
+      "fi": [
+        "Kauhu",
+        "Trilleri"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1309083-dolly",
     "description": {
       "en": "",
       "fi": ""
@@ -326,6 +480,21 @@
     "year": "1965",
     "duration": "83 min",
     "url": "https://www.nightvisions.info/wp/portfolio/faster-pussycat-kill-kill/",
+    "genres": {
+      "en": [
+        "Action",
+        "Comedy",
+        "Crime",
+        "Thriller"
+      ],
+      "fi": [
+        "Toiminta",
+        "Komedia",
+        "Rikos",
+        "Trilleri"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/315-faster-pussycat-kill-kill",
     "description": {
       "en": "",
       "fi": ""
@@ -351,6 +520,19 @@
     "year": "2025",
     "duration": "106 min",
     "url": "https://www.nightvisions.info/wp/portfolio/fucktoys/",
+    "genres": {
+      "en": [
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ],
+      "fi": [
+        "Komedia",
+        "Draama",
+        "Fantasia"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1422008-fucktoys",
     "description": {
       "en": "",
       "fi": ""
@@ -376,6 +558,19 @@
     "year": "1973",
     "duration": "88 min",
     "url": "https://www.nightvisions.info/wp/portfolio/the-golden-voyage-of-sinbad/",
+    "genres": {
+      "en": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "fi": [
+        "Toiminta",
+        "Seikkailu",
+        "Fantasia"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/17897-the-golden-voyage-of-sinbad",
     "description": {
       "en": "",
       "fi": ""
@@ -397,6 +592,18 @@
     "year": "2026",
     "duration": "104 min",
     "url": "https://www.nightvisions.info/wp/portfolio/grind/",
+    "genres": {
+      "en": [
+        "Comedy",
+        "Horror",
+        "Science Fiction"
+      ],
+      "fi": [
+        "Komedia",
+        "Kauhu",
+        "Sci-fi"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -422,6 +629,19 @@
     "year": "2025",
     "duration": "100 min",
     "url": "https://www.nightvisions.info/wp/portfolio/kraken/",
+    "genres": {
+      "en": [
+        "Horror",
+        "Action",
+        "Thriller"
+      ],
+      "fi": [
+        "Kauhu",
+        "Toiminta",
+        "Trilleri"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1110034-kraken",
     "description": {
       "en": "",
       "fi": ""
@@ -447,6 +667,17 @@
     "year": "2025",
     "duration": "110 min",
     "url": "https://www.nightvisions.info/wp/portfolio/kreator-hate-hope/",
+    "genres": {
+      "en": [
+        "Documentary",
+        "Music"
+      ],
+      "fi": [
+        "Dokumentti",
+        "Musiikki"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1230332-kreator-hate-hope",
     "description": {
       "en": "",
       "fi": ""
@@ -472,6 +703,17 @@
     "year": "1980",
     "duration": "87 min",
     "url": "https://www.nightvisions.info/wp/portfolio/maniac/",
+    "genres": {
+      "en": [
+        "Horror",
+        "Thriller"
+      ],
+      "fi": [
+        "Kauhu",
+        "Trilleri"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/27346-maniac",
     "description": {
       "en": "",
       "fi": ""
@@ -486,13 +728,25 @@
   {
     "id": 21,
     "title": {
-      "en": "Mum, I’m Alien Pregnant",
-      "fi": "Mum, I’m Alien Pregnant"
+      "en": "Mum, I'm Alien Pregnant",
+      "fi": "Mum, I'm Alien Pregnant"
     },
     "director": "Sean Wallace; Jordan Mark Windsor",
     "year": "2026",
     "duration": "95 min",
     "url": "https://www.nightvisions.info/wp/portfolio/mum-im-alien-pregnant/",
+    "genres": {
+      "en": [
+        "Comedy",
+        "Horror",
+        "Science Fiction"
+      ],
+      "fi": [
+        "Komedia",
+        "Kauhu",
+        "Sci-fi"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -518,6 +772,18 @@
     "year": "2025",
     "duration": "90 min",
     "url": "https://www.nightvisions.info/wp/portfolio/obex/",
+    "genres": {
+      "en": [
+        "Fantasy",
+        "Horror",
+        "Science Fiction"
+      ],
+      "fi": [
+        "Fantasia",
+        "Kauhu",
+        "Sci-fi"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -543,6 +809,16 @@
     "year": "2025",
     "duration": "108 min",
     "url": "https://www.nightvisions.info/wp/portfolio/obsession/",
+    "genres": {
+      "en": [
+        "Horror",
+        "Comedy"
+      ],
+      "fi": [
+        "Kauhu",
+        "Komedia"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -564,6 +840,16 @@
     "year": "2025",
     "duration": "80 min",
     "url": "https://www.nightvisions.info/wp/portfolio/rave-on/",
+    "genres": {
+      "en": [
+        "Drama",
+        "Music"
+      ],
+      "fi": [
+        "Draama",
+        "Musiikki"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -589,6 +875,19 @@
     "year": "2026",
     "duration": "104 min",
     "url": "https://www.nightvisions.info/wp/portfolio/ready-or-not-2-here-i-come/",
+    "genres": {
+      "en": [
+        "Horror",
+        "Comedy",
+        "Thriller"
+      ],
+      "fi": [
+        "Kauhu",
+        "Komedia",
+        "Trilleri"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1266127-ready-or-not-here-i-come",
     "description": {
       "en": "",
       "fi": ""
@@ -610,6 +909,14 @@
     "year": "2003",
     "duration": "99 min",
     "url": "https://www.nightvisions.info/wp/portfolio/the-room/",
+    "genres": {
+      "en": [
+        "Drama"
+      ],
+      "fi": [
+        "Draama"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -635,6 +942,18 @@
     "year": "2026",
     "duration": "112 min",
     "url": "https://www.nightvisions.info/wp/portfolio/saccharine/",
+    "genres": {
+      "en": [
+        "Drama",
+        "Horror",
+        "Science Fiction"
+      ],
+      "fi": [
+        "Draama",
+        "Kauhu",
+        "Sci-fi"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -664,6 +983,17 @@
     "year": "2025",
     "duration": "85 min",
     "url": "https://www.nightvisions.info/wp/portfolio/self-help/",
+    "genres": {
+      "en": [
+        "Horror",
+        "Thriller"
+      ],
+      "fi": [
+        "Kauhu",
+        "Trilleri"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1485629-self-help",
     "description": {
       "en": "",
       "fi": ""
@@ -689,6 +1019,17 @@
     "year": "2025",
     "duration": "101 min",
     "url": "https://www.nightvisions.info/wp/portfolio/sicko/",
+    "genres": {
+      "en": [
+        "Crime",
+        "Thriller"
+      ],
+      "fi": [
+        "Rikos",
+        "Trilleri"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1535733",
     "description": {
       "en": "",
       "fi": ""
@@ -714,6 +1055,16 @@
     "year": "2025",
     "duration": "97 min",
     "url": "https://www.nightvisions.info/wp/portfolio/positions/",
+    "genres": {
+      "en": [
+        "Comedy",
+        "Thriller"
+      ],
+      "fi": [
+        "Komedia",
+        "Trilleri"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -739,6 +1090,14 @@
     "year": "2026",
     "duration": "103 min",
     "url": "https://www.nightvisions.info/wp/portfolio/tango-europa/",
+    "genres": {
+      "en": [
+        "Comedy"
+      ],
+      "fi": [
+        "Komedia"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -757,13 +1116,24 @@
   {
     "id": 32,
     "title": {
-      "en": "Theatre of Horrors: The Sordid Story of Paris’ Grand Guignol",
-      "fi": "Theatre of Horrors: The Sordid Story of Paris’ Grand Guignol"
+      "en": "Theatre of Horrors: The Sordid Story of Paris' Grand Guignol",
+      "fi": "Theatre of Horrors: The Sordid Story of Paris' Grand Guignol"
     },
     "director": "David Gregory",
     "year": "2025",
     "duration": "90 min",
     "url": "https://www.nightvisions.info/wp/portfolio/theatre-of-horrors-the-sordid-story-of-paris-grand-guignol/",
+    "genres": {
+      "en": [
+        "Documentary",
+        "Horror"
+      ],
+      "fi": [
+        "Dokumentti",
+        "Kauhu"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1541286-theatre-of-horrors-the-sordid-story-of-paris-grand-guignol",
     "description": {
       "en": "",
       "fi": ""
@@ -785,6 +1155,19 @@
     "year": "2026",
     "duration": "94 min",
     "url": "https://www.nightvisions.info/wp/portfolio/they-will-kill-you/",
+    "genres": {
+      "en": [
+        "Action",
+        "Comedy",
+        "Horror"
+      ],
+      "fi": [
+        "Toiminta",
+        "Komedia",
+        "Kauhu"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/1292695-they-will-kill-you",
     "description": {
       "en": "",
       "fi": ""
@@ -806,6 +1189,18 @@
     "year": "2025",
     "duration": "80 min",
     "url": "https://www.nightvisions.info/wp/portfolio/the-true-beauty-of-being-bitten-by-a-tick/",
+    "genres": {
+      "en": [
+        "Comedy",
+        "Drama",
+        "Mystery"
+      ],
+      "fi": [
+        "Komedia",
+        "Draama",
+        "Mysteeri"
+      ]
+    },
     "description": {
       "en": "",
       "fi": ""
@@ -831,6 +1226,15 @@
     "year": "2024",
     "duration": "105 min",
     "url": "https://www.nightvisions.info/wp/portfolio/tura/",
+    "genres": {
+      "en": [
+        "Documentary"
+      ],
+      "fi": [
+        "Dokumentti"
+      ]
+    },
+    "tmdb_url": "https://www.themoviedb.org/movie/451530-tura",
     "description": {
       "en": "",
       "fi": ""

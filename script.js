@@ -151,6 +151,7 @@ async function changeFestival(festivalId) {
         filterYearMax = null;
         filterDurationMin = null;
         filterDurationMax = null;
+        selectedGenres.clear();
         document.getElementById('filterYearMin').value = '';
         document.getElementById('filterYearMax').value = '';
         document.getElementById('filterDurationMin').value = '';
@@ -161,6 +162,7 @@ async function changeFestival(festivalId) {
         updateHeadersForFestival();
         initializeAvailableDates();
         renderDateSelector();
+        renderGenreFilterChips();
         renderFilms();
         renderSchedule();
         updateDownloadButton();
@@ -195,6 +197,7 @@ async function initializeApp() {
             updateHeadersForFestival();
             initializeAvailableDates();
             initializeFilmsViewSwitcher();
+            renderGenreFilterChips();
             renderFilms();
             renderSchedule();
             renderDateSelector();
@@ -266,7 +269,9 @@ const translations = {
         durationFilter: "Duration (min)",
         filters: "Filters",
         select: "Select",
-        jumpToSchedule: "To Schedule"
+        jumpToSchedule: "To Schedule",
+        genre: "Genre",
+        clearGenres: "Clear"
     },
     fi: {
         headerTitle: "",
@@ -316,7 +321,9 @@ const translations = {
         durationFilter: "Kesto (min)",
         filters: "Suodattimet",
         select: "Valitse",
-        jumpToSchedule: "Aikatauluun"
+        jumpToSchedule: "Aikatauluun",
+        genre: "Lajityyppi",
+        clearGenres: "Tyhjennä"
     }
 };
 
@@ -330,6 +337,7 @@ let filterYearMin = null;
 let filterYearMax = null;
 let filterDurationMin = null;
 let filterDurationMax = null;
+let selectedGenres = new Set(); // Genre filter selections
 let currentLang = 'fi';
 let availableDates = new Set(); // Dates the user is available (all by default)
 let currentFilmsView = localStorage.getItem('filmsView') || 'cards'; // 'cards', 'table', or 'list'
@@ -386,6 +394,8 @@ function changeLanguage(lang, event) {
     document.getElementById('yearFilterLabel').textContent = t.yearFilter;
     document.getElementById('durationFilterLabel').textContent = t.durationFilter;
     document.getElementById('filterToggleText').textContent = t.filters;
+    document.getElementById('genreFilterLabel').textContent = t.genre;
+    renderGenreFilterChips();
     updateSelectAllButton();
     document.documentElement.lang = lang;
 
@@ -418,12 +428,106 @@ function handleFilterChange() {
     filterYearMax = yearMax ? parseInt(yearMax) : null;
     filterDurationMin = durMin ? parseInt(durMin) : null;
     filterDurationMax = durMax ? parseInt(durMax) : null;
+    updateFilterBadge();
     renderFilms();
 }
 
 function handleSearch() {
     searchQuery = document.getElementById('searchInput').value.toLowerCase();
     renderFilms();
+}
+
+// Get all unique genres from current festival data (uses English keys for matching)
+function getAllGenres() {
+    const genres = new Set();
+    festivalData.forEach(film => {
+        if (film.genres && film.genres.en) {
+            film.genres.en.forEach(g => genres.add(g));
+        }
+    });
+    return Array.from(genres).sort();
+}
+
+// Toggle a genre in the filter
+function toggleGenreFilter(genre) {
+    if (selectedGenres.has(genre)) {
+        selectedGenres.delete(genre);
+    } else {
+        selectedGenres.add(genre);
+    }
+    renderGenreFilterChips();
+    updateFilterBadge();
+    renderFilms();
+}
+
+// Clear all genre filters
+function clearGenreFilters() {
+    selectedGenres.clear();
+    renderGenreFilterChips();
+    updateFilterBadge();
+    renderFilms();
+}
+
+// Render genre filter chips inside the filter panel
+function renderGenreFilterChips() {
+    const container = document.getElementById('genreChipsContainer');
+    if (!container) return;
+    const allGenres = getAllGenres();
+    const t = translations[currentLang];
+
+    if (allGenres.length === 0) {
+        container.closest('.filter-group').style.display = 'none';
+        return;
+    }
+    container.closest('.filter-group').style.display = '';
+
+    container.innerHTML = allGenres.map(genre => {
+        const displayName = getGenreDisplayName(genre);
+        const isActive = selectedGenres.has(genre);
+        return `<button class="genre-filter-chip ${isActive ? 'active' : ''}" onclick="toggleGenreFilter('${genre.replace(/'/g, "\\'")}')">${displayName}</button>`;
+    }).join('') + (selectedGenres.size > 0 ? `<button class="genre-clear-link" onclick="clearGenreFilters()">${t.clearGenres}</button>` : '');
+}
+
+// Get display name for a genre in the current language
+function getGenreDisplayName(genreEn) {
+    // Find the first film that has this genre and return the corresponding localized name
+    for (const film of festivalData) {
+        if (film.genres && film.genres.en) {
+            const idx = film.genres.en.indexOf(genreEn);
+            if (idx !== -1 && film.genres[currentLang] && film.genres[currentLang][idx]) {
+                return film.genres[currentLang][idx];
+            }
+        }
+    }
+    return genreEn;
+}
+
+// Get film's genres as display text for the current language
+function getFilmGenres(film) {
+    if (!film.genres || !film.genres[currentLang] || film.genres[currentLang].length === 0) return [];
+    return film.genres[currentLang];
+}
+
+// Update the filter toggle button badge count
+function updateFilterBadge() {
+    const btn = document.getElementById('filterToggleBtn');
+    if (!btn) return;
+    let count = 0;
+    if (filterYearMin !== null || filterYearMax !== null) count++;
+    if (filterDurationMin !== null || filterDurationMax !== null) count++;
+    count += selectedGenres.size;
+
+    let badge = btn.querySelector('.filter-badge');
+    if (count > 0) {
+        if (!badge) {
+            badge = document.createElement('span');
+            badge.className = 'filter-badge';
+            btn.appendChild(badge);
+        }
+        badge.textContent = count;
+    } else if (badge) {
+        badge.remove();
+    }
 }
 
 function getFilteredFilms() {
@@ -469,6 +573,13 @@ function getFilteredFilms() {
             const minutes = parseInt(durationMatch[1]);
             if (filterDurationMin && minutes < filterDurationMin) return false;
             if (filterDurationMax && minutes > filterDurationMax) return false;
+        }
+
+        // Genre filter (OR logic: film must have at least one selected genre)
+        if (selectedGenres.size > 0) {
+            const filmGenres = film.genres && film.genres.en ? film.genres.en.map(g => g.toLowerCase()) : [];
+            const hasMatchingGenre = [...selectedGenres].some(g => filmGenres.includes(g.toLowerCase()));
+            if (!hasMatchingGenre) return false;
         }
 
         return true;
@@ -1199,6 +1310,7 @@ function renderCardsView(films, t) {
                     ${film.year ? `<span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> ${film.year}</span>` : ''}
                     <span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12,6 12,12 16,14"></polyline></svg> ${film.duration}</span>
                 </div>
+                ${(() => { const genres = getFilmGenres(film); if (genres.length === 0) return ''; const chip = `<span class="genre-chip">${genres[0]}</span>`; const rest = genres.slice(1).join(', '); return `<div class="film-genres">${chip}${rest ? `<span class="genre-extra">${rest}</span>` : ''}</div>`; })()}
                 <p class="film-description">${desc}</p>
                 <span class="screening-badge">
                     <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -1241,6 +1353,7 @@ function renderTableRow(film, t) {
                     ${isPriority ? `<span class="priority-badge-inline">${t.mustSee}</span>` : ''}
                 </div>
                 <div class="film-description-table">${desc}</div>
+                ${(() => { const genres = getFilmGenres(film); return genres.length > 0 ? `<div class="film-genres-table">${genres.join(', ')}</div>` : ''; })()}
             </td>
             <td class="director-cell">${film.director}</td>
             <td class="year-cell">${film.year || ''}</td>
@@ -1322,6 +1435,7 @@ function renderListView(films, t) {
                             <span class="meta-separator">•</span>
                             <span class="meta-item">${availableScreeningsCount} ${screeningText}</span>
                         </div>
+                        ${(() => { const genres = getFilmGenres(film); return genres.length > 0 ? `<div class="film-genres-list">${genres.join(', ')}</div>` : ''; })()}
                     </div>
                     <p class="film-list-description">${desc}</p>
                 </div>

@@ -1,3 +1,3 @@
-ID,Title_EN,Title_FI,Director,Year,Duration,Description_EN,Description_FI,URL
-1,Film 1,Elokuva 1,Ohjaaja 1,2026,X min,Description,Kuvaus,https://example.com/film1
-2,Film 2,Elokuva 2,Ohjaaja 2,2026,Y min,Description,Kuvaus,https://example.com/film2
+ID,Title_EN,Title_FI,Director,Year,Duration,Genre_EN,Genre_FI,Description_EN,Description_FI,URL
+1,Film 1,Elokuva 1,Ohjaaja 1,2026,X min,Horror|Thriller,Kauhu|Trilleri,Description,Kuvaus,https://example.com/film1
+2,Film 2,Elokuva 2,Ohjaaja 2,2026,Y min,Drama,Draama,Description,Kuvaus,https://example.com/film2

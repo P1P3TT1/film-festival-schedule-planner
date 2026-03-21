@@ -2,7 +2,7 @@
 
 A modern, responsive web application for planning your film festival schedule with multiple viewing modes and smart optimization. Browse films in cards, table, or list view, manage screenings, optimize your schedule, and export to iCal or PDF. Fully accessible with keyboard navigation and screen reader support.
 
-**Key Features:** Multiple view types • Smart schedule optimization • Conflict detection • Mobile-optimized • iCal & PDF export • Bilingual support (FI/EN) • Dark mode • Festival page links • Film release years
+**Key Features:** Multiple view types • Smart schedule optimization • Conflict detection • Mobile-optimized • iCal & PDF export • Bilingual support (FI/EN) • Dark mode • Festival page links • Film release years • Genre display & filtering
 
 ## Features
 
@@ -21,10 +21,11 @@ A modern, responsive web application for planning your film festival schedule wi
   - **Table View** - Data-dense table with sortable columns for quick scanning
   - **Compact List View** - Mobile-optimized horizontal layout with inline metadata
 - **View Persistence** - Your preferred view is saved and restored on reload
-- **Search & Filters** - Filter films by title, director, or description, with additional min/max range filters for release year and duration (collapsible on mobile)
+- **Search & Filters** - Filter films by title, director, or description, with additional min/max range filters for release year and duration, and multi-select genre filter chips (collapsible filter panel with active-filter badge count)
 - **Select/Deselect** - Click on films to add or remove from your schedule
 - **Priority Marking** - Star films as "must see" for schedule optimization
 - **Release Year** - Film release year displayed across all view types (cards, table, list)
+- **Genre Display** - Bilingual genre metadata shown as a coloured chip (first genre) plus muted text (additional genres) in card view, and as plain comma-separated text in list and table views
 - **Festival Page Links** - Optional external link icon next to film titles, linking to the film's page on the festival website (shown on hover tooltip)
 - **Screening Management** - Remove individual screenings while keeping the film selected
 
@@ -152,7 +153,7 @@ film-schedule-planner/
 The easiest way to add festival data is using the CSV-to-JSON converter:
 
 1. **Edit the CSV templates** in Excel or Google Sheets:
-   - [data/templates/template_films.csv](data/templates/template_films.csv) - Film information (includes Year column and optional URL column for festival page links)
+   - [data/templates/template_films.csv](data/templates/template_films.csv) - Film information (includes Year, Genre_EN/Genre_FI, and optional URL columns)
    - [data/templates/template_screenings.csv](data/templates/template_screenings.csv) - Screening times
 
 2. **Run the converter script**:
@@ -201,6 +202,10 @@ You can also create JSON files directly. The expected format:
         "year": "2026",
         "duration": "120 min",
         "url": "https://festival-website.com/films/film-title",
+        "genres": {
+            "en": ["Horror", "Thriller"],
+            "fi": ["Kauhu", "Trilleri"]
+        },
         "description": {
             "en": "English description",
             "fi": "Suomenkielinen kuvaus"
@@ -213,7 +218,7 @@ You can also create JSON files directly. The expected format:
 ]
 ```
 
-> **Note:** The `year` and `url` fields are optional. If `year` is provided, it is displayed in all film views. If `url` is provided, a link icon appears next to the film title linking to the film's page on the festival website.
+> **Note:** The `year`, `url`, and `genres` fields are optional. If `year` is provided, it is displayed in all film views. If `url` is provided, a link icon appears next to the film title linking to the film's page on the festival website. If `genres` is provided, genres are displayed beneath the film metadata and available as filter chips in the filter panel.
 
 ## Browser Support
 

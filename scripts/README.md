@@ -27,6 +27,8 @@ This directory contains tools to convert CSV files into the JSON format required
 | Director | Director name | John Smith |
 | Year | Release year (optional) | 2025 |
 | Duration | Film duration | 105 min |
+| Genre_EN | English genres, pipe-separated (optional) | Horror\|Thriller |
+| Genre_FI | Finnish genres, pipe-separated (optional) | Kauhu\|Trilleri |
 | Description_EN | English description | Description... |
 | Description_FI | Finnish description | Kuvaus... |
 | URL | Festival page link (optional) | https://... |
@@ -60,9 +62,9 @@ Open Excel or Google Sheets and create two sheets:
 
 **Films:**
 ```
-ID | Title_EN | Title_FI | Director | Year | Duration | Description_EN | Description_FI | URL
-1  | Film One | Elokuva 1 | Director A | 2025 | 90 min | English desc | Finnish desc | https://...
-2  | Film Two | Elokuva 2 | Director B | 1987 | 120 min | English desc | Finnish desc | https://...
+ID | Title_EN | Title_FI | Director | Year | Duration | Genre_EN | Genre_FI | Description_EN | Description_FI | URL
+1  | Film One | Elokuva 1 | Director A | 2025 | 90 min | Horror|Thriller | Kauhu|Trilleri | English desc | Finnish desc | https://...
+2  | Film Two | Elokuva 2 | Director B | 1987 | 120 min | Drama | Draama | English desc | Finnish desc | https://...
 ```
 
 **Screenings:**

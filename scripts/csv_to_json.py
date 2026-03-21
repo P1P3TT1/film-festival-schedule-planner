@@ -46,6 +46,15 @@ def read_films_csv(filepath):
                     'screenings': []  # Will be populated from screenings CSV
                 }
 
+                # Optional genre fields (pipe-separated, e.g. "Horror|Thriller")
+                genre_en = row.get('Genre_EN', '').strip()
+                genre_fi = row.get('Genre_FI', '').strip()
+                if genre_en or genre_fi:
+                    film['genres'] = {
+                        'en': [g.strip() for g in genre_en.split('|') if g.strip()] if genre_en else [],
+                        'fi': [g.strip() for g in genre_fi.split('|') if g.strip()] if genre_fi else []
+                    }
+
                 # Optional URL field
                 url = row.get('URL', '').strip()
                 if url:
