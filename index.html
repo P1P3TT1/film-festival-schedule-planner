@@ -117,6 +117,32 @@
                         aria-labelledby="searchLabel"
                     >
                 </div>
+                <button class="filter-toggle-btn" id="filterToggleBtn" onclick="toggleFilters()" aria-expanded="false" aria-controls="searchFilters">
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="4" y1="6" x2="20" y2="6"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                        <line x1="11" y1="18" x2="13" y2="18"></line>
+                    </svg>
+                    <span id="filterToggleText">Suodattimet</span>
+                </button>
+                <div class="search-filters" id="searchFilters">
+                    <div class="filter-group">
+                        <label class="filter-label" id="yearFilterLabel">Vuosi</label>
+                        <div class="filter-range">
+                            <input type="number" id="filterYearMin" class="filter-input" placeholder="Min" oninput="handleFilterChange()" aria-label="Minimum year">
+                            <span class="filter-separator">–</span>
+                            <input type="number" id="filterYearMax" class="filter-input" placeholder="Max" oninput="handleFilterChange()" aria-label="Maximum year">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label" id="durationFilterLabel">Kesto (min)</label>
+                        <div class="filter-range">
+                            <input type="number" id="filterDurationMin" class="filter-input" placeholder="Min" oninput="handleFilterChange()" aria-label="Minimum duration">
+                            <span class="filter-separator">–</span>
+                            <input type="number" id="filterDurationMax" class="filter-input" placeholder="Max" oninput="handleFilterChange()" aria-label="Maximum duration">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="filmsGrid" class="films-grid" role="list" aria-label="Elokuvat"></div>
         </section>

@@ -705,6 +705,71 @@ button svg * {
     color: var(--text-muted);
 }
 
+/* Search Filters */
+.filter-toggle-btn {
+    display: none;
+}
+
+.search-filters {
+    display: flex;
+    gap: 24px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.filter-range {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.filter-input {
+    width: 72px;
+    padding: 8px 10px;
+    background: var(--input-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    -moz-appearance: textfield;
+}
+
+.filter-input::-webkit-outer-spin-button,
+.filter-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.filter-input:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+}
+
+.filter-input::placeholder {
+    color: var(--text-muted);
+}
+
+.filter-separator {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
 /* Films container - base styles and view variants */
 .films-cards {
     display: grid;
@@ -1916,6 +1981,43 @@ button svg * {
         justify-content: center;
         gap: 12px;
         min-width: auto;
+    }
+
+    .filter-toggle-btn {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 10px;
+        padding: 8px 14px;
+        background: var(--input-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: 10px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--text-secondary);
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .filter-toggle-btn:hover {
+        border-color: var(--accent-primary);
+        color: var(--text-primary);
+    }
+
+    .filter-toggle-btn.active {
+        border-color: var(--accent-primary);
+        color: var(--accent-primary);
+    }
+
+    .search-filters {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .search-filters.visible {
+        display: flex;
     }
 }
 

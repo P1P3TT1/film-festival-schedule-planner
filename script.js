@@ -147,6 +147,14 @@ async function changeFestival(festivalId) {
         priorityFilms.clear();
         availableDates.clear();
         searchQuery = '';
+        filterYearMin = null;
+        filterYearMax = null;
+        filterDurationMin = null;
+        filterDurationMax = null;
+        document.getElementById('filterYearMin').value = '';
+        document.getElementById('filterYearMax').value = '';
+        document.getElementById('filterDurationMin').value = '';
+        document.getElementById('filterDurationMax').value = '';
 
         // Update UI
         populateFestivalSelector(); // Update dropdown to show selected
@@ -254,6 +262,9 @@ const translations = {
         title: "Title",
         year: "Year",
         duration: "Duration",
+        yearFilter: "Year",
+        durationFilter: "Duration (min)",
+        filters: "Filters",
         select: "Select",
         jumpToSchedule: "To Schedule"
     },
@@ -301,6 +312,9 @@ const translations = {
         title: "Nimi",
         year: "Vuosi",
         duration: "Kesto",
+        yearFilter: "Vuosi",
+        durationFilter: "Kesto (min)",
+        filters: "Suodattimet",
         select: "Valitse",
         jumpToSchedule: "Aikatauluun"
     }
@@ -312,6 +326,10 @@ let selectedFilms = new Set();
 let excludedScreenings = new Set(); // Tracks removed screenings as "filmId-dateString"
 let priorityFilms = new Set(); // Films marked as "must see"
 let searchQuery = '';
+let filterYearMin = null;
+let filterYearMax = null;
+let filterDurationMin = null;
+let filterDurationMax = null;
 let currentLang = 'fi';
 let availableDates = new Set(); // Dates the user is available (all by default)
 let currentFilmsView = localStorage.getItem('filmsView') || 'cards'; // 'cards', 'table', or 'list'
@@ -365,6 +383,9 @@ function changeLanguage(lang, event) {
     document.getElementById('optimizeBtn').title = t.optimizeTooltip;
     document.getElementById('jumpToScheduleText').textContent = t.jumpToSchedule;
     document.getElementById('jumpToScheduleBtn').setAttribute('aria-label', t.jumpToSchedule);
+    document.getElementById('yearFilterLabel').textContent = t.yearFilter;
+    document.getElementById('durationFilterLabel').textContent = t.durationFilter;
+    document.getElementById('filterToggleText').textContent = t.filters;
     updateSelectAllButton();
     document.documentElement.lang = lang;
 
@@ -378,6 +399,26 @@ function changeLanguage(lang, event) {
     } else if (currentView === 'day') {
         renderDayView();
     }
+}
+
+function toggleFilters() {
+    const filters = document.getElementById('searchFilters');
+    const btn = document.getElementById('filterToggleBtn');
+    const isVisible = filters.classList.toggle('visible');
+    btn.classList.toggle('active', isVisible);
+    btn.setAttribute('aria-expanded', isVisible);
+}
+
+function handleFilterChange() {
+    const yearMin = document.getElementById('filterYearMin').value;
+    const yearMax = document.getElementById('filterYearMax').value;
+    const durMin = document.getElementById('filterDurationMin').value;
+    const durMax = document.getElementById('filterDurationMax').value;
+    filterYearMin = yearMin ? parseInt(yearMin) : null;
+    filterYearMax = yearMax ? parseInt(yearMax) : null;
+    filterDurationMin = durMin ? parseInt(durMin) : null;
+    filterDurationMax = durMax ? parseInt(durMax) : null;
+    renderFilms();
 }
 
 function handleSearch() {
@@ -407,9 +448,27 @@ function getFilteredFilms() {
         if (searchQuery) {
             const title = typeof film.title === 'object' ? film.title[currentLang] : film.title;
             const desc = typeof film.description === 'object' ? film.description[currentLang] : film.description;
-            return title.toLowerCase().includes(searchQuery) ||
+            const matchesSearch = title.toLowerCase().includes(searchQuery) ||
                    film.director.toLowerCase().includes(searchQuery) ||
                    desc.toLowerCase().includes(searchQuery);
+            if (!matchesSearch) return false;
+        }
+
+        // Year filter
+        if (film.year) {
+            const year = parseInt(film.year);
+            if (filterYearMin && year < filterYearMin) return false;
+            if (filterYearMax && year > filterYearMax) return false;
+        } else {
+            if (filterYearMin || filterYearMax) return false;
+        }
+
+        // Duration filter
+        const durationMatch = film.duration.match(/(\d+)/);
+        if (durationMatch) {
+            const minutes = parseInt(durationMatch[1]);
+            if (filterDurationMin && minutes < filterDurationMin) return false;
+            if (filterDurationMax && minutes > filterDurationMax) return false;
         }
 
         return true;

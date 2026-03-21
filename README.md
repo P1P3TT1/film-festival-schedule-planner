@@ -21,7 +21,7 @@ A modern, responsive web application for planning your film festival schedule wi
   - **Table View** - Data-dense table with sortable columns for quick scanning
   - **Compact List View** - Mobile-optimized horizontal layout with inline metadata
 - **View Persistence** - Your preferred view is saved and restored on reload
-- **Search** - Filter films by title, director, or description
+- **Search & Filters** - Filter films by title, director, or description, with additional min/max range filters for release year and duration (collapsible on mobile)
 - **Select/Deselect** - Click on films to add or remove from your schedule
 - **Priority Marking** - Star films as "must see" for schedule optimization
 - **Release Year** - Film release year displayed across all view types (cards, table, list)
