@@ -1,3 +1,4 @@
-ID,Title_EN,Title_FI,Director,Year,Duration,Genre_EN,Genre_FI,Description_EN,Description_FI,URL
-1,Film 1,Elokuva 1,Ohjaaja 1,2026,X min,Horror|Thriller,Kauhu|Trilleri,Description,Kuvaus,https://example.com/film1
-2,Film 2,Elokuva 2,Ohjaaja 2,2026,Y min,Drama,Draama,Description,Kuvaus,https://example.com/film2
+ID,Title_EN,Title_FI,Director,Year,Duration,Country_EN,Country_FI,Age_Limit,Theme_EN,Theme_FI,Keyword_EN,Keyword_FI,Description_EN,Description_FI,URL_EN,URL_FI
+1,Film 1,Elokuva 1,Ohjaaja 1,2026,X min,Finland,Suomi,K16,Midnight Mayhem,Midnight Mayhem,Horror|Thriller,Kauhu|Trilleri,,,https://example.com/en/film1,https://example.com/fi/elokuva1
+2,Film 2,Elokuva 2,Ohjaaja 2,2026,Y min,Finland|Sweden,Suomi|Ruotsi,S,Nordic Lights,Pohjoiset valot,Drama,Draama,,,https://example.com/en/film2,https://example.com/fi/elokuva2
+3,Shorts Programme,Lyhytelokuvaohjelma,,,Z min,,,,Short Film Programme,Lyhytelokuvaohjelma,,,,,https://example.com/en/shorts,https://example.com/fi/lyhyet
