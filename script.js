@@ -154,6 +154,7 @@ async function changeFestival(festivalId) {
         filterYearMax = null;
         filterDurationMin = null;
         filterDurationMax = null;
+        selectedAgeLimit = null;
         selectedTheme = null;
         selectedKeywords.clear();
         document.getElementById('filterYearMin').value = '';
@@ -166,6 +167,7 @@ async function changeFestival(festivalId) {
         updateHeadersForFestival();
         initializeAvailableDates();
         renderDateSelector();
+        renderAgeFilterChips();
         renderThemeFilterChips();
         renderKeywordFilterChips();
         updateFilterBadge();
@@ -203,6 +205,7 @@ async function initializeApp() {
             updateHeadersForFestival();
             initializeAvailableDates();
             initializeFilmsViewSwitcher();
+            renderAgeFilterChips();
             renderThemeFilterChips();
             renderKeywordFilterChips();
             renderFilms();
@@ -277,6 +280,7 @@ const translations = {
         filters: "Filters",
         select: "Select",
         jumpToSchedule: "To Schedule",
+        ageLimit: "Age limit",
         theme: "Theme",
         keywords: "Keywords",
         clear: "Clear"
@@ -330,6 +334,7 @@ const translations = {
         filters: "Suodattimet",
         select: "Valitse",
         jumpToSchedule: "Aikatauluun",
+        ageLimit: "Ikäraja",
         theme: "Teema",
         keywords: "Avainsanat",
         clear: "Tyhjennä"
@@ -350,6 +355,7 @@ let themeLabels = {};    // theme key -> { en, fi }
 let keywordLabels = {};  // keyword key -> { en, fi }
 let selectedTheme = null; // One theme per film, so a single selection
 let selectedKeywords = new Set(); // Several per film, so a multi-select
+let selectedAgeLimit = null; // Highest rating to allow through, or null
 let currentLang = 'fi';
 let availableDates = new Set(); // Dates the user is available (all by default)
 let currentFilmsView = localStorage.getItem('filmsView') || 'cards'; // 'cards', 'table', or 'list'
@@ -460,9 +466,11 @@ function changeLanguage(lang, event) {
     document.getElementById('yearFilterLabel').textContent = t.yearFilter;
     document.getElementById('durationFilterLabel').textContent = t.durationFilter;
     document.getElementById('filterToggleText').textContent = t.filters;
+    document.getElementById('ageFilterLabel').textContent = t.ageLimit;
     document.getElementById('themeFilterLabel').textContent = t.theme;
     document.getElementById('keywordFilterLabel').textContent = t.keywords;
     // Filter state is keyed on stable ids, so the selections survive this
+    renderAgeFilterChips();
     renderThemeFilterChips();
     renderKeywordFilterChips();
     updateSelectAllButton();
@@ -547,6 +555,23 @@ function getAllKeywordKeys() {
     return sortKeysByLabel(Array.from(keys), keywordLabels);
 }
 
+// Rank an age rating by the first number in it, so ratings order themselves
+// without the app knowing any particular country's classifications:
+// "S" -> 0, "K7" -> 7, "K12" -> 12, and equally "PG-13" -> 13, "18+" -> 18.
+function ageLimitRank(value) {
+    const digits = String(value).match(/\d+/);
+    return digits ? parseInt(digits[0]) : 0;
+}
+
+// All age ratings present in the current festival data, lowest first
+function getAllAgeLimits() {
+    const values = new Set();
+    festivalData.forEach(film => {
+        if (film.ageLimit) values.add(film.ageLimit);
+    });
+    return Array.from(values).sort((a, b) => ageLimitRank(a) - ageLimitRank(b) || a.localeCompare(b));
+}
+
 // Theme filter: at most one theme per film, so selecting one replaces the
 // previous choice and clicking the active chip clears it
 function setThemeFilter(key) {
@@ -578,6 +603,22 @@ function toggleKeywordFilter(key) {
 function clearKeywordFilters() {
     selectedKeywords.clear();
     renderKeywordFilterChips();
+    updateFilterBadge();
+    renderFilms();
+}
+
+// Age filter: picking a rating shows that rating and everything below it, so
+// it answers "nothing above this" rather than "exactly this"
+function setAgeLimitFilter(value) {
+    selectedAgeLimit = selectedAgeLimit === value ? null : value;
+    renderAgeFilterChips();
+    updateFilterBadge();
+    renderFilms();
+}
+
+function clearAgeLimitFilter() {
+    selectedAgeLimit = null;
+    renderAgeFilterChips();
     updateFilterBadge();
     renderFilms();
 }
@@ -615,6 +656,13 @@ function renderKeywordFilterChips() {
         key => selectedKeywords.has(key), 'toggleKeywordFilter', 'clearKeywordFilters', selectedKeywords.size > 0);
 }
 
+// Age ratings are language-independent, so an empty registry is right here:
+// labelFor falls through to the value itself
+function renderAgeFilterChips() {
+    renderFilterChips('ageChipsContainer', getAllAgeLimits(), {},
+        value => selectedAgeLimit === value, 'setAgeLimitFilter', 'clearAgeLimitFilter', selectedAgeLimit !== null);
+}
+
 // A film's theme label in the current language, or '' when it has no theme
 function getFilmThemeLabel(film) {
     return film.themeKey ? labelFor(themeLabels, film.themeKey) : '';
@@ -623,6 +671,13 @@ function getFilmThemeLabel(film) {
 // A film's keyword labels in the current language
 function getFilmKeywordLabels(film) {
     return (film.keywords || []).map(key => labelFor(keywordLabels, key));
+}
+
+// A film's countries in the current language, falling back to whichever
+// language has them
+function getFilmCountries(film) {
+    if (!film.country) return [];
+    return film.country[currentLang] || film.country.en || film.country.fi || [];
 }
 
 // Outbound festival page in the active language, falling back to whichever
@@ -648,6 +703,21 @@ function renderThemeBadge(film, variant) {
     return `<div class="film-theme film-theme-${variant}"><span class="theme-badge">${escapeHtml(label)}</span></div>`;
 }
 
+// A film's age rating pill, or nothing when it has no rating. The aria-label
+// matters: a bare "K12" is cryptic read aloud.
+function renderAgeLimit(film) {
+    if (!film.ageLimit) return '';
+    const t = translations[currentLang];
+    const value = escapeHtml(film.ageLimit);
+    return `<span class="age-badge" aria-label="${t.ageLimit} ${value}">${value}</span>`;
+}
+
+// A film's countries as display text, or '' when it has none
+function renderCountries(film) {
+    const countries = getFilmCountries(film);
+    return countries.length > 0 ? escapeHtml(countries.join(', ')) : '';
+}
+
 // A film's keywords, or nothing when it has none
 function renderKeywords(film, variant) {
     const labels = getFilmKeywordLabels(film);
@@ -666,6 +736,7 @@ function updateFilterBadge() {
     let count = 0;
     if (filterYearMin !== null || filterYearMax !== null) count++;
     if (filterDurationMin !== null || filterDurationMax !== null) count++;
+    if (selectedAgeLimit) count++;
     if (selectedTheme) count++;
     count += selectedKeywords.size;
 
@@ -725,6 +796,14 @@ function getFilteredFilms() {
             const minutes = parseInt(durationMatch[1]);
             if (filterDurationMin && minutes < filterDurationMin) return false;
             if (filterDurationMax && minutes > filterDurationMax) return false;
+        }
+
+        // Age filter (threshold: the selected rating and everything below it).
+        // An unrated film is unknown rather than safe, so it drops out while
+        // the filter is active - same stance the year filter takes.
+        if (selectedAgeLimit) {
+            if (!film.ageLimit) return false;
+            if (ageLimitRank(film.ageLimit) > ageLimitRank(selectedAgeLimit)) return false;
         }
 
         // Theme filter (one theme per film, so a straight match)
@@ -1440,6 +1519,7 @@ function renderCardsView(films, t) {
         const isPriority = priorityFilms.has(film.id);
         // Shorts programmes may have no single director
         const directorLabel = film.director ? `${t.director} ${film.director}, ` : '';
+        const countries = renderCountries(film);
 
         return `
             <article class="film-card ${isSelected ? 'selected' : ''} ${isPriority ? 'priority' : ''}"
@@ -1466,7 +1546,9 @@ function renderCardsView(films, t) {
                 <div class="film-meta">
                     ${film.director ? `<span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg> ${film.director}</span>` : ''}
                     ${film.year ? `<span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> ${film.year}</span>` : ''}
+                    ${countries ? `<span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> ${countries}</span>` : ''}
                     <span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12,6 12,12 16,14"></polyline></svg> ${film.duration}</span>
+                    ${renderAgeLimit(film)}
                 </div>
                 ${renderKeywords(film, 'cards')}
                 <p class="film-description">${desc}</p>
@@ -1486,6 +1568,7 @@ function renderTableRow(film, t) {
     const availableScreeningsCount = getAvailableScreeningsCount(film);
     const isSelected = selectedFilms.has(film.id);
     const isPriority = priorityFilms.has(film.id);
+    const countries = renderCountries(film);
 
     return `
         <tr class="film-row ${isSelected ? 'selected' : ''} ${isPriority ? 'priority' : ''}"
@@ -1509,8 +1592,10 @@ function renderTableRow(film, t) {
                     <span class="film-title-text">${title}</span>
                     ${renderFilmLink(film, title, t, true)}
                     ${isPriority ? `<span class="priority-badge-inline">${t.mustSee}</span>` : ''}
+                    ${renderAgeLimit(film)}
                 </div>
                 ${renderThemeBadge(film, 'table')}
+                ${countries ? `<div class="film-country-table">${countries}</div>` : ''}
                 <div class="film-description-table">${desc}</div>
                 ${renderKeywords(film, 'table')}
             </td>
@@ -1565,6 +1650,7 @@ function renderListView(films, t) {
         const screeningText = availableScreeningsCount === 1 ? t.screening : t.screenings;
         const isSelected = selectedFilms.has(film.id);
         const isPriority = priorityFilms.has(film.id);
+        const countries = renderCountries(film);
 
         return `
             <div class="film-list-item ${isSelected ? 'selected' : ''} ${isPriority ? 'priority' : ''}"
@@ -1591,9 +1677,13 @@ function renderListView(films, t) {
                             <span class="meta-separator">•</span>` : ''}
                             ${film.year ? `<span class="meta-item">${film.year}</span>
                             <span class="meta-separator">•</span>` : ''}
+                            ${countries ? `<span class="meta-item">${countries}</span>
+                            <span class="meta-separator">•</span>` : ''}
                             <span class="meta-item">${film.duration}</span>
                             <span class="meta-separator">•</span>
                             <span class="meta-item">${availableScreeningsCount} ${screeningText}</span>
+                            ${film.ageLimit ? `<span class="meta-separator">•</span>
+                            ${renderAgeLimit(film)}` : ''}
                         </div>
                         ${renderKeywords(film, 'list')}
                     </div>
