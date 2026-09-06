@@ -63,7 +63,10 @@ async function loadFestivalData(festivalId) {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        festivalData = await response.json();
+        const normalized = normalizeFestivalData(await response.json());
+        festivalData = normalized.films;
+        themeLabels = normalized.themeLabels;
+        keywordLabels = normalized.keywordLabels;
         currentFestival = festival;
         console.log('Festival data loaded:', festivalData.length, 'films');
         return true;
@@ -151,7 +154,8 @@ async function changeFestival(festivalId) {
         filterYearMax = null;
         filterDurationMin = null;
         filterDurationMax = null;
-        selectedGenres.clear();
+        selectedTheme = null;
+        selectedKeywords.clear();
         document.getElementById('filterYearMin').value = '';
         document.getElementById('filterYearMax').value = '';
         document.getElementById('filterDurationMin').value = '';
@@ -162,7 +166,9 @@ async function changeFestival(festivalId) {
         updateHeadersForFestival();
         initializeAvailableDates();
         renderDateSelector();
-        renderGenreFilterChips();
+        renderThemeFilterChips();
+        renderKeywordFilterChips();
+        updateFilterBadge();
         renderFilms();
         renderSchedule();
         updateDownloadButton();
@@ -197,7 +203,8 @@ async function initializeApp() {
             updateHeadersForFestival();
             initializeAvailableDates();
             initializeFilmsViewSwitcher();
-            renderGenreFilterChips();
+            renderThemeFilterChips();
+            renderKeywordFilterChips();
             renderFilms();
             renderSchedule();
             renderDateSelector();
@@ -270,8 +277,9 @@ const translations = {
         filters: "Filters",
         select: "Select",
         jumpToSchedule: "To Schedule",
-        genre: "Genre",
-        clearGenres: "Clear"
+        theme: "Theme",
+        keywords: "Keywords",
+        clear: "Clear"
     },
     fi: {
         headerTitle: "",
@@ -322,8 +330,9 @@ const translations = {
         filters: "Suodattimet",
         select: "Valitse",
         jumpToSchedule: "Aikatauluun",
-        genre: "Lajityyppi",
-        clearGenres: "Tyhjennä"
+        theme: "Teema",
+        keywords: "Avainsanat",
+        clear: "Tyhjennä"
     }
 };
 
@@ -337,10 +346,67 @@ let filterYearMin = null;
 let filterYearMax = null;
 let filterDurationMin = null;
 let filterDurationMax = null;
-let selectedGenres = new Set(); // Genre filter selections
+let themeLabels = {};    // theme key -> { en, fi }
+let keywordLabels = {};  // keyword key -> { en, fi }
+let selectedTheme = null; // One theme per film, so a single selection
+let selectedKeywords = new Set(); // Several per film, so a multi-select
 let currentLang = 'fi';
 let availableDates = new Set(); // Dates the user is available (all by default)
 let currentFilmsView = localStorage.getItem('filmsView') || 'cards'; // 'cards', 'table', or 'list'
+
+// Themes and keywords are stored on films as stable keys, never as labels, so
+// a filter selection survives a language switch. These two helpers turn any
+// dataset into that one shape.
+
+// Mirrors the key derivation in scripts/csv_to_json.py: fold diacritics to
+// ASCII, lowercase, hyphenate everything else.
+function makeKey(value) {
+    const ascii = value.normalize('NFKD').split('').filter(ch => ch.charCodeAt(0) < 128).join('');
+    return ascii.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || value.toLowerCase();
+}
+
+// Accepts the current format and the older one (a bare array of films whose
+// keywords were stored as `genres` labels and whose festival page was a single
+// `url`), so archived datasets stay loadable.
+function normalizeFestivalData(raw) {
+    if (raw && !Array.isArray(raw) && Array.isArray(raw.films)) {
+        return {
+            films: raw.films,
+            themeLabels: raw.themeLabels || {},
+            keywordLabels: raw.keywordLabels || {}
+        };
+    }
+
+    const films = Array.isArray(raw) ? raw : [];
+    const labels = {};
+
+    films.forEach(film => {
+        film.director = film.director || '';
+        film.year = film.year || '';
+        film.duration = film.duration || '';
+
+        if (film.genres) {
+            const en = film.genres.en || [];
+            const fi = film.genres.fi || [];
+            const keys = [];
+            for (let i = 0; i < Math.max(en.length, fi.length); i++) {
+                const enLabel = en[i] || fi[i];
+                const fiLabel = fi[i] || en[i];
+                if (!enLabel) continue;
+                const key = makeKey(enLabel);
+                if (!labels[key]) labels[key] = { en: enLabel, fi: fiLabel };
+                keys.push(key);
+            }
+            if (keys.length > 0) film.keywords = keys;
+        }
+
+        if (film.url && !film.urls) {
+            film.urls = { en: film.url, fi: film.url };
+        }
+    });
+
+    return { films: films, themeLabels: {}, keywordLabels: labels };
+}
 
 // Get all unique dates from festival data
 function getAllDates() {
@@ -394,8 +460,11 @@ function changeLanguage(lang, event) {
     document.getElementById('yearFilterLabel').textContent = t.yearFilter;
     document.getElementById('durationFilterLabel').textContent = t.durationFilter;
     document.getElementById('filterToggleText').textContent = t.filters;
-    document.getElementById('genreFilterLabel').textContent = t.genre;
-    renderGenreFilterChips();
+    document.getElementById('themeFilterLabel').textContent = t.theme;
+    document.getElementById('keywordFilterLabel').textContent = t.keywords;
+    // Filter state is keyed on stable ids, so the selections survive this
+    renderThemeFilterChips();
+    renderKeywordFilterChips();
     updateSelectAllButton();
     document.documentElement.lang = lang;
 
@@ -437,75 +506,157 @@ function handleSearch() {
     renderFilms();
 }
 
-// Get all unique genres from current festival data (uses English keys for matching)
-function getAllGenres() {
-    const genres = new Set();
+// Resolve a theme or keyword key to its label in the current language
+function labelFor(registry, key) {
+    const labels = registry[key];
+    if (!labels) return key;
+    return labels[currentLang] || labels.en || labels.fi || key;
+}
+
+// Festival data is scraped, so escape it before it goes into innerHTML
+function escapeHtml(value) {
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+// Order keys by their label in the current language, so chip order follows
+// the language rather than the key
+function sortKeysByLabel(keys, registry) {
+    return keys.sort((a, b) => labelFor(registry, a).localeCompare(labelFor(registry, b)));
+}
+
+// All theme keys present in the current festival data
+function getAllThemeKeys() {
+    const keys = new Set();
     festivalData.forEach(film => {
-        if (film.genres && film.genres.en) {
-            film.genres.en.forEach(g => genres.add(g));
-        }
+        if (film.themeKey) keys.add(film.themeKey);
     });
-    return Array.from(genres).sort();
+    return sortKeysByLabel(Array.from(keys), themeLabels);
 }
 
-// Toggle a genre in the filter
-function toggleGenreFilter(genre) {
-    if (selectedGenres.has(genre)) {
-        selectedGenres.delete(genre);
+// All keyword keys present in the current festival data
+function getAllKeywordKeys() {
+    const keys = new Set();
+    festivalData.forEach(film => {
+        (film.keywords || []).forEach(key => keys.add(key));
+    });
+    return sortKeysByLabel(Array.from(keys), keywordLabels);
+}
+
+// Theme filter: at most one theme per film, so selecting one replaces the
+// previous choice and clicking the active chip clears it
+function setThemeFilter(key) {
+    selectedTheme = selectedTheme === key ? null : key;
+    renderThemeFilterChips();
+    updateFilterBadge();
+    renderFilms();
+}
+
+function clearThemeFilter() {
+    selectedTheme = null;
+    renderThemeFilterChips();
+    updateFilterBadge();
+    renderFilms();
+}
+
+// Keyword filter: several keywords per film, so a multi-select
+function toggleKeywordFilter(key) {
+    if (selectedKeywords.has(key)) {
+        selectedKeywords.delete(key);
     } else {
-        selectedGenres.add(genre);
+        selectedKeywords.add(key);
     }
-    renderGenreFilterChips();
+    renderKeywordFilterChips();
     updateFilterBadge();
     renderFilms();
 }
 
-// Clear all genre filters
-function clearGenreFilters() {
-    selectedGenres.clear();
-    renderGenreFilterChips();
+function clearKeywordFilters() {
+    selectedKeywords.clear();
+    renderKeywordFilterChips();
     updateFilterBadge();
     renderFilms();
 }
 
-// Render genre filter chips inside the filter panel
-function renderGenreFilterChips() {
-    const container = document.getElementById('genreChipsContainer');
+// Render one group of filter chips. A festival that uses neither themes nor
+// keywords has no keys here, and the whole group disappears with them.
+function renderFilterChips(containerId, keys, registry, isActive, toggleFn, clearFn, hasSelection) {
+    const container = document.getElementById(containerId);
     if (!container) return;
-    const allGenres = getAllGenres();
-    const t = translations[currentLang];
+    const group = container.closest('.filter-group');
 
-    if (allGenres.length === 0) {
-        container.closest('.filter-group').style.display = 'none';
+    if (keys.length === 0) {
+        if (group) group.style.display = 'none';
         return;
     }
-    container.closest('.filter-group').style.display = '';
+    if (group) group.style.display = '';
 
-    container.innerHTML = allGenres.map(genre => {
-        const displayName = getGenreDisplayName(genre);
-        const isActive = selectedGenres.has(genre);
-        return `<button class="genre-filter-chip ${isActive ? 'active' : ''}" onclick="toggleGenreFilter('${genre.replace(/'/g, "\\'")}')">${displayName}</button>`;
-    }).join('') + (selectedGenres.size > 0 ? `<button class="genre-clear-link" onclick="clearGenreFilters()">${t.clearGenres}</button>` : '');
+    const t = translations[currentLang];
+    const chips = keys.map(key => {
+        const active = isActive(key);
+        return `<button class="filter-chip ${active ? 'active' : ''}" aria-pressed="${active}" onclick="${toggleFn}('${key}')">${escapeHtml(labelFor(registry, key))}</button>`;
+    }).join('');
+    const clear = hasSelection ? `<button class="filter-clear-link" onclick="${clearFn}()">${t.clear}</button>` : '';
+
+    container.innerHTML = chips + clear;
 }
 
-// Get display name for a genre in the current language
-function getGenreDisplayName(genreEn) {
-    // Find the first film that has this genre and return the corresponding localized name
-    for (const film of festivalData) {
-        if (film.genres && film.genres.en) {
-            const idx = film.genres.en.indexOf(genreEn);
-            if (idx !== -1 && film.genres[currentLang] && film.genres[currentLang][idx]) {
-                return film.genres[currentLang][idx];
-            }
-        }
+function renderThemeFilterChips() {
+    renderFilterChips('themeChipsContainer', getAllThemeKeys(), themeLabels,
+        key => selectedTheme === key, 'setThemeFilter', 'clearThemeFilter', selectedTheme !== null);
+}
+
+function renderKeywordFilterChips() {
+    renderFilterChips('keywordChipsContainer', getAllKeywordKeys(), keywordLabels,
+        key => selectedKeywords.has(key), 'toggleKeywordFilter', 'clearKeywordFilters', selectedKeywords.size > 0);
+}
+
+// A film's theme label in the current language, or '' when it has no theme
+function getFilmThemeLabel(film) {
+    return film.themeKey ? labelFor(themeLabels, film.themeKey) : '';
+}
+
+// A film's keyword labels in the current language
+function getFilmKeywordLabels(film) {
+    return (film.keywords || []).map(key => labelFor(keywordLabels, key));
+}
+
+// Outbound festival page in the active language, falling back to whichever
+// language has one
+function getFilmUrl(film) {
+    if (!film.urls) return '';
+    return film.urls[currentLang] || film.urls.en || film.urls.fi || '';
+}
+
+// The "festival page" link, shared by all three film views
+function renderFilmLink(film, title, t, small) {
+    const url = getFilmUrl(film);
+    if (!url) return '';
+    const size = small ? 12 : 14;
+    const label = t.festivalPage || 'Festival page';
+    return `<a class="film-link${small ? ' film-link-table' : ''}" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="${escapeHtml(title)} - ${label}"><svg aria-hidden="true" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span class="film-link-text">${label}</span></a>`;
+}
+
+// A film's theme badge, or nothing when it has no theme
+function renderThemeBadge(film, variant) {
+    const label = getFilmThemeLabel(film);
+    if (!label) return '';
+    return `<div class="film-theme film-theme-${variant}"><span class="theme-badge">${escapeHtml(label)}</span></div>`;
+}
+
+// A film's keywords, or nothing when it has none
+function renderKeywords(film, variant) {
+    const labels = getFilmKeywordLabels(film);
+    if (labels.length === 0) return '';
+    if (variant === 'cards') {
+        const rest = labels.slice(1).map(escapeHtml).join(', ');
+        return `<div class="film-keywords"><span class="keyword-chip">${escapeHtml(labels[0])}</span>${rest ? `<span class="keyword-extra">${rest}</span>` : ''}</div>`;
     }
-    return genreEn;
-}
-
-// Get film's genres as display text for the current language
-function getFilmGenres(film) {
-    if (!film.genres || !film.genres[currentLang] || film.genres[currentLang].length === 0) return [];
-    return film.genres[currentLang];
+    return `<div class="film-keywords-${variant}">${labels.map(escapeHtml).join(', ')}</div>`;
 }
 
 // Update the filter toggle button badge count
@@ -515,7 +666,8 @@ function updateFilterBadge() {
     let count = 0;
     if (filterYearMin !== null || filterYearMax !== null) count++;
     if (filterDurationMin !== null || filterDurationMax !== null) count++;
-    count += selectedGenres.size;
+    if (selectedTheme) count++;
+    count += selectedKeywords.size;
 
     let badge = btn.querySelector('.filter-badge');
     if (count > 0) {
@@ -553,8 +705,8 @@ function getFilteredFilms() {
             const title = typeof film.title === 'object' ? film.title[currentLang] : film.title;
             const desc = typeof film.description === 'object' ? film.description[currentLang] : film.description;
             const matchesSearch = title.toLowerCase().includes(searchQuery) ||
-                   film.director.toLowerCase().includes(searchQuery) ||
-                   desc.toLowerCase().includes(searchQuery);
+                   (film.director || '').toLowerCase().includes(searchQuery) ||
+                   (desc || '').toLowerCase().includes(searchQuery);
             if (!matchesSearch) return false;
         }
 
@@ -568,18 +720,21 @@ function getFilteredFilms() {
         }
 
         // Duration filter
-        const durationMatch = film.duration.match(/(\d+)/);
+        const durationMatch = (film.duration || '').match(/(\d+)/);
         if (durationMatch) {
             const minutes = parseInt(durationMatch[1]);
             if (filterDurationMin && minutes < filterDurationMin) return false;
             if (filterDurationMax && minutes > filterDurationMax) return false;
         }
 
-        // Genre filter (OR logic: film must have at least one selected genre)
-        if (selectedGenres.size > 0) {
-            const filmGenres = film.genres && film.genres.en ? film.genres.en.map(g => g.toLowerCase()) : [];
-            const hasMatchingGenre = [...selectedGenres].some(g => filmGenres.includes(g.toLowerCase()));
-            if (!hasMatchingGenre) return false;
+        // Theme filter (one theme per film, so a straight match)
+        if (selectedTheme && film.themeKey !== selectedTheme) return false;
+
+        // Keyword filter (OR logic: film must carry at least one selected keyword)
+        if (selectedKeywords.size > 0) {
+            const filmKeywords = film.keywords || [];
+            const hasMatchingKeyword = [...selectedKeywords].some(key => filmKeywords.includes(key));
+            if (!hasMatchingKeyword) return false;
         }
 
         return true;
@@ -1283,6 +1438,8 @@ function renderCardsView(films, t) {
         const screeningText = availableScreeningsCount === 1 ? t.screening : t.screenings;
         const isSelected = selectedFilms.has(film.id);
         const isPriority = priorityFilms.has(film.id);
+        // Shorts programmes may have no single director
+        const directorLabel = film.director ? `${t.director} ${film.director}, ` : '';
 
         return `
             <article class="film-card ${isSelected ? 'selected' : ''} ${isPriority ? 'priority' : ''}"
@@ -1290,7 +1447,7 @@ function renderCardsView(films, t) {
                  tabindex="0"
                  data-film-id="${film.id}"
                  aria-pressed="${isSelected}"
-                 aria-label="${title}, ${t.director} ${film.director}, ${film.duration}, ${availableScreeningsCount} ${screeningText}${isSelected ? ', valittu' : ''}${isPriority ? ', prioriteetti' : ''}"
+                 aria-label="${title}, ${directorLabel}${film.duration}, ${availableScreeningsCount} ${screeningText}${isSelected ? ', valittu' : ''}${isPriority ? ', prioriteetti' : ''}"
                  onclick="toggleFilm(${film.id})"
                  onkeydown="handleCardKeydown(event, ${film.id})">
                 <button class="priority-btn ${isPriority ? 'active' : ''}"
@@ -1301,16 +1458,17 @@ function renderCardsView(films, t) {
                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                     </svg>
                 </button>
+                ${renderThemeBadge(film, 'card')}
                 <div class="film-card-header">
-                    <h3 class="film-title">${title}${film.url ? `<a class="film-link" href="${film.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="${title} - ${t.festivalPage || 'Festival page'}"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span class="film-link-text">${t.festivalPage || 'Festival page'}</span></a>` : ''}${isPriority ? `<span class="priority-badge">${t.mustSee}</span>` : ''}</h3>
+                    <h3 class="film-title">${title}${renderFilmLink(film, title, t, false)}${isPriority ? `<span class="priority-badge">${t.mustSee}</span>` : ''}</h3>
                     ${isSelected ? '<span class="checkmark" aria-hidden="true">✓</span>' : ''}
                 </div>
                 <div class="film-meta">
-                    <span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg> ${film.director}</span>
+                    ${film.director ? `<span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg> ${film.director}</span>` : ''}
                     ${film.year ? `<span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> ${film.year}</span>` : ''}
                     <span class="film-meta-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12,6 12,12 16,14"></polyline></svg> ${film.duration}</span>
                 </div>
-                ${(() => { const genres = getFilmGenres(film); if (genres.length === 0) return ''; const chip = `<span class="genre-chip">${genres[0]}</span>`; const rest = genres.slice(1).join(', '); return `<div class="film-genres">${chip}${rest ? `<span class="genre-extra">${rest}</span>` : ''}</div>`; })()}
+                ${renderKeywords(film, 'cards')}
                 <p class="film-description">${desc}</p>
                 <span class="screening-badge">
                     <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -1349,11 +1507,12 @@ function renderTableRow(film, t) {
             <td class="title-cell">
                 <div class="title-wrapper">
                     <span class="film-title-text">${title}</span>
-                    ${film.url ? `<a class="film-link film-link-table" href="${film.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="${title} - ${t.festivalPage || 'Festival page'}"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span class="film-link-text">${t.festivalPage || 'Festival page'}</span></a>` : ''}
+                    ${renderFilmLink(film, title, t, true)}
                     ${isPriority ? `<span class="priority-badge-inline">${t.mustSee}</span>` : ''}
                 </div>
+                ${renderThemeBadge(film, 'table')}
                 <div class="film-description-table">${desc}</div>
-                ${(() => { const genres = getFilmGenres(film); return genres.length > 0 ? `<div class="film-genres-table">${genres.join(', ')}</div>` : ''; })()}
+                ${renderKeywords(film, 'table')}
             </td>
             <td class="director-cell">${film.director}</td>
             <td class="year-cell">${film.year || ''}</td>
@@ -1414,7 +1573,7 @@ function renderListView(films, t) {
                  data-film-id="${film.id}"
                  onclick="toggleFilm(${film.id})"
                  onkeydown="handleCardKeydown(event, ${film.id})"
-                 aria-label="${title}, ${film.director}, ${film.duration}, ${availableScreeningsCount} ${screeningText}">
+                 aria-label="${title}, ${film.director ? film.director + ', ' : ''}${film.duration}, ${availableScreeningsCount} ${screeningText}">
                 <button class="priority-btn ${isPriority ? 'active' : ''}"
                         onclick="togglePriority(${film.id}, event)"
                         aria-label="${isPriority ? t.removePriority : t.mustSee}"
@@ -1425,17 +1584,18 @@ function renderListView(films, t) {
                 </button>
                 <div class="film-list-content">
                     <div class="film-list-header">
-                        <h3 class="film-list-title">${title}${film.url ? `<a class="film-link film-link-table" href="${film.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="${title} - ${t.festivalPage || 'Festival page'}"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span class="film-link-text">${t.festivalPage || 'Festival page'}</span></a>` : ''}</h3>
+                        ${renderThemeBadge(film, 'list')}
+                        <h3 class="film-list-title">${title}${renderFilmLink(film, title, t, true)}</h3>
                         <div class="film-list-meta">
-                            <span class="meta-item">${film.director}</span>
-                            ${film.year ? `<span class="meta-separator">•</span>
-                            <span class="meta-item">${film.year}</span>` : ''}
-                            <span class="meta-separator">•</span>
+                            ${film.director ? `<span class="meta-item">${film.director}</span>
+                            <span class="meta-separator">•</span>` : ''}
+                            ${film.year ? `<span class="meta-item">${film.year}</span>
+                            <span class="meta-separator">•</span>` : ''}
                             <span class="meta-item">${film.duration}</span>
                             <span class="meta-separator">•</span>
                             <span class="meta-item">${availableScreeningsCount} ${screeningText}</span>
                         </div>
-                        ${(() => { const genres = getFilmGenres(film); return genres.length > 0 ? `<div class="film-genres-list">${genres.join(', ')}</div>` : ''; })()}
+                        ${renderKeywords(film, 'list')}
                     </div>
                     <p class="film-list-description">${desc}</p>
                 </div>
