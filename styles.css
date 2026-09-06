@@ -797,19 +797,19 @@ button svg * {
     font-size: 0.85rem;
 }
 
-/* Genre filter chips in filter panel */
-.filter-group-genre {
+/* Theme and keyword filter chips in filter panel */
+.filter-group-chips {
     flex-basis: 100%;
 }
 
-.genre-chips-container {
+.filter-chips-container {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     align-items: center;
 }
 
-.genre-filter-chip {
+.filter-chip {
     padding: 4px 12px;
     border-radius: 16px;
     border: 1px solid var(--glass-border);
@@ -823,18 +823,18 @@ button svg * {
     white-space: nowrap;
 }
 
-.genre-filter-chip:hover {
+.filter-chip:hover {
     border-color: var(--accent-primary);
     color: var(--text-primary);
 }
 
-.genre-filter-chip.active {
+.filter-chip.active {
     background: var(--accent-primary);
     border-color: var(--accent-primary);
     color: #fff;
 }
 
-.genre-clear-link {
+.filter-clear-link {
     background: none;
     border: none;
     font-family: 'DM Sans', sans-serif;
@@ -845,7 +845,7 @@ button svg * {
     text-decoration: underline;
 }
 
-.genre-clear-link:hover {
+.filter-clear-link:hover {
     opacity: 0.8;
 }
 
@@ -865,8 +865,39 @@ button svg * {
     margin-left: 4px;
 }
 
-/* Genre display in card view */
-.film-genres {
+/* Theme badge - the festival's own programme strand */
+.film-theme {
+    margin-bottom: 8px;
+}
+
+.theme-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--accent-primary);
+    background: transparent;
+    color: var(--accent-primary);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.film-theme-table,
+.film-theme-list {
+    margin-bottom: 4px;
+}
+
+.film-theme-table .theme-badge,
+.film-theme-list .theme-badge {
+    padding: 1px 8px;
+    font-size: 0.65rem;
+}
+
+/* Keyword display in card view */
+.film-keywords {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -874,7 +905,7 @@ button svg * {
     flex-wrap: wrap;
 }
 
-.genre-chip {
+.keyword-chip {
     display: inline-block;
     padding: 2px 10px;
     border-radius: 12px;
@@ -886,15 +917,15 @@ button svg * {
     white-space: nowrap;
 }
 
-.genre-extra {
+.keyword-extra {
     font-family: 'DM Sans', sans-serif;
     font-size: 11px;
     color: var(--text-muted);
 }
 
-/* Genre display in list and table views */
-.film-genres-list,
-.film-genres-table {
+/* Keyword display in list and table views */
+.film-keywords-list,
+.film-keywords-table {
     font-family: 'DM Sans', sans-serif;
     font-size: 0.8rem;
     color: var(--text-muted);
