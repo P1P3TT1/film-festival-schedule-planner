@@ -923,6 +923,30 @@ button svg * {
     color: var(--text-muted);
 }
 
+/* Age rating pill - deliberately quieter than the theme badge (accent
+   outline) and the keyword chip (accent fill), so it reads as metadata */
+.age-badge {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--glass-border);
+    background: var(--input-bg);
+    color: var(--text-secondary);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+/* Country in the table view */
+.film-country-table {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
 /* Keyword display in list and table views */
 .film-keywords-list,
 .film-keywords-table {
