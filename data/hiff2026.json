@@ -1,0 +1,7641 @@
+{
+  "themeLabels": {
+    "animated-dreams": {
+      "en": "Animated Dreams",
+      "fi": "Animoituja unia"
+    },
+    "asian-cuts": {
+      "en": "Asian Cuts",
+      "fi": "Asian Cuts"
+    },
+    "crime-punishment": {
+      "en": "Crime & Punishment",
+      "fi": "Rikos & rangaistus"
+    },
+    "dark-feminine": {
+      "en": "Dark Feminine",
+      "fi": "Dark Feminine"
+    },
+    "east-side-stories": {
+      "en": "East Side Stories",
+      "fi": "East Side Stories"
+    },
+    "fight-the-power": {
+      "en": "Fight the Power",
+      "fi": "Fight the Power"
+    },
+    "gala-films": {
+      "en": "Gala Films",
+      "fi": "Gaalaelokuvat"
+    },
+    "kids-these-days": {
+      "en": "Kids These Days",
+      "fi": "Kids These Days"
+    },
+    "let-s-talk-about-sex": {
+      "en": "Let's Talk about Sex",
+      "fi": "Let's Talk about Sex"
+    },
+    "live-laugh-love-anarchy": {
+      "en": "Live, Laugh, Love & Anarchy",
+      "fi": "Live, Laugh, Love & Anarchy"
+    },
+    "midnight-mayhem": {
+      "en": "Midnight Mayhem",
+      "fi": "Midnight Mayhem"
+    },
+    "more-than-human": {
+      "en": "More Than Human",
+      "fi": "Toisenlajiset"
+    },
+    "national-competition": {
+      "en": "National Competition",
+      "fi": "Kotimainen kilpailu"
+    },
+    "next-level": {
+      "en": "Next Level",
+      "fi": "Next Level"
+    },
+    "nordic-council-film-prize-nominees": {
+      "en": "Nordic Council Film Prize Nominees",
+      "fi": "Pohjoismaiden neuvoston elokuvapalkintoehdokkaat"
+    },
+    "nordic-council-film-prize-nominees-r-a-x-lux-audience-award": {
+      "en": "Nordic Council Film Prize Nominees, R&A x LUX Audience Award",
+      "fi": "Pohjoismaiden neuvoston elokuvapalkintoehdokkaat, R&A x LUX-yleisöpalkinto"
+    },
+    "nordic-gems": {
+      "en": "Nordic Gems",
+      "fi": "Pohjolan huiput"
+    },
+    "r-a-special-screenings": {
+      "en": "R&A Special Screenings",
+      "fi": "R&A Special Screenings"
+    },
+    "r-a-trailblazers": {
+      "en": "R&A Trailblazers",
+      "fi": "R&A Trailblazers"
+    },
+    "r-a-x-lux-audience-award": {
+      "en": "R&A x LUX Audience Award",
+      "fi": "R&A x LUX-yleisöpalkinto"
+    },
+    "rewrite-history": {
+      "en": "Rewrite History",
+      "fi": "Historia uusiksi"
+    },
+    "spotlight-selection": {
+      "en": "Spotlight Selection",
+      "fi": "Avainelokuvat"
+    },
+    "the-power-of-music": {
+      "en": "The Power of Music",
+      "fi": "Musiikin voima"
+    },
+    "uncanny-valley": {
+      "en": "Uncanny Valley",
+      "fi": "Outouden laakso"
+    },
+    "united-states-of-indie": {
+      "en": "United States of Indie",
+      "fi": "United States of Indie"
+    }
+  },
+  "keywordLabels": {
+    "action": {
+      "en": "Action",
+      "fi": "Action"
+    },
+    "adventure": {
+      "en": "Adventure",
+      "fi": "Seikkailu"
+    },
+    "africa": {
+      "en": "Africa",
+      "fi": "Afrikka"
+    },
+    "aging": {
+      "en": "Aging",
+      "fi": "Ikääntyminen"
+    },
+    "angst": {
+      "en": "Angst",
+      "fi": "Angsti"
+    },
+    "animals": {
+      "en": "Animals",
+      "fi": "Eläimet"
+    },
+    "archives": {
+      "en": "Archives",
+      "fi": "Arkistot"
+    },
+    "art": {
+      "en": "Art",
+      "fi": "Taide"
+    },
+    "badass": {
+      "en": "Badass",
+      "fi": "Badass"
+    },
+    "based-on-true-events": {
+      "en": "Based on true events",
+      "fi": "Perustuu tositapahtumiin"
+    },
+    "biopic": {
+      "en": "Biopic",
+      "fi": "Elämäkerta"
+    },
+    "childhood": {
+      "en": "Childhood",
+      "fi": "Lapsuus"
+    },
+    "coming-of-age": {
+      "en": "Coming of age",
+      "fi": "Kasvutarina"
+    },
+    "crime": {
+      "en": "Crime",
+      "fi": "Rikos"
+    },
+    "dance": {
+      "en": "Dance",
+      "fi": "Tanssi"
+    },
+    "epoch": {
+      "en": "Epoch",
+      "fi": "Epookki"
+    },
+    "experimental": {
+      "en": "Experimental",
+      "fi": "Kokeellinen"
+    },
+    "faith": {
+      "en": "Faith",
+      "fi": "Usko"
+    },
+    "family-ties": {
+      "en": "Family ties",
+      "fi": "Perhesuhteet"
+    },
+    "fantasy": {
+      "en": "Fantasy",
+      "fi": "Fantasia"
+    },
+    "feelgood": {
+      "en": "Feelgood",
+      "fi": "Feelgood"
+    },
+    "female-stories": {
+      "en": "Female stories",
+      "fi": "Naiskuvia"
+    },
+    "festival-hit": {
+      "en": "Festival hit",
+      "fi": "Festarihitti"
+    },
+    "filmmaking": {
+      "en": "Filmmaking",
+      "fi": "Elokuvanteko"
+    },
+    "free-of-charge": {
+      "en": "Free of charge",
+      "fi": "Maksuton"
+    },
+    "friendship": {
+      "en": "Friendship",
+      "fi": "Ystävyys"
+    },
+    "grief": {
+      "en": "Grief",
+      "fi": "Suru"
+    },
+    "history": {
+      "en": "History",
+      "fi": "Historia"
+    },
+    "horror": {
+      "en": "Horror",
+      "fi": "Kauhu"
+    },
+    "human-rights": {
+      "en": "Human rights",
+      "fi": "Ihmisoikeudet"
+    },
+    "humour": {
+      "en": "Humour",
+      "fi": "Huumori"
+    },
+    "identity": {
+      "en": "Identity",
+      "fi": "Identiteetti"
+    },
+    "immigration": {
+      "en": "Immigration",
+      "fi": "Siirtolaisuus"
+    },
+    "indigenous-peoples": {
+      "en": "Indigenous Peoples",
+      "fi": "Alkuperäiskansat"
+    },
+    "journey": {
+      "en": "Journey",
+      "fi": "Matka"
+    },
+    "lgbtqia": {
+      "en": "LGBTQIA+",
+      "fi": "LGBTQIA+"
+    },
+    "literature": {
+      "en": "Literature",
+      "fi": "Kirjallisuus"
+    },
+    "love": {
+      "en": "Love",
+      "fi": "Rakkaus"
+    },
+    "media": {
+      "en": "Media",
+      "fi": "Media"
+    },
+    "memory": {
+      "en": "Memory",
+      "fi": "Muisti"
+    },
+    "mental-health": {
+      "en": "Mental health",
+      "fi": "Mielenterveys"
+    },
+    "music": {
+      "en": "Music",
+      "fi": "Musiikki"
+    },
+    "r-a-shorts": {
+      "en": "R&A Shorts",
+      "fi": "R&A Shorts"
+    },
+    "relationship-with-nature": {
+      "en": "Relationship with nature",
+      "fi": "Luontosuhde"
+    },
+    "sci-fi": {
+      "en": "Sci-fi",
+      "fi": "Sci-fi"
+    },
+    "sex": {
+      "en": "Sex",
+      "fi": "Seksi"
+    },
+    "slow-cinema": {
+      "en": "Slow cinema",
+      "fi": "Slow cinema"
+    },
+    "society": {
+      "en": "Society",
+      "fi": "Yhteiskunta"
+    },
+    "sports": {
+      "en": "Sports",
+      "fi": "Urheilu"
+    },
+    "subtitled-spoken-in-finnish": {
+      "en": "Subtitled/spoken in Finnish",
+      "fi": "Tekstitetty/puhuttu suomeksi"
+    },
+    "tech": {
+      "en": "Tech",
+      "fi": "Tech"
+    },
+    "thriller": {
+      "en": "Thriller",
+      "fi": "Jännitys"
+    },
+    "urban-spaces": {
+      "en": "Urban spaces",
+      "fi": "Kaupunkitila"
+    },
+    "weird": {
+      "en": "Weird",
+      "fi": "Outoa"
+    },
+    "youth": {
+      "en": "Youth",
+      "fi": "Nuoruus"
+    }
+  },
+  "films": [
+    {
+      "id": 1,
+      "title": {
+        "en": "Opening Gala: La bola negra",
+        "fi": "Avajaisgaala: La bola negra"
+      },
+      "director": "Javier Ambrossi, Javier Calvo",
+      "year": "2026",
+      "duration": "155 min",
+      "country": {
+        "en": [
+          "Spain"
+        ],
+        "fi": [
+          "Espanja"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "gala-films",
+      "keywords": [
+        "art",
+        "love",
+        "festival-hit",
+        "history",
+        "epoch",
+        "literature"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/avajaisgaala-la-bola-negra/",
+        "fi": "https://hiff.fi/ohjelma/avajaisgaala-la-bola-negra/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-17T16:45",
+          "venue": "Bio Rex Lasipalatsi"
+        },
+        {
+          "date": "2026-09-17T20:00",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "Love & Anarchy Gala: Hope",
+        "fi": "R&A-gaala: Hope"
+      },
+      "director": "Na Hong-jin",
+      "year": "2026",
+      "duration": "160 min",
+      "country": {
+        "en": [
+          "South Korea"
+        ],
+        "fi": [
+          "Etelä-Korea"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "gala-films",
+      "keywords": [
+        "action",
+        "sci-fi",
+        "fantasy",
+        "weird"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-gaala-hope/",
+        "fi": "https://hiff.fi/ohjelma/ra-gaala-hope/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-21T19:30",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Finnish Gala: Nightborn",
+        "fi": "Kotimainen gaala: Yön lapsi"
+      },
+      "director": "Hanna Bergholm",
+      "year": "",
+      "duration": "92 min",
+      "country": {
+        "en": [
+          "Finland, France, United Kingdom, Lithuania"
+        ],
+        "fi": [
+          "Suomi, Ranska, Iso-Britannia, Liettua"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "gala-films",
+      "keywords": [
+        "horror",
+        "female-stories",
+        "family-ties",
+        "thriller",
+        "weird",
+        "festival-hit",
+        "subtitled-spoken-in-finnish"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/kotimainen-gaala-yon-lapsi/",
+        "fi": "https://hiff.fi/ohjelma/kotimainen-gaala-yon-lapsi/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-23T18:00",
+          "venue": "Bio Rex Lasipalatsi"
+        },
+        {
+          "date": "2026-09-23T19:00",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "Nordic Gems Gala: Fjord",
+        "fi": "Pohjolan huiput -gaala: Vuono"
+      },
+      "director": "Cristian Mungiu",
+      "year": "2026",
+      "duration": "146 min",
+      "country": {
+        "en": [
+          "Norway, Finland, France, Denmark, Romania"
+        ],
+        "fi": [
+          "Norja, Suomi, Ranska, Tanska, Romania"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "gala-films",
+      "keywords": [
+        "family-ties",
+        "society",
+        "festival-hit",
+        "media",
+        "subtitled-spoken-in-finnish"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/pohjolan-huiput-gaala-vuono/",
+        "fi": "https://hiff.fi/ohjelma/pohjolan-huiput-gaala-vuono/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-26T18:00",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "Closing Gala: Minotaur",
+        "fi": "Päätösgaala: Minotaur"
+      },
+      "director": "Andrey Zvyagintsev",
+      "year": "2026",
+      "duration": "135 min",
+      "country": {
+        "en": [
+          "France, United Kingdom, Latvia"
+        ],
+        "fi": [
+          "Ranska, Iso-Britannia, Latvia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "gala-films",
+      "keywords": [
+        "crime",
+        "society",
+        "love"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/paatosgaala-minotaur/",
+        "fi": "https://hiff.fi/ohjelma/paatosgaala-minotaur/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-27T17:50",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-27T18:15",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": {
+        "en": "9 Temples to Heaven",
+        "fi": "9 Temples to Heaven"
+      },
+      "director": "Sompot Chidgasornpongse",
+      "year": "2026",
+      "duration": "120 min",
+      "country": {
+        "en": [
+          "Thailand, Norway, France, Singapore"
+        ],
+        "fi": [
+          "Thaimaa, Norja, Ranska, Singapore"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "family-ties",
+        "journey",
+        "faith",
+        "aging",
+        "slow-cinema"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/9-temples-to-heaven/",
+        "fi": "https://hiff.fi/ohjelma/9-temples-to-heaven/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T18:30",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-22T20:45",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-26T18:15",
+          "venue": "WHS Teatteri Union"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": {
+        "en": "10s Across the Borders",
+        "fi": "10s Across the Borders"
+      },
+      "director": "Chan Sze-wei",
+      "year": "2025",
+      "duration": "99 min",
+      "country": {
+        "en": [
+          "Philippines, Singapore, Germany"
+        ],
+        "fi": [
+          "Filippiinit, Singapore, Saksa"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "live-laugh-love-anarchy",
+      "keywords": [
+        "dance",
+        "art",
+        "lgbtqia",
+        "friendship",
+        "society"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/10s-across-the-borders/",
+        "fi": "https://hiff.fi/ohjelma/10s-across-the-borders/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T13:15",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-24T17:45",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-26T16:30",
+          "venue": "Savoy-teatteri"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": {
+        "en": "A Girl Unknown",
+        "fi": "A Girl Unknown"
+      },
+      "director": "Zou Jing",
+      "year": "2026",
+      "duration": "120 min",
+      "country": {
+        "en": [
+          "China, France"
+        ],
+        "fi": [
+          "Kiina, Ranska"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "coming-of-age",
+        "youth",
+        "identity",
+        "angst",
+        "grief",
+        "female-stories"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/a-girl-unknown/",
+        "fi": "https://hiff.fi/ohjelma/a-girl-unknown/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T13:15",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-22T20:30",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-26T18:30",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": {
+        "en": "A Girl's Story",
+        "fi": "A Girl's Story"
+      },
+      "director": "Judith Godrèche",
+      "year": "2026",
+      "duration": "117 min",
+      "country": {
+        "en": [
+          "France"
+        ],
+        "fi": [
+          "Ranska"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "kids-these-days",
+      "keywords": [
+        "memory",
+        "youth",
+        "female-stories",
+        "literature",
+        "identity"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/a-girls-story/",
+        "fi": "https://hiff.fi/ohjelma/a-girls-story/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T16:10",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-20T18:00",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-24T20:00",
+          "venue": "Gilda 2"
+        },
+        {
+          "date": "2026-09-26T13:30",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": {
+        "en": "A Poet",
+        "fi": "A Poet"
+      },
+      "director": "Simón Mesa Soto",
+      "year": "2025",
+      "duration": "123 min",
+      "country": {
+        "en": [
+          "Colombia, Germany, Sweden"
+        ],
+        "fi": [
+          "Kolumbia, Saksa, Ruotsi"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "live-laugh-love-anarchy",
+      "keywords": [
+        "humour",
+        "art",
+        "literature",
+        "weird"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/a-poet/",
+        "fi": "https://hiff.fi/ohjelma/a-poet/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T18:15",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-23T16:45",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-27T18:30",
+          "venue": "Kino Engel 1"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": {
+        "en": "A Prayer for the Dying",
+        "fi": "A Prayer for the Dying"
+      },
+      "director": "Dara Van Dusen",
+      "year": "2026",
+      "duration": "95 min",
+      "country": {
+        "en": [
+          "Norway, Sweden, Poland"
+        ],
+        "fi": [
+          "Norja, Ruotsi, Puola"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "rewrite-history",
+      "keywords": [
+        "angst",
+        "history",
+        "urban-spaces",
+        "mental-health",
+        "weird",
+        "family-ties"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/a-prayer-for-the-dying/",
+        "fi": "https://hiff.fi/ohjelma/a-prayer-for-the-dying/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T16:00",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-23T20:45",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-25T21:15",
+          "venue": "Kinopalatsi 2"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": {
+        "en": "A Woman’s Life",
+        "fi": "A Woman’s Life"
+      },
+      "director": "Charline Bourgeois-Tacquet",
+      "year": "2026",
+      "duration": "99 min",
+      "country": {
+        "en": [
+          "France"
+        ],
+        "fi": [
+          "Ranska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "live-laugh-love-anarchy",
+      "keywords": [
+        "love",
+        "family-ties",
+        "female-stories",
+        "badass",
+        "feelgood",
+        "lgbtqia"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/a-womans-life/",
+        "fi": "https://hiff.fi/ohjelma/a-womans-life/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-22T19:45",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-25T16:00",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": {
+        "en": "Arrested Memory",
+        "fi": "Arrested Memory"
+      },
+      "director": "Sabu",
+      "year": "",
+      "duration": "87 min",
+      "ageLimit": "K16",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "action",
+        "humour",
+        "angst",
+        "thriller",
+        "memory",
+        "journey",
+        "grief",
+        "crime"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/arrested-memory/",
+        "fi": "https://hiff.fi/ohjelma/arrested-memory/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T21:15",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-23T18:30",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-25T19:00",
+          "venue": "Savoy-teatteri"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": {
+        "en": "Árru",
+        "fi": "Árru"
+      },
+      "director": "Elle Sofe Sara",
+      "year": "2026",
+      "duration": "98 min",
+      "country": {
+        "en": [
+          "Norway, Finland, Sweden, Sápmi"
+        ],
+        "fi": [
+          "Norja, Suomi, Ruotsi, Saamenmaa"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "nordic-gems",
+      "keywords": [
+        "indigenous-peoples",
+        "music",
+        "family-ties",
+        "memory",
+        "human-rights"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/arru/",
+        "fi": "https://hiff.fi/ohjelma/arru/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-22T17:30",
+          "venue": "Bio Rex Lasipalatsi"
+        },
+        {
+          "date": "2026-09-23T18:00",
+          "venue": "Vuotalo"
+        },
+        {
+          "date": "2026-09-26T21:00",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": {
+        "en": "Attenberg",
+        "fi": "Attenberg"
+      },
+      "director": "Athina Rachel Tsangari",
+      "year": "2011",
+      "duration": "95 min",
+      "country": {
+        "en": [
+          "Greece"
+        ],
+        "fi": [
+          "Kreikka"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "r-a-x-lux-audience-award",
+      "keywords": [
+        "identity",
+        "coming-of-age",
+        "family-ties",
+        "weird",
+        "sex",
+        "subtitled-spoken-in-finnish",
+        "free-of-charge"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/attenberg/",
+        "fi": "https://hiff.fi/ohjelma/attenberg/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T11:30",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": {
+        "en": "Barbara Forever",
+        "fi": "Barbara Forever"
+      },
+      "director": "Brydie O’Connor",
+      "year": "2026",
+      "duration": "102 min",
+      "country": {
+        "en": [
+          "United States"
+        ],
+        "fi": [
+          "Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "r-a-trailblazers",
+      "keywords": [
+        "lgbtqia",
+        "archives",
+        "biopic",
+        "art",
+        "filmmaking",
+        "aging"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/barbara-forever/",
+        "fi": "https://hiff.fi/ohjelma/barbara-forever/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T20:30",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-19T17:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-27T14:00",
+          "venue": "Kino Regina"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": {
+        "en": "Bayside Shakedown N.E.W.",
+        "fi": "Bayside Shakedown N.E.W."
+      },
+      "director": "Katsuyuki Motohiro",
+      "year": "",
+      "duration": "141 min",
+      "country": {
+        "en": [
+          "Japan"
+        ],
+        "fi": [
+          "Japani"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "action",
+        "crime",
+        "tech",
+        "badass",
+        "aging",
+        "thriller"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/bayside-shakedown-n-e-w/",
+        "fi": "https://hiff.fi/ohjelma/bayside-shakedown-n-e-w/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-25T18:00",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": {
+        "en": "Beginnings",
+        "fi": "Beginnings"
+      },
+      "director": "Jeanette Nordahl",
+      "year": "2025",
+      "duration": "96 min",
+      "country": {
+        "en": [
+          "Denmark"
+        ],
+        "fi": [
+          "Tanska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "nordic-council-film-prize-nominees",
+      "keywords": [
+        "family-ties",
+        "female-stories",
+        "love"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/beginnings/",
+        "fi": "https://hiff.fi/ohjelma/beginnings/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T16:30",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-21T18:30",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-24T20:30",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": {
+        "en": "Belzebubs",
+        "fi": "Belzebubs"
+      },
+      "director": "Samppa Kukkonen",
+      "year": "",
+      "duration": "67 min",
+      "country": {
+        "en": [
+          "Finland"
+        ],
+        "fi": [
+          "Suomi"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "animated-dreams",
+      "keywords": [
+        "family-ties",
+        "humour",
+        "art",
+        "subtitled-spoken-in-finnish",
+        "music"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/belzebubs/",
+        "fi": "https://hiff.fi/ohjelma/belzebubs/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-22T20:40",
+          "venue": "Bio Rex Lasipalatsi"
+        },
+        {
+          "date": "2026-09-23T17:00",
+          "venue": "Kinopalatsi 2"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": {
+        "en": "Ben'Imana",
+        "fi": "Ben'Imana"
+      },
+      "director": "Marie-Clémentine Dusabejambo",
+      "year": "2026",
+      "duration": "101 min",
+      "country": {
+        "en": [
+          "Gabon, Norway, Rwanda, France, Ivory Coast"
+        ],
+        "fi": [
+          "Gabon, Norja, Ruanda, Ranska, Norsunluurannikko"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "crime-punishment",
+      "keywords": [
+        "crime",
+        "family-ties",
+        "memory",
+        "society",
+        "female-stories",
+        "africa"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/benimana/",
+        "fi": "https://hiff.fi/ohjelma/benimana/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-21T16:30",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-22T21:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-26T18:20",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": {
+        "en": "Birita",
+        "fi": "Birita"
+      },
+      "director": "Búi Dam",
+      "year": "2025",
+      "duration": "89 min",
+      "country": {
+        "en": [
+          "Faroe Islands, Denmark"
+        ],
+        "fi": [
+          "Färsaaret, Tanska"
+        ]
+      },
+      "ageLimit": "S",
+      "themeKey": "nordic-council-film-prize-nominees",
+      "keywords": [
+        "memory",
+        "family-ties",
+        "art",
+        "aging"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/birita/",
+        "fi": "https://hiff.fi/ohjelma/birita/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T13:30",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-23T18:30",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-24T17:30",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-27T13:30",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": {
+        "en": "Blue Film",
+        "fi": "Blue Film"
+      },
+      "director": "Elliot Tuttle",
+      "year": "",
+      "duration": "85 min",
+      "country": {
+        "en": [
+          "United States"
+        ],
+        "fi": [
+          "Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "let-s-talk-about-sex",
+      "keywords": [
+        "crime",
+        "lgbtqia",
+        "sex",
+        "angst",
+        "memory"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/blue-film/",
+        "fi": "https://hiff.fi/ohjelma/blue-film/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T21:00",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-20T18:15",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-23T21:20",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": {
+        "en": "Blue Heron",
+        "fi": "Blue Heron"
+      },
+      "director": "Sophy Romvari",
+      "year": "2025",
+      "duration": "91 min",
+      "country": {
+        "en": [
+          "Hungary, Canada"
+        ],
+        "fi": [
+          "Unkari, Kanada"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "kids-these-days",
+      "keywords": [
+        "family-ties",
+        "angst",
+        "coming-of-age",
+        "mental-health",
+        "memory",
+        "grief",
+        "subtitled-spoken-in-finnish"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/blue-heron/",
+        "fi": "https://hiff.fi/ohjelma/blue-heron/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T18:30",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-26T14:00",
+          "venue": "Kino Regina"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": {
+        "en": "Bouchra",
+        "fi": "Bouchra"
+      },
+      "director": "Orian Barki, Meriem Bennani",
+      "year": "2025",
+      "duration": "83 min",
+      "country": {
+        "en": [
+          "Italy, Morocco, United States"
+        ],
+        "fi": [
+          "Italia, Marokko, Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "animated-dreams",
+      "keywords": [
+        "animals",
+        "urban-spaces",
+        "lgbtqia",
+        "memory",
+        "female-stories",
+        "family-ties",
+        "love",
+        "sex",
+        "filmmaking",
+        "africa",
+        "youth"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/bouchra/",
+        "fi": "https://hiff.fi/ohjelma/bouchra/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T16:30",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-21T21:15",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-24T18:00",
+          "venue": "Gilda 2"
+        },
+        {
+          "date": "2026-09-27T16:15",
+          "venue": "Gilda 1"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": {
+        "en": "Brunch Screening: A Woman's Life",
+        "fi": "Brunssinäytös: A Woman's Life"
+      },
+      "director": "Charline Bourgeois-Tacquet",
+      "year": "2026",
+      "duration": "129 min",
+      "country": {
+        "en": [
+          "France"
+        ],
+        "fi": [
+          "Ranska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "r-a-special-screenings",
+      "keywords": [
+        "love",
+        "family-ties",
+        "female-stories",
+        "badass",
+        "feelgood",
+        "lgbtqia"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/brunssinaytos-a-womans-life/",
+        "fi": "https://hiff.fi/ohjelma/brunssinaytos-a-womans-life/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-26T12:00",
+          "venue": "Gilda 1"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": {
+        "en": "Brunch Screening: The Dance Club",
+        "fi": "Brunssinäytös: The Dance Club"
+      },
+      "director": "Lisa Langseth",
+      "year": "2025",
+      "duration": "129 min",
+      "country": {
+        "en": [
+          "Sweden"
+        ],
+        "fi": [
+          "Ruotsi"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "r-a-special-screenings",
+      "keywords": [
+        "feelgood",
+        "dance",
+        "mental-health",
+        "humour"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/brunssinaytos-the-dance-club/",
+        "fi": "https://hiff.fi/ohjelma/brunssinaytos-the-dance-club/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T12:00",
+          "venue": "Gilda 1"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": {
+        "en": "California Schemin'",
+        "fi": "California Schemin'"
+      },
+      "director": "James McAvoy",
+      "year": "2025",
+      "duration": "107 min",
+      "country": {
+        "en": [
+          "United Kingdom, United States"
+        ],
+        "fi": [
+          "Iso-Britannia, Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "the-power-of-music",
+      "keywords": [
+        "music",
+        "feelgood",
+        "friendship",
+        "humour"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/california-schemin/",
+        "fi": "https://hiff.fi/ohjelma/california-schemin/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T18:45",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-19T20:45",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-26T14:15",
+          "venue": "Savoy-teatteri"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": {
+        "en": "Cambodian Beer Dreams",
+        "fi": "Cambodian Beer Dreams"
+      },
+      "director": "Laurits Nansen",
+      "year": "",
+      "duration": "82 min",
+      "country": {
+        "en": [
+          "Denmark, Sweden, France"
+        ],
+        "fi": [
+          "Tanska, Ruotsi, Ranska"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "society",
+        "urban-spaces"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/cambodian-beer-dreams/",
+        "fi": "https://hiff.fi/ohjelma/cambodian-beer-dreams/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T21:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-24T18:30",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-26T12:00",
+          "venue": "Kino Töölö"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": {
+        "en": "CAMP",
+        "fi": "CAMP"
+      },
+      "director": "Avalon Fast",
+      "year": "2025",
+      "duration": "111 min",
+      "country": {
+        "en": [
+          "Canada"
+        ],
+        "fi": [
+          "Kanada"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "dark-feminine",
+      "keywords": [
+        "coming-of-age",
+        "horror",
+        "identity",
+        "fantasy",
+        "female-stories"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/camp/",
+        "fi": "https://hiff.fi/ohjelma/camp/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-21T18:00",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-22T20:45",
+          "venue": "Savoy-teatteri"
+        },
+        {
+          "date": "2026-09-24T20:45",
+          "venue": "Kinopalatsi 1"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": {
+        "en": "Congo Boy",
+        "fi": "Congo Boy"
+      },
+      "director": "Rafiki Fariala",
+      "year": "2026",
+      "duration": "90 min",
+      "country": {
+        "en": [
+          "Central African Republic, Democratic Republic of the Congo, France, Italy"
+        ],
+        "fi": [
+          "Central African Republic, Kongon demokraattinen tasavalta, Ranska, Italia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "the-power-of-music",
+      "keywords": [
+        "coming-of-age",
+        "music",
+        "identity",
+        "family-ties",
+        "society",
+        "human-rights",
+        "youth",
+        "africa"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/congo-boy/",
+        "fi": "https://hiff.fi/ohjelma/congo-boy/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T20:30",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-22T18:00",
+          "venue": "Vuotalo"
+        },
+        {
+          "date": "2026-09-26T16:15",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": {
+        "en": "Dao",
+        "fi": "Dao"
+      },
+      "director": "Alain Gomis",
+      "year": "2026",
+      "duration": "185 min",
+      "country": {
+        "en": [
+          "France, Guinea-Bissau, Senegal"
+        ],
+        "fi": [
+          "Ranska, Guinea-Bissau, Senegal"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "next-level",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "experimental",
+        "africa",
+        "family-ties"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/dao/",
+        "fi": "https://hiff.fi/ohjelma/dao/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T14:00",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-24T17:30",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": {
+        "en": "Dawning",
+        "fi": "Dawning"
+      },
+      "director": "Patrik Syversen",
+      "year": "",
+      "duration": "109 min",
+      "country": {
+        "en": [
+          "Norway"
+        ],
+        "fi": [
+          "Norja"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "midnight-mayhem",
+      "keywords": [
+        "horror",
+        "family-ties",
+        "angst",
+        "female-stories"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/dawning/",
+        "fi": "https://hiff.fi/ohjelma/dawning/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T16:15",
+          "venue": "Bio Rex Lasipalatsi"
+        },
+        {
+          "date": "2026-09-21T16:00",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-22T20:45",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-26T20:30",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-27T18:00",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": {
+        "en": "Decorado",
+        "fi": "Decorado"
+      },
+      "director": "Alberto Vázquez",
+      "year": "2025",
+      "duration": "95 min",
+      "country": {
+        "en": [
+          "Spain"
+        ],
+        "fi": [
+          "Espanja"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "animated-dreams",
+      "keywords": [
+        "angst",
+        "animals",
+        "fantasy",
+        "identity",
+        "thriller",
+        "urban-spaces",
+        "mental-health",
+        "weird",
+        "family-ties"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/decorado/",
+        "fi": "https://hiff.fi/ohjelma/decorado/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T14:10",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-20T20:30",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-24T20:45",
+          "venue": "Savoy-teatteri"
+        },
+        {
+          "date": "2026-09-27T16:15",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": {
+        "en": "Double Freedom",
+        "fi": "Double Freedom"
+      },
+      "director": "Lisandro Alonso",
+      "year": "2026",
+      "duration": "100 min",
+      "country": {
+        "en": [
+          "Chile, Argentina, Luxembourg, Germany, United Kingdom"
+        ],
+        "fi": [
+          "Chile, Argentiina, Luxemburg, Saksa, Iso-Britannia"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "next-level",
+      "keywords": [
+        "family-ties",
+        "slow-cinema",
+        "relationship-with-nature"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/double-freedom/",
+        "fi": "https://hiff.fi/ohjelma/double-freedom/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T20:45",
+          "venue": "WHS Teatteri Union"
+        },
+        {
+          "date": "2026-09-19T11:15",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-21T18:00",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-26T16:10",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "title": {
+        "en": "Down the Arm of God",
+        "fi": "Down the Arm of God"
+      },
+      "director": "Peter Brunner",
+      "year": "2026",
+      "duration": "106 min",
+      "country": {
+        "en": [
+          "France, United States"
+        ],
+        "fi": [
+          "Ranska, Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "united-states-of-indie",
+      "keywords": [
+        "society",
+        "thriller",
+        "faith"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/down-the-arm-of-god/",
+        "fi": "https://hiff.fi/ohjelma/down-the-arm-of-god/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T16:30",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-20T20:45",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-24T21:00",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": {
+        "en": "Dracula",
+        "fi": "Dracula"
+      },
+      "director": "Radu Jude",
+      "year": "2025",
+      "duration": "170 min",
+      "country": {
+        "en": [
+          "Romania, Austria, Luxembourg, Brazil"
+        ],
+        "fi": [
+          "Romania, Itävalta, Luxemburg, Brasilia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "next-level",
+      "keywords": [
+        "tech",
+        "experimental",
+        "literature",
+        "fantasy",
+        "humour"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/dracula/",
+        "fi": "https://hiff.fi/ohjelma/dracula/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T17:45",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-27T15:45",
+          "venue": "Kinopalatsi 2"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": {
+        "en": "Dry Leaf",
+        "fi": "Dry Leaf"
+      },
+      "director": "Alexandre Koberidze",
+      "year": "2025",
+      "duration": "186 min",
+      "country": {
+        "en": [
+          "Germany, Georgia"
+        ],
+        "fi": [
+          "Saksa, Georgia"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "next-level",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "experimental",
+        "slow-cinema",
+        "family-ties",
+        "fantasy",
+        "sports"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/dry-leaf/",
+        "fi": "https://hiff.fi/ohjelma/dry-leaf/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T12:30",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-25T17:30",
+          "venue": "WHS Teatteri Union"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": {
+        "en": "Dua",
+        "fi": "Dua"
+      },
+      "director": "Blerta Basholli",
+      "year": "",
+      "duration": "100 min",
+      "country": {
+        "en": [
+          "Kosovo, Switzerland, France"
+        ],
+        "fi": [
+          "Kosovo, Sveitsi, Ranska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "east-side-stories",
+      "keywords": [
+        "history",
+        "family-ties",
+        "female-stories",
+        "based-on-true-events",
+        "coming-of-age",
+        "youth"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/dua/",
+        "fi": "https://hiff.fi/ohjelma/dua/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T11:30",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-25T18:00",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-27T16:20",
+          "venue": "Kino Töölö"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "title": {
+        "en": "Elephants in the Fog",
+        "fi": "Elephants in the Fog"
+      },
+      "director": "Abinash Bikram Shah",
+      "year": "2026",
+      "duration": "108 min",
+      "country": {
+        "en": [
+          "Nepal, France"
+        ],
+        "fi": [
+          "Nepal, Ranska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "lgbtqia",
+        "relationship-with-nature",
+        "animals",
+        "love",
+        "crime"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/elephants-in-the-fog/",
+        "fi": "https://hiff.fi/ohjelma/elephants-in-the-fog/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-22T16:30",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-23T20:45",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-27T18:00",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "title": {
+        "en": "Erupcja",
+        "fi": "Erupcja"
+      },
+      "director": "Pete Ohs",
+      "year": "2025",
+      "duration": "71 min",
+      "country": {
+        "en": [
+          "United States, Poland"
+        ],
+        "fi": [
+          "Yhdysvallat, Puola"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "live-laugh-love-anarchy",
+      "keywords": [
+        "urban-spaces",
+        "lgbtqia",
+        "female-stories",
+        "feelgood",
+        "festival-hit"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/erupcja/",
+        "fi": "https://hiff.fi/ohjelma/erupcja/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T15:45",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-20T14:00",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-24T21:00",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": {
+        "en": "Everybody Digs Bill Evans",
+        "fi": "Everybody Digs Bill Evans"
+      },
+      "director": "Grant Gee",
+      "year": "2026",
+      "duration": "102 min",
+      "country": {
+        "en": [
+          "Ireland, United Kingdom"
+        ],
+        "fi": [
+          "Irlanti, Iso-Britannia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "the-power-of-music",
+      "keywords": [
+        "angst",
+        "festival-hit",
+        "mental-health",
+        "music",
+        "family-ties",
+        "grief",
+        "based-on-true-events",
+        "biopic"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/everybody-digs-bill-evans/",
+        "fi": "https://hiff.fi/ohjelma/everybody-digs-bill-evans/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-22T18:30",
+          "venue": "Savoy-teatteri"
+        },
+        {
+          "date": "2026-09-26T13:30",
+          "venue": "Kinopalatsi 1"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "title": {
+        "en": "Everybody to Kenmure Street",
+        "fi": "Everybody to Kenmure Street"
+      },
+      "director": "Felipe Bustos Sierra",
+      "year": "2025",
+      "duration": "98 min",
+      "country": {
+        "en": [
+          "United Kingdom"
+        ],
+        "fi": [
+          "Iso-Britannia"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "fight-the-power",
+      "keywords": [
+        "society",
+        "urban-spaces",
+        "immigration",
+        "human-rights"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/everybody-to-kenmure-street/",
+        "fi": "https://hiff.fi/ohjelma/everybody-to-kenmure-street/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T16:00",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-21T21:00",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-25T16:45",
+          "venue": "Savoy-teatteri"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "title": {
+        "en": "Everytime",
+        "fi": "Everytime"
+      },
+      "director": "Sandra Wollner",
+      "year": "2026",
+      "duration": "124 min",
+      "country": {
+        "en": [
+          "Austria, Germany"
+        ],
+        "fi": [
+          "Itävalta, Saksa"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "next-level",
+      "keywords": [
+        "grief",
+        "weird",
+        "family-ties",
+        "journey",
+        "memory"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/everytime/",
+        "fi": "https://hiff.fi/ohjelma/everytime/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T12:00",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-23T20:15",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-25T17:30",
+          "venue": "Gilda 2"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "title": {
+        "en": "Full Phil",
+        "fi": "Full Phil"
+      },
+      "director": "Quentin Dupieux",
+      "year": "2026",
+      "duration": "78 min",
+      "country": {
+        "en": [
+          "France, Belgium"
+        ],
+        "fi": [
+          "Ranska, Belgia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "spotlight-selection",
+      "keywords": [
+        "weird",
+        "journey",
+        "humour",
+        "horror"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/full-phil/",
+        "fi": "https://hiff.fi/ohjelma/full-phil/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T19:15",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "title": {
+        "en": "Ghost in the Cell",
+        "fi": "Ghost in the Cell"
+      },
+      "director": "Joko Anwar",
+      "year": "2026",
+      "duration": "106 min",
+      "country": {
+        "en": [
+          "Indonesia, South Korea"
+        ],
+        "fi": [
+          "Indonesia, Etelä-Korea"
+        ]
+      },
+      "ageLimit": "K18",
+      "themeKey": "midnight-mayhem",
+      "keywords": [
+        "angst",
+        "thriller",
+        "horror",
+        "action"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ghost-in-the-cell/",
+        "fi": "https://hiff.fi/ohjelma/ghost-in-the-cell/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T18:45",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-23T20:50",
+          "venue": "Bio Rex Lasipalatsi"
+        },
+        {
+          "date": "2026-09-25T21:00",
+          "venue": "Savoy-teatteri"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "title": {
+        "en": "Glorious Summer",
+        "fi": "Glorious Summer"
+      },
+      "director": "Helena Ganjalyan, Bartosz Szpak",
+      "year": "2025",
+      "duration": "89 min",
+      "country": {
+        "en": [
+          "Poland"
+        ],
+        "fi": [
+          "Puola"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "uncanny-valley",
+      "keywords": [
+        "weird",
+        "society",
+        "mental-health",
+        "female-stories"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/glorious-summer/",
+        "fi": "https://hiff.fi/ohjelma/glorious-summer/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T21:00",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-20T18:30",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-24T16:40",
+          "venue": "Maxim 1"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "title": {
+        "en": "God Will Not Help",
+        "fi": "God Will Not Help"
+      },
+      "director": "Hana Jušić",
+      "year": "2025",
+      "duration": "137 min",
+      "country": {
+        "en": [
+          "Croatia, Italy, Romania, Greece, France, Slovenia"
+        ],
+        "fi": [
+          "Kroatia, Italia, Romania, Kreikka, Ranska, Slovenia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "dark-feminine",
+      "keywords": [
+        "faith",
+        "weird",
+        "epoch",
+        "thriller"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/god-will-not-help/",
+        "fi": "https://hiff.fi/ohjelma/god-will-not-help/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-22T17:30",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-24T20:00",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-27T13:15",
+          "venue": "Gilda 1"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "title": {
+        "en": "Good Boy",
+        "fi": "Good Boy"
+      },
+      "director": "Ben Leonberg",
+      "year": "2025",
+      "duration": "72 min",
+      "country": {
+        "en": [
+          "United States"
+        ],
+        "fi": [
+          "Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "more-than-human",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "angst",
+        "animals",
+        "horror"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/good-boy/",
+        "fi": "https://hiff.fi/ohjelma/good-boy/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-24T16:40",
+          "venue": "Bio Rex Lasipalatsi"
+        },
+        {
+          "date": "2026-09-26T19:00",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-27T20:40",
+          "venue": "Gilda 1"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "title": {
+        "en": "Her Private Hell",
+        "fi": "Her Private Hell"
+      },
+      "director": "Nicolas Winding Refn",
+      "year": "2026",
+      "duration": "110 min",
+      "country": {
+        "en": [
+          "Denmark, United States"
+        ],
+        "fi": [
+          "Tanska, Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "spotlight-selection",
+      "keywords": [
+        "thriller",
+        "crime",
+        "weird",
+        "sci-fi"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/her-private-hell/",
+        "fi": "https://hiff.fi/ohjelma/her-private-hell/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T20:50",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "title": {
+        "en": "Hold Onto Me",
+        "fi": "Hold Onto Me"
+      },
+      "director": "Myrsini Aristidou",
+      "year": "2026",
+      "duration": "102 min",
+      "country": {
+        "en": [
+          "Cyprus, France, Denmark, United States, Greece"
+        ],
+        "fi": [
+          "Kypros, Ranska, Tanska, Yhdysvallat, Kreikka"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "kids-these-days",
+      "keywords": [
+        "journey",
+        "family-ties",
+        "childhood"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/hold-onto-me/",
+        "fi": "https://hiff.fi/ohjelma/hold-onto-me/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T18:00",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-26T20:45",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-27T20:45",
+          "venue": "Kino Töölö"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "title": {
+        "en": "Homebound",
+        "fi": "Homebound"
+      },
+      "director": "Neeraj Ghaywan",
+      "year": "2025",
+      "duration": "122 min",
+      "country": {
+        "en": [
+          "India, France"
+        ],
+        "fi": [
+          "Intia, Ranska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "friendship",
+        "journey",
+        "society"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/homebound/",
+        "fi": "https://hiff.fi/ohjelma/homebound/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T21:30",
+          "venue": "Kesäkino Engel (outdoor)"
+        },
+        {
+          "date": "2026-09-20T13:30",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "title": {
+        "en": "I See Buildings Fall Like Lightning",
+        "fi": "I See Buildings Fall Like Lightning"
+      },
+      "director": "Clio Barnard",
+      "year": "2026",
+      "duration": "109 min",
+      "country": {
+        "en": [
+          "United Kingdom, United States, France"
+        ],
+        "fi": [
+          "Iso-Britannia, Yhdysvallat, Ranska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "live-laugh-love-anarchy",
+      "keywords": [
+        "friendship",
+        "love",
+        "mental-health",
+        "coming-of-age",
+        "society",
+        "urban-spaces"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/i-see-buildings-fall-like-lightning/",
+        "fi": "https://hiff.fi/ohjelma/i-see-buildings-fall-like-lightning/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T13:45",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-22T21:00",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-25T20:45",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "title": {
+        "en": "If I Go Will They Miss Me",
+        "fi": "If I Go Will They Miss Me"
+      },
+      "director": "Walter Thompson-Hernández",
+      "year": "2026",
+      "duration": "92 min",
+      "country": {
+        "en": [
+          "United States"
+        ],
+        "fi": [
+          "Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "united-states-of-indie",
+      "keywords": [
+        "urban-spaces",
+        "family-ties",
+        "coming-of-age",
+        "childhood"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/if-i-go-will-they-miss-me/",
+        "fi": "https://hiff.fi/ohjelma/if-i-go-will-they-miss-me/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T16:45",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-26T18:30",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-27T21:00",
+          "venue": "Kinopalatsi 1"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "title": {
+        "en": "If I Had Legs I'd Kick You",
+        "fi": "If I Had Legs I'd Kick You"
+      },
+      "director": "Mary Bronstein",
+      "year": "2025",
+      "duration": "113 min",
+      "country": {
+        "en": [
+          "United States"
+        ],
+        "fi": [
+          "Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "united-states-of-indie",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "family-ties",
+        "thriller",
+        "mental-health",
+        "humour"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/if-i-had-legs-id-kick-you/",
+        "fi": "https://hiff.fi/ohjelma/if-i-had-legs-id-kick-you/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T20:45",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-27T16:00",
+          "venue": "Kinopalatsi 1"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "title": {
+        "en": "If We Don't Burn, How Do We Light Up the Night",
+        "fi": "If We Don't Burn, How Do We Light Up the Night"
+      },
+      "director": "Kim Torres",
+      "year": "2025",
+      "duration": "91 min",
+      "country": {
+        "en": [
+          "Costa Rica, Mexico, France"
+        ],
+        "fi": [
+          "Costa Rica, Meksiko, Ranska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "kids-these-days",
+      "keywords": [
+        "youth",
+        "female-stories",
+        "coming-of-age",
+        "crime",
+        "friendship"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/if-we-dont-burn-how-do-we-light-up-the-night/",
+        "fi": "https://hiff.fi/ohjelma/if-we-dont-burn-how-do-we-light-up-the-night/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T19:15",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-21T21:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-25T20:30",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-27T21:00",
+          "venue": "Kino Engel 1"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "title": {
+        "en": "Iron Boy",
+        "fi": "Iron Boy"
+      },
+      "director": "Louis Clichy",
+      "year": "2026",
+      "duration": "80 min",
+      "country": {
+        "en": [
+          "France"
+        ],
+        "fi": [
+          "Ranska"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "animated-dreams",
+      "keywords": [
+        "childhood",
+        "coming-of-age",
+        "family-ties"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/iron-boy/",
+        "fi": "https://hiff.fi/ohjelma/iron-boy/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T14:30",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-20T16:15",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-26T18:30",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "title": {
+        "en": "Toni Erdmann",
+        "fi": "Isäni Toni Erdmann"
+      },
+      "director": "Maren Ade",
+      "year": "2016",
+      "duration": "162 min",
+      "country": {
+        "en": [
+          "Germany, Austria, Romania"
+        ],
+        "fi": [
+          "Saksa, Itävalta, Romania"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "r-a-x-lux-audience-award",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "humour",
+        "weird",
+        "family-ties",
+        "journey",
+        "free-of-charge"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/isani-toni-erdmann/",
+        "fi": "https://hiff.fi/ohjelma/isani-toni-erdmann/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T12:00",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "title": {
+        "en": "Jim Queen",
+        "fi": "Jim Queen"
+      },
+      "director": "Marco Nguyen, Nicolas Athané",
+      "year": "2026",
+      "duration": "85 min",
+      "country": {
+        "en": [
+          "France, Belgium"
+        ],
+        "fi": [
+          "Ranska, Belgia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "animated-dreams",
+      "keywords": [
+        "lgbtqia",
+        "badass",
+        "love",
+        "sex",
+        "humour",
+        "festival-hit"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/jim-queen/",
+        "fi": "https://hiff.fi/ohjelma/jim-queen/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T21:00",
+          "venue": "Bio Rex Lasipalatsi"
+        },
+        {
+          "date": "2026-09-21T19:00",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-26T18:45",
+          "venue": "Savoy-teatteri"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "title": {
+        "en": "Joan of Arc",
+        "fi": "Joan of Arc"
+      },
+      "director": "Hlynur Pálmason",
+      "year": "2025",
+      "duration": "61 min",
+      "country": {
+        "en": [
+          "Iceland, Denmark, France"
+        ],
+        "fi": [
+          "Islanti, Tanska, Ranska"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "next-level",
+      "keywords": [
+        "experimental",
+        "relationship-with-nature",
+        "family-ties"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/joan-of-arc/",
+        "fi": "https://hiff.fi/ohjelma/joan-of-arc/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T16:30",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-24T21:15",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-26T13:40",
+          "venue": "Kino Töölö"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "title": {
+        "en": "A Light That Never Goes Out",
+        "fi": "Jossain on valo joka ei sammu"
+      },
+      "director": "Lauri-Matti Parppei",
+      "year": "2025",
+      "duration": "111 min",
+      "country": {
+        "en": [
+          "Finland, Norway"
+        ],
+        "fi": [
+          "Suomi, Norja"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "nordic-council-film-prize-nominees",
+      "keywords": [
+        "music",
+        "friendship",
+        "mental-health"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/jossain-on-valo-joka-ei-sammu/",
+        "fi": "https://hiff.fi/ohjelma/jossain-on-valo-joka-ei-sammu/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T14:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-25T21:00",
+          "venue": "Kino Engel 1"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "title": {
+        "en": "Hen",
+        "fi": "Kana"
+      },
+      "director": "György Pálfi",
+      "year": "2025",
+      "duration": "96 min",
+      "country": {
+        "en": [
+          "Greece, Germany, Hungary"
+        ],
+        "fi": [
+          "Kreikka, Saksa, Unkari"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "more-than-human",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "animals",
+        "adventure",
+        "journey"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/kana/",
+        "fi": "https://hiff.fi/ohjelma/kana/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T18:00",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "title": {
+        "en": "Kevlar Soul",
+        "fi": "Kevlarsjäl – Iskunkestävä sielu"
+      },
+      "director": "Maria Eriksson-Hecht",
+      "year": "2025",
+      "duration": "102 min",
+      "country": {
+        "en": [
+          "Sweden, Norway, Finland"
+        ],
+        "fi": [
+          "Ruotsi, Norja, Suomi"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "nordic-council-film-prize-nominees",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "family-ties",
+        "love",
+        "crime"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/kevlarsjal-iskunkestava-sielu/",
+        "fi": "https://hiff.fi/ohjelma/kevlarsjal-iskunkestava-sielu/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-22T14:00",
+          "venue": "Vuotalo"
+        },
+        {
+          "date": "2026-09-24T18:00",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "title": {
+        "en": "KitKatClub – Kinks of Berlin",
+        "fi": "KitKatClub – Kinks of Berlin"
+      },
+      "director": "Philipp Fussenegger",
+      "year": "2026",
+      "duration": "96 min",
+      "country": {
+        "en": [
+          "Germany"
+        ],
+        "fi": [
+          "Saksa"
+        ]
+      },
+      "ageLimit": "K18",
+      "themeKey": "let-s-talk-about-sex",
+      "keywords": [
+        "sex",
+        "music",
+        "identity",
+        "lgbtqia"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/kitkatclub-kinks-of-berlin/",
+        "fi": "https://hiff.fi/ohjelma/kitkatclub-kinks-of-berlin/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T20:45",
+          "venue": "WHS Teatteri Union"
+        },
+        {
+          "date": "2026-09-20T19:00",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-25T18:15",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "title": {
+        "en": "National Competition: Time Travels",
+        "fi": "Kotimainen kilpailu: Aikamatkoja"
+      },
+      "director": "",
+      "year": "",
+      "duration": "83 min",
+      "ageLimit": "K12",
+      "themeKey": "national-competition",
+      "keywords": [
+        "history",
+        "youth",
+        "lgbtqia",
+        "memory",
+        "society",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/kotimainen-kilpailu-aikamatkoja/",
+        "fi": "https://hiff.fi/ohjelma/kotimainen-kilpailu-aikamatkoja/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T19:50",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-20T18:00",
+          "venue": "Maxim 2"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "title": {
+        "en": "National Competition: Twilight Zone",
+        "fi": "Kotimainen kilpailu: Hämärän rajamailla"
+      },
+      "director": "",
+      "year": "",
+      "duration": "86 min",
+      "ageLimit": "K16",
+      "themeKey": "national-competition",
+      "keywords": [
+        "sci-fi",
+        "thriller",
+        "horror",
+        "subtitled-spoken-in-finnish",
+        "fantasy",
+        "weird",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/kotimainen-kilpailu-hamaran-rajamailla/",
+        "fi": "https://hiff.fi/ohjelma/kotimainen-kilpailu-hamaran-rajamailla/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T19:45",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-22T20:15",
+          "venue": "Maxim 2"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "title": {
+        "en": "National Competition: Human Factor",
+        "fi": "Kotimainen kilpailu: Inhimillinen tekijä"
+      },
+      "director": "",
+      "year": "",
+      "duration": "75 min",
+      "ageLimit": "K12",
+      "themeKey": "national-competition",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "identity",
+        "youth",
+        "society",
+        "relationship-with-nature",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/kotimainen-kilpailu-inhimillinen-tekija/",
+        "fi": "https://hiff.fi/ohjelma/kotimainen-kilpailu-inhimillinen-tekija/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T14:45",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-21T18:30",
+          "venue": "Maxim 2"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "title": {
+        "en": "National Competition: What Remains",
+        "fi": "Kotimainen kilpailu: Mitä jäljelle jää"
+      },
+      "director": "",
+      "year": "",
+      "duration": "75 min",
+      "ageLimit": "K12",
+      "themeKey": "national-competition",
+      "keywords": [
+        "family-ties",
+        "based-on-true-events",
+        "society",
+        "aging",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/kotimainen-kilpailu-mita-jaljelle-jaa/",
+        "fi": "https://hiff.fi/ohjelma/kotimainen-kilpailu-mita-jaljelle-jaa/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T13:30",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-22T18:30",
+          "venue": "Maxim 2"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "title": {
+        "en": "National Competition: Just Between Us",
+        "fi": "Kotimainen kilpailu: Näin meidän kesken"
+      },
+      "director": "",
+      "year": "",
+      "duration": "80 min",
+      "ageLimit": "K12",
+      "themeKey": "national-competition",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "friendship",
+        "humour",
+        "society",
+        "feelgood",
+        "youth",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/kotimainen-kilpailu-nain-meidan-kesken/",
+        "fi": "https://hiff.fi/ohjelma/kotimainen-kilpailu-nain-meidan-kesken/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T17:15",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-21T20:15",
+          "venue": "Maxim 2"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "title": {
+        "en": "National Competition: Award Winners",
+        "fi": "Kotimainen kilpailu: Palkitut"
+      },
+      "director": "",
+      "year": "",
+      "duration": "",
+      "ageLimit": "K16",
+      "themeKey": "national-competition",
+      "keywords": [
+        "festival-hit",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/kotimainen-kilpailu-palkitut/",
+        "fi": "https://hiff.fi/ohjelma/kotimainen-kilpailu-palkitut/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-26T15:00",
+          "venue": "Kino Töölö"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "title": {
+        "en": "National Competition: Across Generations",
+        "fi": "Kotimainen kilpailu: Sukupolvien välillä"
+      },
+      "director": "",
+      "year": "",
+      "duration": "88 min",
+      "ageLimit": "K12",
+      "themeKey": "national-competition",
+      "keywords": [
+        "family-ties",
+        "memory",
+        "society",
+        "coming-of-age",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/kotimainen-kilpailu-sukupolvien-valilla/",
+        "fi": "https://hiff.fi/ohjelma/kotimainen-kilpailu-sukupolvien-valilla/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T17:15",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-20T20:00",
+          "venue": "Maxim 2"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "title": {
+        "en": "La Gradiva",
+        "fi": "La Gradiva"
+      },
+      "director": "Marine Atlan",
+      "year": "2026",
+      "duration": "145 min",
+      "country": {
+        "en": [
+          "France"
+        ],
+        "fi": [
+          "Ranska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "spotlight-selection",
+      "keywords": [
+        "youth",
+        "journey",
+        "history",
+        "coming-of-age"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/la-gradiva/",
+        "fi": "https://hiff.fi/ohjelma/la-gradiva/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T17:30",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-23T18:15",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "title": {
+        "en": "La Grazia",
+        "fi": "La Grazia"
+      },
+      "director": "Paolo Sorrentino",
+      "year": "2025",
+      "duration": "133 min",
+      "country": {
+        "en": [
+          "Italy"
+        ],
+        "fi": [
+          "Italia"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "spotlight-selection",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "grief",
+        "urban-spaces",
+        "aging",
+        "festival-hit"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/la-grazia/",
+        "fi": "https://hiff.fi/ohjelma/la-grazia/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-25T21:30",
+          "venue": "Kesäkino Engel (outdoor)"
+        },
+        {
+          "date": "2026-09-27T15:30",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "title": {
+        "en": "Landmarks",
+        "fi": "Landmarks"
+      },
+      "director": "Lucrecia Martel",
+      "year": "2025",
+      "duration": "124 min",
+      "country": {
+        "en": [
+          "Argentina, United States, Mexico, France, Netherlands, Denmark"
+        ],
+        "fi": [
+          "Argentiina, Yhdysvallat, Meksiko, Ranska, Alankomaat, Tanska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "fight-the-power",
+      "keywords": [
+        "crime",
+        "indigenous-peoples",
+        "human-rights",
+        "society"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/landmarks/",
+        "fi": "https://hiff.fi/ohjelma/landmarks/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T20:15",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-20T14:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-22T18:30",
+          "venue": "Kino Engel 1"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "title": {
+        "en": "Light Pillar",
+        "fi": "Light Pillar"
+      },
+      "director": "Xu Zao",
+      "year": "2026",
+      "duration": "90 min",
+      "country": {
+        "en": [
+          "China"
+        ],
+        "fi": [
+          "Kiina"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "animated-dreams",
+      "keywords": [
+        "humour",
+        "urban-spaces",
+        "love",
+        "tech"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/light-pillar/",
+        "fi": "https://hiff.fi/ohjelma/light-pillar/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T13:30",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-25T21:00",
+          "venue": "WHS Teatteri Union"
+        },
+        {
+          "date": "2026-09-27T18:15",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "title": {
+        "en": "Los Tigres",
+        "fi": "Los Tigres"
+      },
+      "director": "Alberto Rodríguez",
+      "year": "2025",
+      "duration": "109 min",
+      "country": {
+        "en": [
+          "Spain"
+        ],
+        "fi": [
+          "Espanja"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "midnight-mayhem",
+      "keywords": [
+        "action",
+        "family-ties",
+        "thriller"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/los-tigres/",
+        "fi": "https://hiff.fi/ohjelma/los-tigres/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T21:00",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-25T16:30",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-27T13:45",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "title": {
+        "en": "Earth Song",
+        "fi": "Maan laulu"
+      },
+      "director": "Erol Mintaş",
+      "year": "",
+      "duration": "118 min",
+      "country": {
+        "en": [
+          "Finland"
+        ],
+        "fi": [
+          "Suomi"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "spotlight-selection",
+      "keywords": [
+        "family-ties",
+        "memory",
+        "relationship-with-nature"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/maan-laulu/",
+        "fi": "https://hiff.fi/ohjelma/maan-laulu/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T18:50",
+          "venue": "Kino Regina"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "title": {
+        "en": "Marie Madeleine",
+        "fi": "Marie Madeleine"
+      },
+      "director": "Gessica Généus",
+      "year": "2026",
+      "duration": "104 min",
+      "country": {
+        "en": [
+          "France, Haiti, Luxembourg, Belgium, Canada"
+        ],
+        "fi": [
+          "Ranska, Haiti, Luxemburg, Belgia, Kanada"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "live-laugh-love-anarchy",
+      "keywords": [
+        "friendship",
+        "lgbtqia",
+        "identity"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/marie-madeleine/",
+        "fi": "https://hiff.fi/ohjelma/marie-madeleine/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T21:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-22T13:50",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-24T18:30",
+          "venue": "Kino Engel 1"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "title": {
+        "en": "Professor and Forest Warrior",
+        "fi": "Metsäsota ja rauha"
+      },
+      "director": "Jari Kokko",
+      "year": "2026",
+      "duration": "87 min",
+      "country": {
+        "en": [
+          "Finland"
+        ],
+        "fi": [
+          "Suomi"
+        ]
+      },
+      "ageLimit": "S",
+      "themeKey": "fight-the-power",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "society",
+        "relationship-with-nature"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/metsasota-ja-rauha/",
+        "fi": "https://hiff.fi/ohjelma/metsasota-ja-rauha/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T16:30",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "title": {
+        "en": "Mother of Flies",
+        "fi": "Mother of Flies"
+      },
+      "director": "John Adams, Zelda Adams, Toby Poser",
+      "year": "2025",
+      "duration": "92 min",
+      "country": {
+        "en": [
+          "United States"
+        ],
+        "fi": [
+          "Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "dark-feminine",
+      "keywords": [
+        "horror",
+        "female-stories",
+        "weird",
+        "faith"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/mother-of-flies/",
+        "fi": "https://hiff.fi/ohjelma/mother-of-flies/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-23T19:15",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-24T18:45",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-26T20:45",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "title": {
+        "en": "Mouse",
+        "fi": "Mouse"
+      },
+      "director": "Kelly O’Sullivan, Alex Thompson",
+      "year": "2026",
+      "duration": "120 min",
+      "country": {
+        "en": [
+          "United States"
+        ],
+        "fi": [
+          "Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "united-states-of-indie",
+      "keywords": [
+        "angst",
+        "festival-hit",
+        "identity",
+        "coming-of-age",
+        "urban-spaces",
+        "lgbtqia",
+        "female-stories",
+        "family-ties",
+        "grief",
+        "friendship",
+        "youth"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/mouse/",
+        "fi": "https://hiff.fi/ohjelma/mouse/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T18:15",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-26T16:00",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-27T20:45",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "title": {
+        "en": "My Friend the Porn Star",
+        "fi": "My Friend the Porn Star"
+      },
+      "director": "Rosa Friedrich",
+      "year": "2026",
+      "duration": "94 min",
+      "country": {
+        "en": [
+          "Austria"
+        ],
+        "fi": [
+          "Itävalta"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "let-s-talk-about-sex",
+      "keywords": [
+        "sex",
+        "female-stories",
+        "lgbtqia",
+        "media",
+        "filmmaking"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/my-friend-the-porn-star/",
+        "fi": "https://hiff.fi/ohjelma/my-friend-the-porn-star/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T17:15",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-19T15:00",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-25T20:45",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-27T18:00",
+          "venue": "Kino Regina"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "title": {
+        "en": "Nagi Notes",
+        "fi": "Nagi Notes"
+      },
+      "director": "Koji Fukada",
+      "year": "2026",
+      "duration": "110 min",
+      "country": {
+        "en": [
+          "Japan"
+        ],
+        "fi": [
+          "Japani"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "art",
+        "family-ties",
+        "love",
+        "friendship",
+        "female-stories"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/nagi-notes/",
+        "fi": "https://hiff.fi/ohjelma/nagi-notes/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T18:00",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-21T18:15",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-27T13:15",
+          "venue": "Kinopalatsi 2"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "title": {
+        "en": "Narciso",
+        "fi": "Narciso"
+      },
+      "director": "Marcelo Martinessi",
+      "year": "2026",
+      "duration": "101 min",
+      "country": {
+        "en": [
+          "Uruguay, Paraguay, France, Spain, Portugal, Brazil"
+        ],
+        "fi": [
+          "Uruguay, Paraguay, Ranska, Espanja, Portugali, Brasilia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "the-power-of-music",
+      "keywords": [
+        "crime",
+        "music",
+        "epoch",
+        "society",
+        "lgbtqia",
+        "thriller"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/narciso/",
+        "fi": "https://hiff.fi/ohjelma/narciso/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T20:45",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-24T16:30",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-27T18:30",
+          "venue": "Kino Töölö"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "title": {
+        "en": "New Group",
+        "fi": "New Group"
+      },
+      "director": "Yûta Shimotsu",
+      "year": "",
+      "duration": "82 min",
+      "country": {
+        "en": [
+          "Japan"
+        ],
+        "fi": [
+          "Japani"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "midnight-mayhem",
+      "keywords": [
+        "horror",
+        "society",
+        "family-ties",
+        "weird"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/new-group/",
+        "fi": "https://hiff.fi/ohjelma/new-group/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T18:45",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-21T20:30",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-26T21:30",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "title": {
+        "en": "Nitrate Kisses",
+        "fi": "Nitrate Kisses"
+      },
+      "director": "Barbara Hammer",
+      "year": "1992",
+      "duration": "67 min",
+      "country": {
+        "en": [
+          "United States"
+        ],
+        "fi": [
+          "Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "r-a-trailblazers",
+      "keywords": [
+        "archives",
+        "lgbtqia",
+        "history",
+        "experimental"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/nitrate-kisses/",
+        "fi": "https://hiff.fi/ohjelma/nitrate-kisses/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T19:15",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-27T16:15",
+          "venue": "Kino Regina"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "title": {
+        "en": "No Good Men",
+        "fi": "No Good Men"
+      },
+      "director": "Shahrbanoo Sadat",
+      "year": "2026",
+      "duration": "103 min",
+      "country": {
+        "en": [
+          "Afghanistan, Germany, Denmark, France, Norway"
+        ],
+        "fi": [
+          "Afganistan, Saksa, Tanska, Ranska, Norja"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "spotlight-selection",
+      "keywords": [
+        "festival-hit",
+        "female-stories",
+        "family-ties",
+        "love",
+        "human-rights"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/no-good-men/",
+        "fi": "https://hiff.fi/ohjelma/no-good-men/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T16:15",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-22T18:45",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-26T12:00",
+          "venue": "Savoy-teatteri"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "title": {
+        "en": "No Rest for the Wicked",
+        "fi": "No Rest for the Wicked"
+      },
+      "director": "Kasper \"Kalle\" Skovsbøl",
+      "year": "",
+      "duration": "103 min",
+      "country": {
+        "en": [
+          "Denmark"
+        ],
+        "fi": [
+          "Tanska"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "spotlight-selection",
+      "keywords": [
+        "fantasy",
+        "horror",
+        "lgbtqia",
+        "history",
+        "literature"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/no-rest-for-the-wicked/",
+        "fi": "https://hiff.fi/ohjelma/no-rest-for-the-wicked/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-24T20:45",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "title": {
+        "en": "Nox",
+        "fi": "Nox"
+      },
+      "director": "Matti Harju",
+      "year": "",
+      "duration": "66 min",
+      "country": {
+        "en": [
+          "Finland"
+        ],
+        "fi": [
+          "Suomi"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "next-level",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "weird",
+        "crime",
+        "friendship"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/nox/",
+        "fi": "https://hiff.fi/ohjelma/nox/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T16:00",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "title": {
+        "en": "Nuisance Bear",
+        "fi": "Nuisance Bear"
+      },
+      "director": "Gabriela Osio Vanden, Jack Weisman",
+      "year": "2026",
+      "duration": "87 min",
+      "country": {
+        "en": [
+          "United States, Canada"
+        ],
+        "fi": [
+          "Yhdysvallat, Kanada"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "more-than-human",
+      "keywords": [
+        "relationship-with-nature",
+        "society",
+        "urban-spaces",
+        "animals"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/nuisance-bear/",
+        "fi": "https://hiff.fi/ohjelma/nuisance-bear/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T13:15",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-22T16:30",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-26T19:00",
+          "venue": "Kino Engel 1"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "title": {
+        "en": "Olmo",
+        "fi": "Olmo"
+      },
+      "director": "Fernando Eimbcke",
+      "year": "2026",
+      "duration": "84 min",
+      "country": {
+        "en": [
+          "Mexico, United States"
+        ],
+        "fi": [
+          "Meksiko, Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "united-states-of-indie",
+      "keywords": [
+        "coming-of-age",
+        "family-ties",
+        "youth"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/olmo/",
+        "fi": "https://hiff.fi/ohjelma/olmo/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-21T16:30",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-23T21:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-27T14:30",
+          "venue": "Kino Engel 1"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "title": {
+        "en": "Palestine 36",
+        "fi": "Palestine 36"
+      },
+      "director": "Annemarie Jacir",
+      "year": "",
+      "duration": "119 min",
+      "country": {
+        "en": [
+          "Palestine, France, Qatar, United Kingdom, Saudi Arabia, United States, Denmark, Jordan, United Arab Emirates, Turkey, Sweden, Australia, Norway"
+        ],
+        "fi": [
+          "Palestiina, Ranska, Qatar, Iso-Britannia, Saudi-Arabia, Yhdysvallat, Tanska, Jordania, Yhdistyneet arabiemiirikunnat, Turkki, Ruotsi, Australia, Norja"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "fight-the-power",
+      "keywords": [
+        "history",
+        "society"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/palestine-36/",
+        "fi": "https://hiff.fi/ohjelma/palestine-36/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T16:10",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-19T13:30",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-25T20:00",
+          "venue": "Gilda 2"
+        },
+        {
+          "date": "2026-09-27T15:30",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "title": {
+        "en": "Paper Tiger",
+        "fi": "Paper Tiger"
+      },
+      "director": "James Gray",
+      "year": "2026",
+      "duration": "115 min",
+      "country": {
+        "en": [
+          "United States"
+        ],
+        "fi": [
+          "Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "spotlight-selection",
+      "keywords": [
+        "crime",
+        "family-ties",
+        "thriller",
+        "urban-spaces"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/paper-tiger/",
+        "fi": "https://hiff.fi/ohjelma/paper-tiger/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T20:50",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "title": {
+        "en": "Pillion",
+        "fi": "Pillion"
+      },
+      "director": "Harry Lighton",
+      "year": "2025",
+      "duration": "107 min",
+      "country": {
+        "en": [
+          "United Kingdom"
+        ],
+        "fi": [
+          "Iso-Britannia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "let-s-talk-about-sex",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "love",
+        "sex",
+        "humour",
+        "feelgood"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/pillion/",
+        "fi": "https://hiff.fi/ohjelma/pillion/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T21:00",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-25T18:30",
+          "venue": "Kinopalatsi 1"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "title": {
+        "en": "Prosecution",
+        "fi": "Prosecution"
+      },
+      "director": "Faraz Shariat",
+      "year": "2026",
+      "duration": "114 min",
+      "country": {
+        "en": [
+          "Germany"
+        ],
+        "fi": [
+          "Saksa"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "crime-punishment",
+      "keywords": [
+        "crime",
+        "badass",
+        "female-stories",
+        "society",
+        "thriller"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/prosecution/",
+        "fi": "https://hiff.fi/ohjelma/prosecution/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T20:30",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-25T20:30",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-26T18:15",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "title": {
+        "en": "Queen at Sea",
+        "fi": "Queen at Sea"
+      },
+      "director": "Lance Hammer",
+      "year": "2026",
+      "duration": "121 min",
+      "country": {
+        "en": [
+          "United Kingdom, United States"
+        ],
+        "fi": [
+          "Iso-Britannia, Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "spotlight-selection",
+      "keywords": [
+        "aging",
+        "love",
+        "family-ties"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/queen-at-sea/",
+        "fi": "https://hiff.fi/ohjelma/queen-at-sea/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T18:30",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-21T20:00",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-27T13:00",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "title": {
+        "en": "R&A Jazz: Juho Valjakka Trio x Everybody Digs Bill Evans",
+        "fi": "R&A Jazz: Juho Valjakka Trio x Everybody Digs Bill Evans"
+      },
+      "director": "Grant Gee",
+      "year": "2026",
+      "duration": "177 min",
+      "country": {
+        "en": [
+          "Ireland, United Kingdom"
+        ],
+        "fi": [
+          "Irlanti, Iso-Britannia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "r-a-special-screenings",
+      "keywords": [
+        "angst",
+        "festival-hit",
+        "mental-health",
+        "music",
+        "family-ties",
+        "grief",
+        "based-on-true-events"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-jazz-juho-valjakka-trio-x-everybody-digs-bill-evans/",
+        "fi": "https://hiff.fi/ohjelma/ra-jazz-juho-valjakka-trio-x-everybody-digs-bill-evans/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-23T17:30",
+          "venue": "Kino Töölö"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "title": {
+        "en": "R&A Shorts: African Express",
+        "fi": "R&A Shorts: African Express"
+      },
+      "director": "",
+      "year": "",
+      "duration": "80 min",
+      "ageLimit": "K16",
+      "themeKey": "kids-these-days",
+      "keywords": [
+        "family-ties",
+        "identity",
+        "youth",
+        "filmmaking",
+        "lgbtqia",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-african-express/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-african-express/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-23T18:00",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "title": {
+        "en": "R&A Shorts: Animated Baltic Gems",
+        "fi": "R&A Shorts: Baltian animaatiohuiput"
+      },
+      "director": "",
+      "year": "",
+      "duration": "68 min",
+      "ageLimit": "K12",
+      "themeKey": "animated-dreams",
+      "keywords": [
+        "art",
+        "urban-spaces",
+        "society",
+        "female-stories",
+        "coming-of-age",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-baltian-animaatiohuiput/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-baltian-animaatiohuiput/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-24T17:45",
+          "venue": "Maxim 2"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "title": {
+        "en": "R&A Shorts: Laughing in Swedish",
+        "fi": "R&A Shorts: Laughing in Swedish"
+      },
+      "director": "",
+      "year": "",
+      "duration": "75 min",
+      "ageLimit": "K12",
+      "themeKey": "nordic-gems",
+      "keywords": [
+        "humour",
+        "feelgood",
+        "animals",
+        "festival-hit",
+        "childhood",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-laughing-in-swedish/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-laughing-in-swedish/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-22T18:00",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "title": {
+        "en": "R&A Shorts: Let's Talk About Sex",
+        "fi": "R&A Shorts: Let's Talk About Sex"
+      },
+      "director": "",
+      "year": "",
+      "duration": "77 min",
+      "ageLimit": "K16",
+      "themeKey": "let-s-talk-about-sex",
+      "keywords": [
+        "sex",
+        "lgbtqia",
+        "youth",
+        "family-ties",
+        "coming-of-age",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-lets-talk-about-sex/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-lets-talk-about-sex/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T18:30",
+          "venue": "WHS Teatteri Union"
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "title": {
+        "en": "R&A Shorts: In the Spotlight",
+        "fi": "R&A Shorts: Näytön paikka"
+      },
+      "director": "",
+      "year": "",
+      "duration": "86 min",
+      "ageLimit": "K16",
+      "themeKey": "live-laugh-love-anarchy",
+      "keywords": [
+        "feelgood",
+        "identity",
+        "art",
+        "humour",
+        "coming-of-age",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-nayton-paikka/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-nayton-paikka/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-27T16:00",
+          "venue": "Gilda 2"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "title": {
+        "en": "R&A Shorts: Night Visions Presents",
+        "fi": "R&A Shorts: Night Visions esittää"
+      },
+      "director": "",
+      "year": "",
+      "duration": "99 min",
+      "ageLimit": "K16",
+      "themeKey": "midnight-mayhem",
+      "keywords": [
+        "horror",
+        "thriller",
+        "action",
+        "badass",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-night-visions-esittaa/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-night-visions-esittaa/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-25T20:30",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "title": {
+        "en": "R&A Shorts: Uncanny Valley",
+        "fi": "R&A Shorts: Outouden laakso"
+      },
+      "director": "",
+      "year": "",
+      "duration": "89 min",
+      "ageLimit": "K12",
+      "themeKey": "uncanny-valley",
+      "keywords": [
+        "weird",
+        "fantasy",
+        "adventure",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-outouden-laakso/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-outouden-laakso/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-26T16:15",
+          "venue": "WHS Teatteri Union"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "title": {
+        "en": "R&A Shorts: Outsider Art Festival Presents",
+        "fi": "R&A Shorts: Outsider Art Festival esittää"
+      },
+      "director": "",
+      "year": "",
+      "duration": "60 min",
+      "ageLimit": "K12",
+      "themeKey": "r-a-special-screenings",
+      "keywords": [
+        "art",
+        "badass",
+        "music",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-outsider-art-festival-esittaa/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-outsider-art-festival-esittaa/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T18:45",
+          "venue": "WHS Teatteri Union"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "title": {
+        "en": "R&A Shorts: Nordic Gems",
+        "fi": "R&A Shorts: Pohjolan huiput"
+      },
+      "director": "",
+      "year": "",
+      "duration": "64 min",
+      "ageLimit": "K12",
+      "themeKey": "nordic-gems",
+      "keywords": [
+        "family-ties",
+        "identity",
+        "dance",
+        "childhood",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-pohjolan-huiput/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-pohjolan-huiput/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-26T11:30",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "title": {
+        "en": "R&A Shorts: Reality Tech",
+        "fi": "R&A Shorts: Reality Tech"
+      },
+      "director": "",
+      "year": "",
+      "duration": "96 min",
+      "ageLimit": "K16",
+      "themeKey": "fight-the-power",
+      "keywords": [
+        "tech",
+        "human-rights",
+        "lgbtqia",
+        "animals",
+        "identity",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-reality-tech/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-reality-tech/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-24T18:00",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "title": {
+        "en": "R&A Shorts: Fairytales for Grownups",
+        "fi": "R&A Shorts: Satuja aikuisille"
+      },
+      "director": "",
+      "year": "",
+      "duration": "79 min",
+      "ageLimit": "K16",
+      "themeKey": "rewrite-history",
+      "keywords": [
+        "fantasy",
+        "epoch",
+        "horror",
+        "weird",
+        "history",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-satuja-aikuisille/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-satuja-aikuisille/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T14:00",
+          "venue": "Kino Regina"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "title": {
+        "en": "R&A Shorts: Eye Candy",
+        "fi": "R&A Shorts: Silmäkarkkia"
+      },
+      "director": "",
+      "year": "",
+      "duration": "55 min",
+      "ageLimit": "K12",
+      "themeKey": "animated-dreams",
+      "keywords": [
+        "fantasy",
+        "animals",
+        "biopic",
+        "literature",
+        "weird",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-silmakarkkia/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-silmakarkkia/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T19:00",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "title": {
+        "en": "R&A Shorts: Skábmagovat Presents: ČSV – Show Sámi Spirit",
+        "fi": "R&A Shorts: Skábmagovat esittää: ČSV – Näytä Saamen henkeä"
+      },
+      "director": "",
+      "year": "",
+      "duration": "95 min",
+      "ageLimit": "K12",
+      "themeKey": "fight-the-power",
+      "keywords": [
+        "indigenous-peoples",
+        "relationship-with-nature",
+        "society",
+        "badass",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-skabmagovat-esittaa-csv-nayta-saamen-henkea/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-skabmagovat-esittaa-csv-nayta-saamen-henkea/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T13:45",
+          "venue": "Maxim 2"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "title": {
+        "en": "R&A Shorts: More Than Human",
+        "fi": "R&A Shorts: Toisenlajiset"
+      },
+      "director": "",
+      "year": "",
+      "duration": "75 min",
+      "ageLimit": "K12",
+      "themeKey": "more-than-human",
+      "keywords": [
+        "animals",
+        "family-ties",
+        "mental-health",
+        "society",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-shorts-toisenlajiset/",
+        "fi": "https://hiff.fi/ohjelma/ra-shorts-toisenlajiset/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-27T18:45",
+          "venue": "Gilda 1"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "title": {
+        "en": "R&A x Amos Anderson Fund: Miami & Masterclass",
+        "fi": "R&A x Amos Andersonin rahasto: Miami & Masterclass"
+      },
+      "director": "Zaida Bergroth",
+      "year": "",
+      "duration": "164 min",
+      "ageLimit": "K12",
+      "themeKey": "nordic-gems",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "crime",
+        "family-ties",
+        "friendship",
+        "journey"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-x-amos-andersonin-rahasto-miami-masterclass/",
+        "fi": "https://hiff.fi/ohjelma/ra-x-amos-andersonin-rahasto-miami-masterclass/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T16:00",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "title": {
+        "en": "R&A x Puistokatu 4: Everybody to Kenmure Street",
+        "fi": "R&A x Puistokatu 4: Everybody to Kenmure Street"
+      },
+      "director": "Felipe Bustos Sierra",
+      "year": "2025",
+      "duration": "98 min",
+      "country": {
+        "en": [
+          "United Kingdom"
+        ],
+        "fi": [
+          "Iso-Britannia"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "r-a-special-screenings",
+      "keywords": [
+        "society",
+        "free-of-charge"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-x-puistokatu-4-everybody-to-kenmure-street/",
+        "fi": "https://hiff.fi/ohjelma/ra-x-puistokatu-4-everybody-to-kenmure-street/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T17:00",
+          "venue": "Puistokatu 4"
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "title": {
+        "en": "R&A x VVO: Interstellar Live",
+        "fi": "R&A x VVO: Interstellar Live"
+      },
+      "director": "Christopher Nolan",
+      "year": "",
+      "duration": "210 min",
+      "ageLimit": "K12",
+      "themeKey": "r-a-special-screenings",
+      "keywords": [
+        "music",
+        "sci-fi",
+        "family-ties"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-x-vvo-interstellar-live/",
+        "fi": "https://hiff.fi/ohjelma/ra-x-vvo-interstellar-live/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-26T14:00",
+          "venue": "Musiikkitalo"
+        },
+        {
+          "date": "2026-09-26T19:30",
+          "venue": "Musiikkitalo"
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "title": {
+        "en": "R&A x Yle Areenan Dokkarifestivaali: Keinaan, mee takas Somaliaan",
+        "fi": "R&A x Yle Areenan Dokkarifestivaali: Keinaan, mee takas Somaliaan"
+      },
+      "director": "Timo Korpi, Abdirahman Keinaan",
+      "year": "",
+      "duration": "67 min",
+      "country": {
+        "en": [
+          "Finland"
+        ],
+        "fi": [
+          "Suomi"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "r-a-special-screenings",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "free-of-charge",
+        "youth"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-x-yle-areenan-dokkarifestivaali-keinaan-mee-takas-somaliaan/",
+        "fi": "https://hiff.fi/ohjelma/ra-x-yle-areenan-dokkarifestivaali-keinaan-mee-takas-somaliaan/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-17T17:45",
+          "venue": "Gilda 1"
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "title": {
+        "en": "R&A x Yle: fml – nuorten lyhärikokonaisuus",
+        "fi": "R&A x Yle: fml – nuorten lyhärikokonaisuus"
+      },
+      "director": "",
+      "year": "",
+      "duration": "120 min",
+      "ageLimit": "K12",
+      "themeKey": "r-a-special-screenings",
+      "keywords": [
+        "youth",
+        "friendship",
+        "coming-of-age",
+        "free-of-charge",
+        "subtitled-spoken-in-finnish",
+        "r-a-shorts"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-x-yle-fml-nuorten-lyharikokonaisuus/",
+        "fi": "https://hiff.fi/ohjelma/ra-x-yle-fml-nuorten-lyharikokonaisuus/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-23T13:00",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "title": {
+        "en": "R&A Afters x Yle Teema: My Name Is Dingo",
+        "fi": "R&A-jatkot x Yle Teema: Levoton Tuhkimo"
+      },
+      "director": "Mari Rantasila",
+      "year": "",
+      "duration": "88 min",
+      "country": {
+        "en": [
+          "Finland"
+        ],
+        "fi": [
+          "Suomi"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "r-a-special-screenings",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "music",
+        "history",
+        "biopic",
+        "friendship",
+        "feelgood"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/ra-jatkot-x-yle-teema-levoton-tuhkimo/",
+        "fi": "https://hiff.fi/ohjelma/ra-jatkot-x-yle-teema-levoton-tuhkimo/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-10-03T21:00",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "title": {
+        "en": "The Beloved",
+        "fi": "Rakastettu"
+      },
+      "director": "Rodrigo Sorogoyen",
+      "year": "2026",
+      "duration": "135 min",
+      "country": {
+        "en": [
+          "Spain"
+        ],
+        "fi": [
+          "Espanja"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "spotlight-selection",
+      "keywords": [
+        "filmmaking",
+        "family-ties",
+        "art",
+        "subtitled-spoken-in-finnish"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/rakastettu/",
+        "fi": "https://hiff.fi/ohjelma/rakastettu/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T21:30",
+          "venue": "Kesäkino Engel (outdoor)"
+        },
+        {
+          "date": "2026-09-25T18:15",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "title": {
+        "en": "Redoubt",
+        "fi": "Redoubt"
+      },
+      "director": "John Skoog",
+      "year": "2025",
+      "duration": "81 min",
+      "country": {
+        "en": [
+          "Sweden, Denmark, Netherlands, Poland, Finland, United Kingdom, Switzerland"
+        ],
+        "fi": [
+          "Ruotsi, Tanska, Alankomaat, Puola, Suomi, Iso-Britannia, Sveitsi"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "rewrite-history",
+      "keywords": [
+        "history",
+        "slow-cinema",
+        "society"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/redoubt/",
+        "fi": "https://hiff.fi/ohjelma/redoubt/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T16:30",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-20T21:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-25T21:00",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-27T16:00",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "title": {
+        "en": "Rehearsals for a Revolution",
+        "fi": "Rehearsals for a Revolution"
+      },
+      "director": "Pegah Ahangarani",
+      "year": "",
+      "duration": "95 min",
+      "country": {
+        "en": [
+          "Czech Republic, Spain"
+        ],
+        "fi": [
+          "Tšekki, Espanja"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "fight-the-power",
+      "keywords": [
+        "society",
+        "history",
+        "archives",
+        "family-ties",
+        "grief"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/rehearsals-for-a-revolution/",
+        "fi": "https://hiff.fi/ohjelma/rehearsals-for-a-revolution/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T18:15",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-26T21:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-27T16:30",
+          "venue": "Kino Engel 1"
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "title": {
+        "en": "Rolling Papers",
+        "fi": "Rolling Papers"
+      },
+      "director": "Meel Paliale",
+      "year": "2024",
+      "duration": "97 min",
+      "country": {
+        "en": [
+          "Estonia"
+        ],
+        "fi": [
+          "Viro"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "live-laugh-love-anarchy",
+      "keywords": [
+        "urban-spaces",
+        "humour",
+        "friendship",
+        "love"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/rolling-papers/",
+        "fi": "https://hiff.fi/ohjelma/rolling-papers/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T18:30",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-20T14:30",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-24T14:00",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-26T18:00",
+          "venue": "Kinopalatsi 2"
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "title": {
+        "en": "Roma Elastica",
+        "fi": "Roma Elastica"
+      },
+      "director": "Bertrand Mandico",
+      "year": "2026",
+      "duration": "107 min",
+      "country": {
+        "en": [
+          "France, Italy"
+        ],
+        "fi": [
+          "Ranska, Italia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "uncanny-valley",
+      "keywords": [
+        "weird",
+        "filmmaking",
+        "aging"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/roma-elastica/",
+        "fi": "https://hiff.fi/ohjelma/roma-elastica/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-21T18:30",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-25T21:00",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-27T20:45",
+          "venue": "Kinopalatsi 2"
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "title": {
+        "en": "Roqia",
+        "fi": "Roqia"
+      },
+      "director": "Yanis Koussim",
+      "year": "",
+      "duration": "94 min",
+      "country": {
+        "en": [
+          "Algeria, France, Saudi Arabia, Qatar"
+        ],
+        "fi": [
+          "Algeria, Ranska, Saudi-Arabia, Qatar"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "rewrite-history",
+      "keywords": [
+        "horror",
+        "society",
+        "thriller",
+        "memory"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/roqia/",
+        "fi": "https://hiff.fi/ohjelma/roqia/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T20:45",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-23T16:45",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-27T20:30",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "title": {
+        "en": "Rose of Nevada",
+        "fi": "Rose of Nevada"
+      },
+      "director": "Mark Jenkin",
+      "year": "2025",
+      "duration": "114 min",
+      "country": {
+        "en": [
+          "United Kingdom"
+        ],
+        "fi": [
+          "Iso-Britannia"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "next-level",
+      "keywords": [
+        "weird",
+        "experimental",
+        "memory"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/rose-of-nevada/",
+        "fi": "https://hiff.fi/ohjelma/rose-of-nevada/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-23T20:45",
+          "venue": "Savoy-teatteri"
+        },
+        {
+          "date": "2026-09-24T18:15",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-26T15:30",
+          "venue": "Kinopalatsi 2"
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "title": {
+        "en": "Salvation",
+        "fi": "Salvation"
+      },
+      "director": "Emin Alper",
+      "year": "2026",
+      "duration": "120 min",
+      "country": {
+        "en": [
+          "Turkey, France, Netherlands, Greece, Sweden, Saudi Arabia"
+        ],
+        "fi": [
+          "Turkki, Ranska, Alankomaat, Kreikka, Ruotsi, Saudi-Arabia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "crime-punishment",
+      "keywords": [
+        "society",
+        "thriller",
+        "faith"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/salvation/",
+        "fi": "https://hiff.fi/ohjelma/salvation/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T20:45",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-19T15:30",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-26T12:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-27T20:30",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "title": {
+        "en": "Sentimental Value",
+        "fi": "Sentimental Value"
+      },
+      "director": "Joachim Trier",
+      "year": "2025",
+      "duration": "134 min",
+      "country": {
+        "en": [
+          "Norway, Germany, Denmark, France, Sweden, United Kingdom, Turkey"
+        ],
+        "fi": [
+          "Norja, Saksa, Tanska, Ranska, Ruotsi, Iso-Britannia, Turkki"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "nordic-council-film-prize-nominees-r-a-x-lux-audience-award",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "filmmaking",
+        "family-ties",
+        "female-stories",
+        "free-of-charge"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/sentimental-value/",
+        "fi": "https://hiff.fi/ohjelma/sentimental-value/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-21T16:00",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "title": {
+        "en": "Shame and Money",
+        "fi": "Shame and Money"
+      },
+      "director": "Visar Morina",
+      "year": "2026",
+      "duration": "129 min",
+      "country": {
+        "en": [
+          "Germany, Kosovo, Slovenia, Albania, North Macedonia, Belgium"
+        ],
+        "fi": [
+          "Saksa, Kosovo, Slovenia, Albania, Pohjois-Makedonia, Belgia"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "east-side-stories",
+      "keywords": [
+        "society",
+        "family-ties",
+        "urban-spaces",
+        "crime"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/shame-and-money/",
+        "fi": "https://hiff.fi/ohjelma/shame-and-money/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T17:50",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-19T20:30",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-27T13:30",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "title": {
+        "en": "Silence",
+        "fi": "Silence"
+      },
+      "director": "Eduardo Casanova",
+      "year": "2025",
+      "duration": "57 min",
+      "country": {
+        "en": [
+          "Spain"
+        ],
+        "fi": [
+          "Espanja"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "uncanny-valley",
+      "keywords": [
+        "music",
+        "epoch",
+        "human-rights",
+        "lgbtqia",
+        "fantasy"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/silence/",
+        "fi": "https://hiff.fi/ohjelma/silence/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T12:00",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-19T16:15",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-20T17:30",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-23T21:15",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-27T19:15",
+          "venue": "Kinopalatsi 2"
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "title": {
+        "en": "Silent Friend",
+        "fi": "Silent Friend"
+      },
+      "director": "Ildikó Enyedi",
+      "year": "2025",
+      "duration": "147 min",
+      "country": {
+        "en": [
+          "Germany, Hungary, France, China"
+        ],
+        "fi": [
+          "Saksa, Unkari, Ranska, Kiina"
+        ]
+      },
+      "ageLimit": "S",
+      "themeKey": "more-than-human",
+      "keywords": [
+        "relationship-with-nature",
+        "memory",
+        "epoch",
+        "feelgood",
+        "coming-of-age"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/silent-friend/",
+        "fi": "https://hiff.fi/ohjelma/silent-friend/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T12:45",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-23T17:45",
+          "venue": "Savoy-teatteri"
+        },
+        {
+          "date": "2026-09-26T15:45",
+          "venue": "Kinopalatsi 1"
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "title": {
+        "en": "Sirens Call",
+        "fi": "Sirens Call"
+      },
+      "director": "Miriam Gossing, Lina Sieckmann",
+      "year": "2025",
+      "duration": "121 min",
+      "country": {
+        "en": [
+          "Germany, Netherlands"
+        ],
+        "fi": [
+          "Saksa, Alankomaat"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "more-than-human",
+      "keywords": [
+        "identity",
+        "journey",
+        "fantasy",
+        "experimental"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/sirens-call/",
+        "fi": "https://hiff.fi/ohjelma/sirens-call/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T13:45",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-22T18:00",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-26T20:45",
+          "venue": "WHS Teatteri Union"
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "title": {
+        "en": "Sister",
+        "fi": "Sister"
+      },
+      "director": "Jin Sung-moon",
+      "year": "2026",
+      "duration": "87 min",
+      "country": {
+        "en": [
+          "South Korea"
+        ],
+        "fi": [
+          "Etelä-Korea"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "midnight-mayhem",
+      "keywords": [
+        "identity",
+        "thriller",
+        "female-stories",
+        "crime",
+        "horror"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/sister/",
+        "fi": "https://hiff.fi/ohjelma/sister/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T21:15",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-22T18:15",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-27T21:15",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "title": {
+        "en": "Soldiers of Song",
+        "fi": "Soldiers of Song"
+      },
+      "director": "Ryan Smith",
+      "year": "2024",
+      "duration": "90 min",
+      "country": {
+        "en": [
+          "Ukraine"
+        ],
+        "fi": [
+          "Ukraina"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "the-power-of-music",
+      "keywords": [
+        "angst",
+        "urban-spaces",
+        "music",
+        "grief",
+        "society",
+        "human-rights"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/soldiers-of-song/",
+        "fi": "https://hiff.fi/ohjelma/soldiers-of-song/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-22T20:30",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-25T18:30",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "title": {
+        "en": "Soldiers of Song & The Sound of Hope",
+        "fi": "Soldiers of Song & The Sound of Hope"
+      },
+      "director": "",
+      "year": "",
+      "duration": "105 min",
+      "ageLimit": "K16",
+      "themeKey": "the-power-of-music",
+      "keywords": [
+        "angst",
+        "urban-spaces",
+        "music",
+        "grief",
+        "society",
+        "human-rights"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/soldiers-of-song-the-sound-of-hope/",
+        "fi": "https://hiff.fi/ohjelma/soldiers-of-song-the-sound-of-hope/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-26T16:00",
+          "venue": "Cinema Orion"
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "title": {
+        "en": "Solomamma",
+        "fi": "Solomamma"
+      },
+      "director": "Janicke Askevold",
+      "year": "2025",
+      "duration": "99 min",
+      "country": {
+        "en": [
+          "Norway, Latvia, Lithuania, Denmark, Finland"
+        ],
+        "fi": [
+          "Norja, Latvia, Liettua, Tanska, Suomi"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "nordic-gems",
+      "keywords": [
+        "family-ties",
+        "media",
+        "feelgood",
+        "identity",
+        "female-stories"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/solomamma/",
+        "fi": "https://hiff.fi/ohjelma/solomamma/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-21T14:40",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-24T18:30",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-25T17:45",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-26T14:30",
+          "venue": "Kino Engel 1"
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "title": {
+        "en": "Soumsoum, the Night of the Stars",
+        "fi": "Soumsoum, the Night of the Stars"
+      },
+      "director": "Mahamat-Saleh Haroun",
+      "year": "2026",
+      "duration": "101 min",
+      "country": {
+        "en": [
+          "France, Chad"
+        ],
+        "fi": [
+          "Ranska, Tšad"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "kids-these-days",
+      "keywords": [
+        "africa",
+        "youth",
+        "friendship",
+        "coming-of-age",
+        "female-stories"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/soumsoum-the-night-of-the-stars/",
+        "fi": "https://hiff.fi/ohjelma/soumsoum-the-night-of-the-stars/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T12:00",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-24T20:15",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-26T16:45",
+          "venue": "Kino Engel 1"
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "title": {
+        "en": "Sundays",
+        "fi": "Sundays"
+      },
+      "director": "Alauda Ruiz de Azúan",
+      "year": "2025",
+      "duration": "115 min",
+      "country": {
+        "en": [
+          "Spain, France"
+        ],
+        "fi": [
+          "Espanja, Ranska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "kids-these-days",
+      "keywords": [
+        "faith",
+        "coming-of-age",
+        "youth",
+        "family-ties"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/sundays/",
+        "fi": "https://hiff.fi/ohjelma/sundays/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T20:45",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-20T17:00",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-23T20:30",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-27T15:30",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "title": {
+        "en": "Teenage Sex and Death at Camp Miasma",
+        "fi": "Teenage Sex and Death at Camp Miasma"
+      },
+      "director": "Jane Schoenbrun",
+      "year": "2026",
+      "duration": "112 min",
+      "country": {
+        "en": [
+          "United States, United Kingdom"
+        ],
+        "fi": [
+          "Yhdysvallat, Iso-Britannia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "dark-feminine",
+      "keywords": [
+        "filmmaking",
+        "humour",
+        "female-stories",
+        "lgbtqia",
+        "festival-hit",
+        "subtitled-spoken-in-finnish",
+        "horror"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/teenage-sex-and-death-at-camp-miasma/",
+        "fi": "https://hiff.fi/ohjelma/teenage-sex-and-death-at-camp-miasma/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T21:00",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-22T18:30",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-26T20:30",
+          "venue": "Kinopalatsi 2"
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "title": {
+        "en": "The Boy with the Light-Blue Eyes",
+        "fi": "The Boy with the Light-Blue Eyes"
+      },
+      "director": "Thanasis Neofotistos",
+      "year": "2026",
+      "duration": "100 min",
+      "country": {
+        "en": [
+          "Greece"
+        ],
+        "fi": [
+          "Kreikka"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "kids-these-days",
+      "keywords": [
+        "fantasy",
+        "horror",
+        "lgbtqia",
+        "youth"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-boy-with-the-light-blue-eyes/",
+        "fi": "https://hiff.fi/ohjelma/the-boy-with-the-light-blue-eyes/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T18:00",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-20T16:00",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-23T16:50",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-25T14:10",
+          "venue": "Kinopalatsi 1"
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "title": {
+        "en": "The Dance Club",
+        "fi": "The Dance Club"
+      },
+      "director": "Lisa Langseth",
+      "year": "2025",
+      "duration": "99 min",
+      "country": {
+        "en": [
+          "Sweden"
+        ],
+        "fi": [
+          "Ruotsi"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "live-laugh-love-anarchy",
+      "keywords": [
+        "feelgood",
+        "dance",
+        "mental-health",
+        "humour"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-dance-club/",
+        "fi": "https://hiff.fi/ohjelma/the-dance-club/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T21:10",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-23T14:30",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-24T16:30",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-26T20:45",
+          "venue": "Gilda 2"
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "title": {
+        "en": "The Day She Returns",
+        "fi": "The Day She Returns"
+      },
+      "director": "Hong Sang-soo",
+      "year": "2026",
+      "duration": "84 min",
+      "country": {
+        "en": [
+          "South Korea"
+        ],
+        "fi": [
+          "Etelä-Korea"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "filmmaking",
+        "female-stories",
+        "identity",
+        "memory",
+        "media"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-day-she-returns/",
+        "fi": "https://hiff.fi/ohjelma/the-day-she-returns/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T19:10",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-26T14:15",
+          "venue": "Kinopalatsi 7"
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "title": {
+        "en": "The Devils",
+        "fi": "The Devils"
+      },
+      "director": "Ken Russell",
+      "year": "",
+      "duration": "114 min",
+      "country": {
+        "en": [
+          "United Kingdom"
+        ],
+        "fi": [
+          "Iso-Britannia"
+        ]
+      },
+      "ageLimit": "K18",
+      "themeKey": "r-a-trailblazers",
+      "keywords": [
+        "faith",
+        "weird",
+        "epoch",
+        "sex"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-devils/",
+        "fi": "https://hiff.fi/ohjelma/the-devils/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T18:30",
+          "venue": "Bio Rex Lasipalatsi"
+        },
+        {
+          "date": "2026-09-26T20:45",
+          "venue": "Savoy-teatteri"
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "title": {
+        "en": "The Diary of a Chambermaid",
+        "fi": "The Diary of a Chambermaid"
+      },
+      "director": "Radu Jude",
+      "year": "2026",
+      "duration": "94 min",
+      "country": {
+        "en": [
+          "France, Romania"
+        ],
+        "fi": [
+          "Ranska, Romania"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "east-side-stories",
+      "keywords": [
+        "humour",
+        "society",
+        "weird",
+        "literature",
+        "immigration"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-diary-of-a-chambermaid/",
+        "fi": "https://hiff.fi/ohjelma/the-diary-of-a-chambermaid/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-23T21:00",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-26T14:00",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "title": {
+        "en": "The Dreamed Adventure",
+        "fi": "The Dreamed Adventure"
+      },
+      "director": "Valeska Grisebach",
+      "year": "2026",
+      "duration": "164 min",
+      "country": {
+        "en": [
+          "Germany, Bulgaria, France, Austria"
+        ],
+        "fi": [
+          "Saksa, Bulgaria, Ranska, Itävalta"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "east-side-stories",
+      "keywords": [
+        "crime",
+        "festival-hit",
+        "female-stories",
+        "society",
+        "history"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-dreamed-adventure/",
+        "fi": "https://hiff.fi/ohjelma/the-dreamed-adventure/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T17:30",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-20T12:00",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-23T17:00",
+          "venue": "Maxim 2"
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "title": {
+        "en": "The Education of Jane Cumming",
+        "fi": "The Education of Jane Cumming"
+      },
+      "director": "Sophie Heldman",
+      "year": "2026",
+      "duration": "114 min",
+      "country": {
+        "en": [
+          "Germany, Switzerland, United Kingdom"
+        ],
+        "fi": [
+          "Saksa, Sveitsi, Iso-Britannia"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "rewrite-history",
+      "keywords": [
+        "epoch",
+        "lgbtqia",
+        "human-rights",
+        "love",
+        "based-on-true-events"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-education-of-jane-cumming/",
+        "fi": "https://hiff.fi/ohjelma/the-education-of-jane-cumming/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T18:45",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-24T20:30",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-26T16:00",
+          "venue": "Kino Regina"
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "title": {
+        "en": "The End of It",
+        "fi": "The End of It"
+      },
+      "director": "Maria Martinez Bayona",
+      "year": "2026",
+      "duration": "101 min",
+      "country": {
+        "en": [
+          "United Kingdom, Spain, Norway"
+        ],
+        "fi": [
+          "Iso-Britannia, Espanja, Norja"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "uncanny-valley",
+      "keywords": [
+        "sci-fi",
+        "society",
+        "aging",
+        "weird"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-end-of-it/",
+        "fi": "https://hiff.fi/ohjelma/the-end-of-it/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-22T17:30",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-23T18:45",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-27T20:50",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "title": {
+        "en": "The History of Concrete",
+        "fi": "The History of Concrete"
+      },
+      "director": "John Wilson",
+      "year": "",
+      "duration": "100 min",
+      "country": {
+        "en": [
+          "United States"
+        ],
+        "fi": [
+          "Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "united-states-of-indie",
+      "keywords": [
+        "weird",
+        "humour",
+        "feelgood",
+        "urban-spaces"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-history-of-concrete/",
+        "fi": "https://hiff.fi/ohjelma/the-history-of-concrete/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T20:30",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-20T18:00",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-25T16:15",
+          "venue": "Kinopalatsi 1"
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "title": {
+        "en": "The Love That Remains",
+        "fi": "The Love That Remains"
+      },
+      "director": "Hlynur Pálmason",
+      "year": "2025",
+      "duration": "109 min",
+      "country": {
+        "en": [
+          "Iceland, Denmark, Sweden, France"
+        ],
+        "fi": [
+          "Islanti, Tanska, Ruotsi, Ranska"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "nordic-council-film-prize-nominees",
+      "keywords": [
+        "family-ties",
+        "relationship-with-nature",
+        "humour",
+        "love"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-love-that-remains/",
+        "fi": "https://hiff.fi/ohjelma/the-love-that-remains/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T11:45",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-25T18:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-26T15:30",
+          "venue": "Gilda 1"
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "title": {
+        "en": "The Meltdown",
+        "fi": "The Meltdown"
+      },
+      "director": "Manuela Martelli",
+      "year": "2026",
+      "duration": "108 min",
+      "country": {
+        "en": [
+          "United States, Mexico, Spain, Chile"
+        ],
+        "fi": [
+          "Yhdysvallat, Meksiko, Espanja, Chile"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "crime-punishment",
+      "keywords": [
+        "crime",
+        "childhood",
+        "friendship",
+        "thriller"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-meltdown/",
+        "fi": "https://hiff.fi/ohjelma/the-meltdown/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-21T20:45",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-25T18:30",
+          "venue": "Kino Regina"
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "title": {
+        "en": "The Patron",
+        "fi": "The Patron"
+      },
+      "director": "Julia Thelin",
+      "year": "",
+      "duration": "100 min",
+      "country": {
+        "en": [
+          "Sweden"
+        ],
+        "fi": [
+          "Ruotsi"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "nordic-gems",
+      "keywords": [
+        "art",
+        "identity",
+        "weird"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-patron/",
+        "fi": "https://hiff.fi/ohjelma/the-patron/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T18:30",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-21T18:30",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-22T16:30",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-25T21:00",
+          "venue": "Bio Rex Lasipalatsi"
+        },
+        {
+          "date": "2026-09-26T21:15",
+          "venue": "Kinopalatsi 1"
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "title": {
+        "en": "The Red Hangar",
+        "fi": "The Red Hangar"
+      },
+      "director": "Juan Pablo Sallato",
+      "year": "2026",
+      "duration": "83 min",
+      "country": {
+        "en": [
+          "Chile, Argentina, Italy"
+        ],
+        "fi": [
+          "Chile, Argentiina, Italia"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "rewrite-history",
+      "keywords": [
+        "society",
+        "history",
+        "thriller"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-red-hangar/",
+        "fi": "https://hiff.fi/ohjelma/the-red-hangar/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T18:30",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-20T15:30",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-24T20:30",
+          "venue": "Kinopalatsi 5"
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "title": {
+        "en": "The Samurai and the Prisoner",
+        "fi": "The Samurai and the Prisoner"
+      },
+      "director": "Kiyoshi Kurosawa",
+      "year": "2026",
+      "duration": "147 min",
+      "country": {
+        "en": [
+          "Japan"
+        ],
+        "fi": [
+          "Japani"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "spotlight-selection",
+      "keywords": [
+        "epoch",
+        "crime",
+        "thriller",
+        "literature"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-samurai-and-the-prisoner/",
+        "fi": "https://hiff.fi/ohjelma/the-samurai-and-the-prisoner/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T15:10",
+          "venue": "Bio Rex Lasipalatsi"
+        },
+        {
+          "date": "2026-09-23T20:30",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-24T17:45",
+          "venue": "Savoy-teatteri"
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "title": {
+        "en": "The Secret Reading Club of Kabul",
+        "fi": "The Secret Reading Club of Kabul"
+      },
+      "director": "Shakiba Adil, Elina Hirvonen",
+      "year": "2026",
+      "duration": "92 min",
+      "country": {
+        "en": [
+          "Finland, Norway"
+        ],
+        "fi": [
+          "Suomi, Norja"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "fight-the-power",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "society",
+        "female-stories"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-secret-reading-club-of-kabul/",
+        "fi": "https://hiff.fi/ohjelma/the-secret-reading-club-of-kabul/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-24T18:15",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 152,
+      "title": {
+        "en": "The Station",
+        "fi": "The Station"
+      },
+      "director": "Sara Ishaq",
+      "year": "2026",
+      "duration": "112 min",
+      "country": {
+        "en": [
+          "Yemen, Jordan, France, Germany, Netherlands, Norway, Qatar"
+        ],
+        "fi": [
+          "Yemen, Jordania, Ranska, Saksa, Alankomaat, Norja, Qatar"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "fight-the-power",
+      "keywords": [
+        "society",
+        "female-stories",
+        "family-ties"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/the-station/",
+        "fi": "https://hiff.fi/ohjelma/the-station/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T18:40",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-21T16:40",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-24T21:00",
+          "venue": "Kino Engel 1"
+        },
+        {
+          "date": "2026-09-26T20:30",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 153,
+      "title": {
+        "en": "Their Town",
+        "fi": "Their Town"
+      },
+      "director": "Katie Aselton",
+      "year": "",
+      "duration": "81 min",
+      "country": {
+        "en": [
+          "United States"
+        ],
+        "fi": [
+          "Yhdysvallat"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "united-states-of-indie",
+      "keywords": [
+        "angst",
+        "coming-of-age",
+        "urban-spaces",
+        "journey",
+        "mental-health",
+        "friendship",
+        "youth"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/their-town/",
+        "fi": "https://hiff.fi/ohjelma/their-town/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T21:15",
+          "venue": "Kinopalatsi 5"
+        },
+        {
+          "date": "2026-09-22T16:00",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-23T21:00",
+          "venue": "Kino Töölö"
+        },
+        {
+          "date": "2026-09-26T16:00",
+          "venue": "Gilda 2"
+        }
+      ]
+    },
+    {
+      "id": 154,
+      "title": {
+        "en": "Three of a Kind",
+        "fi": "Three of a Kind"
+      },
+      "director": "Charlotte Brodthagen",
+      "year": "2025",
+      "duration": "98 min",
+      "country": {
+        "en": [
+          "Denmark"
+        ],
+        "fi": [
+          "Tanska"
+        ]
+      },
+      "ageLimit": "K7",
+      "themeKey": "nordic-gems",
+      "keywords": [
+        "family-ties",
+        "grief",
+        "aging"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/three-of-a-kind/",
+        "fi": "https://hiff.fi/ohjelma/three-of-a-kind/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T14:40",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-19T15:20",
+          "venue": "Gilda 1"
+        },
+        {
+          "date": "2026-09-22T21:00",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-24T16:10",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-27T18:00",
+          "venue": "Gilda 2"
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "title": {
+        "en": "Titanic Ocean",
+        "fi": "Titanic Ocean"
+      },
+      "director": "Konstantina Kotzamani",
+      "year": "2026",
+      "duration": "131 min",
+      "country": {
+        "en": [
+          "Greece, Germany, Romania, France, Spain, Japan"
+        ],
+        "fi": [
+          "Kreikka, Saksa, Romania, Ranska, Espanja, Japani"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "fantasy",
+        "identity",
+        "coming-of-age",
+        "female-stories",
+        "love",
+        "weird",
+        "sports",
+        "youth",
+        "friendship"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/titanic-ocean/",
+        "fi": "https://hiff.fi/ohjelma/titanic-ocean/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-18T18:30",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-20T15:15",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-22T20:15",
+          "venue": "Kinopalatsi 1"
+        },
+        {
+          "date": "2026-09-26T15:15",
+          "venue": "Bio Rex Lasipalatsi"
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "title": {
+        "en": "Trial of Hein",
+        "fi": "Trial of Hein"
+      },
+      "director": "Kai Stänicke",
+      "year": "2026",
+      "duration": "122 min",
+      "country": {
+        "en": [
+          "Germany"
+        ],
+        "fi": [
+          "Saksa"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "uncanny-valley",
+      "keywords": [
+        "identity",
+        "weird",
+        "memory",
+        "lgbtqia",
+        "family-ties"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/trial-of-hein/",
+        "fi": "https://hiff.fi/ohjelma/trial-of-hein/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T20:45",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-20T14:00",
+          "venue": "Cinema Orion"
+        },
+        {
+          "date": "2026-09-26T13:00",
+          "venue": "Kinopalatsi 2"
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "title": {
+        "en": "Truly Naked",
+        "fi": "Truly Naked"
+      },
+      "director": "Muriel d’Ansembourg",
+      "year": "2026",
+      "duration": "102 min",
+      "country": {
+        "en": [
+          "Netherlands, Belgium, France, United Kingdom"
+        ],
+        "fi": [
+          "Alankomaat, Belgia, Ranska, Iso-Britannia"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "let-s-talk-about-sex",
+      "keywords": [
+        "sex",
+        "coming-of-age",
+        "youth",
+        "love",
+        "family-ties"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/truly-naked/",
+        "fi": "https://hiff.fi/ohjelma/truly-naked/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T16:15",
+          "venue": "WHS Teatteri Union"
+        },
+        {
+          "date": "2026-09-21T20:45",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-27T18:30",
+          "venue": "Kinopalatsi 1"
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "title": {
+        "en": "Two Seasons, Two Strangers",
+        "fi": "Two Seasons, Two Strangers"
+      },
+      "director": "Sho Miyake",
+      "year": "2025",
+      "duration": "89 min",
+      "country": {
+        "en": [
+          "Japan"
+        ],
+        "fi": [
+          "Japani"
+        ]
+      },
+      "ageLimit": "S",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "subtitled-spoken-in-finnish",
+        "friendship",
+        "adventure",
+        "relationship-with-nature",
+        "filmmaking"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/two-seasons-two-strangers/",
+        "fi": "https://hiff.fi/ohjelma/two-seasons-two-strangers/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-20T15:45",
+          "venue": "Kinopalatsi 7"
+        },
+        {
+          "date": "2026-09-26T18:30",
+          "venue": "Kino Regina"
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "title": {
+        "en": "We Are Aliens",
+        "fi": "We Are Aliens"
+      },
+      "director": "Kohei Kadowaki",
+      "year": "2026",
+      "duration": "117 min",
+      "country": {
+        "en": [
+          "Japan, France"
+        ],
+        "fi": [
+          "Japani, Ranska"
+        ]
+      },
+      "ageLimit": "K16",
+      "themeKey": "animated-dreams",
+      "keywords": [
+        "coming-of-age",
+        "friendship",
+        "angst",
+        "youth",
+        "memory"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/we-are-aliens/",
+        "fi": "https://hiff.fi/ohjelma/we-are-aliens/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T20:30",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-25T18:45",
+          "venue": "Kinopalatsi 2"
+        },
+        {
+          "date": "2026-09-27T13:30",
+          "venue": "Kinopalatsi 1"
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "title": {
+        "en": "We Are All Strangers",
+        "fi": "We Are All Strangers"
+      },
+      "director": "Anthony Chen",
+      "year": "2026",
+      "duration": "157 min",
+      "country": {
+        "en": [
+          "Singapore, Australia"
+        ],
+        "fi": [
+          "Singapore, Australia"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "asian-cuts",
+      "keywords": [
+        "family-ties",
+        "love",
+        "society",
+        "media"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/we-are-all-strangers/",
+        "fi": "https://hiff.fi/ohjelma/we-are-all-strangers/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T15:50",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-21T16:45",
+          "venue": "Maxim 1"
+        },
+        {
+          "date": "2026-09-23T17:30",
+          "venue": "Kino Regina"
+        },
+        {
+          "date": "2026-09-26T13:00",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "title": {
+        "en": "Yesterday the Eye Didn't Sleep",
+        "fi": "Yesterday the Eye Didn't Sleep"
+      },
+      "director": "Rakan Mayasi",
+      "year": "2026",
+      "duration": "100 min",
+      "country": {
+        "en": [
+          "Belgium, Lebanon, Palestine, Qatar, Saudi Arabia"
+        ],
+        "fi": [
+          "Belgia, Libanon, Palestiina, Qatar, Saudi-Arabia"
+        ]
+      },
+      "ageLimit": "K12",
+      "themeKey": "crime-punishment",
+      "keywords": [
+        "family-ties",
+        "society",
+        "crime",
+        "female-stories"
+      ],
+      "urls": {
+        "en": "https://hiff.fi/en/program/yesterday-the-eye-didnt-sleep/",
+        "fi": "https://hiff.fi/ohjelma/yesterday-the-eye-didnt-sleep/"
+      },
+      "description": {
+        "en": "",
+        "fi": ""
+      },
+      "screenings": [
+        {
+          "date": "2026-09-19T21:00",
+          "venue": "Maxim 2"
+        },
+        {
+          "date": "2026-09-21T20:30",
+          "venue": "Kino Engel 2"
+        },
+        {
+          "date": "2026-09-23T18:00",
+          "venue": "Kino Engel 2"
+        }
+      ]
+    }
+  ]
+}
