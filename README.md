@@ -2,7 +2,7 @@
 
 A modern, responsive web application for planning your film festival schedule with multiple viewing modes and smart optimization. Browse films in cards, table, or list view, manage screenings, optimize your schedule, and export to iCal or PDF. Fully accessible with keyboard navigation and screen reader support.
 
-**Key Features:** Multiple view types • Smart schedule optimization • Conflict detection • Mobile-optimized • iCal & PDF export • Bilingual support (FI/EN) • Dark mode • Festival page links • Film release years • Genre display & filtering
+**Key Features:** Multiple view types • Smart schedule optimization • Conflict detection • Mobile-optimized • iCal & PDF export • Bilingual support (FI/EN) • Dark mode • Per-language festival page links • Themes, keywords, age ratings, countries & release years • Theme, keyword & age filtering
 
 ## Features
 
@@ -18,15 +18,17 @@ A modern, responsive web application for planning your film festival schedule wi
 ### Film Browsing & Management
 - **Multiple View Types** - Switch between three different viewing modes:
   - **Cards View** - Visual glassmorphic cards with full descriptions (default)
-  - **Table View** - Data-dense table with sortable columns for quick scanning
+  - **Table View** - Data-dense table for quick scanning
   - **Compact List View** - Mobile-optimized horizontal layout with inline metadata
 - **View Persistence** - Your preferred view is saved and restored on reload
-- **Search & Filters** - Filter films by title, director, or description, with additional min/max range filters for release year and duration, and multi-select genre filter chips (collapsible filter panel with active-filter badge count)
+- **Search & Filters** - Filter films by title, director, or description, plus min/max range filters for release year and duration and three chip filters: theme (single-select), keywords (multi-select) and age rating (see below). Filters combine with AND, selections within one filter with OR. The panel is collapsible and carries an active-filter badge count.
 - **Select/Deselect** - Click on films to add or remove from your schedule
 - **Priority Marking** - Star films as "must see" for schedule optimization
-- **Release Year** - Film release year displayed across all view types (cards, table, list)
-- **Genre Display** - Bilingual genre metadata shown as a coloured chip (first genre) plus muted text (additional genres) in card view, and as plain comma-separated text in list and table views
-- **Festival Page Links** - Optional external link icon next to film titles, linking to the film's page on the festival website (shown on hover tooltip)
+- **Themes** - A festival's own programme strand, shown as a badge on each film and filterable one strand at a time
+- **Keywords** - Broad bilingual descriptive tags (genre, mood, descriptor), shown as a coloured chip (first keyword) plus muted text (the rest) in card view and as comma-separated text in list and table views, filterable as multi-select chips
+- **Age Ratings** - Classification shown as a pill on each film, with a "maximum rating" filter: selecting K12 shows K12 and everything below it. Ratings order themselves from the value, so any country's scheme works
+- **Country & Release Year** - Shown in the film metadata across all three view types
+- **Festival Page Links** - External link icon next to film titles, pointing to the film's page on the festival site in the active language and falling back to whichever language has one
 - **Screening Management** - Remove individual screenings while keeping the film selected
 
 ### Schedule Views
@@ -49,6 +51,7 @@ A modern, responsive web application for planning your film festival schedule wi
 - Full support for Finnish (FI) and English (EN)
 - Language toggle in the header
 - All UI elements and film content translated
+- Theme and keyword filter selections survive a language switch, because filter state is keyed on stable ids rather than on the displayed label
 
 ### Theme Support
 - Light and dark mode
@@ -146,6 +149,8 @@ film-schedule-planner/
 
 **Adding your own festival data is easy!** Use the included CSV templates and converter script to quickly generate festival data from spreadsheets. See the [Adding New Festivals](#adding-new-festivals) section below.
 
+The CSVs are an authoring convenience only. Once the JSON is generated it is the app's sole runtime data source, so everything the app needs has to end up in the JSON.
+
 ## Adding New Festivals
 
 ### Easy Method: CSV to JSON Converter (Recommended)
@@ -153,7 +158,7 @@ film-schedule-planner/
 The easiest way to add festival data is using the CSV-to-JSON converter:
 
 1. **Edit the CSV templates** in Excel or Google Sheets:
-   - [data/templates/template_films.csv](data/templates/template_films.csv) - Film information (includes Year, Genre_EN/Genre_FI, and optional URL columns)
+   - [data/templates/template_films.csv](data/templates/template_films.csv) - Film information. Only `ID`, `Title_EN`, `Title_FI` and `Duration` are required; `Director`, `Year`, `Country_EN`/`Country_FI`, `Age_Limit`, `Theme_EN`/`Theme_FI`, `Keyword_EN`/`Keyword_FI`, `Description_EN`/`Description_FI` and `URL_EN`/`URL_FI` are all optional
    - [data/templates/template_screenings.csv](data/templates/template_screenings.csv) - Screening times
 
 2. **Run the converter script**:
@@ -191,34 +196,50 @@ See [scripts/README.md](scripts/README.md) for detailed instructions and example
 
 ### Manual Method: Direct JSON Editing
 
-You can also create JSON files directly. The expected format:
+You can also create JSON files directly. The expected format is an object with two label registries and the films array:
 
 ```json
-[
-    {
-        "id": 1,
-        "title": { "en": "Film Title", "fi": "Elokuvan nimi" },
-        "director": "Director Name",
-        "year": "2026",
-        "duration": "120 min",
-        "url": "https://festival-website.com/films/film-title",
-        "genres": {
-            "en": ["Horror", "Thriller"],
-            "fi": ["Kauhu", "Trilleri"]
-        },
-        "description": {
-            "en": "English description",
-            "fi": "Suomenkielinen kuvaus"
-        },
-        "screenings": [
-            { "date": "2026-10-15T14:00", "venue": "Main Theater" },
-            { "date": "2026-10-16T20:30", "venue": "Screen 2" }
-        ]
-    }
-]
+{
+    "themeLabels": {
+        "midnight-mayhem": { "en": "Midnight Mayhem", "fi": "Midnight Mayhem" }
+    },
+    "keywordLabels": {
+        "horror": { "en": "Horror", "fi": "Kauhu" },
+        "thriller": { "en": "Thriller", "fi": "Trilleri" }
+    },
+    "films": [
+        {
+            "id": 1,
+            "title": { "en": "Film Title", "fi": "Elokuvan nimi" },
+            "director": "Director Name",
+            "year": "2026",
+            "duration": "120 min",
+            "country": { "en": ["Finland"], "fi": ["Suomi"] },
+            "ageLimit": "K16",
+            "themeKey": "midnight-mayhem",
+            "keywords": ["horror", "thriller"],
+            "urls": {
+                "en": "https://festival-website.com/en/films/film-title",
+                "fi": "https://festival-website.com/fi/elokuvat/elokuvan-nimi"
+            },
+            "description": {
+                "en": "English description",
+                "fi": "Suomenkielinen kuvaus"
+            },
+            "screenings": [
+                { "date": "2026-10-15T14:00", "venue": "Main Theater" },
+                { "date": "2026-10-16T20:30", "venue": "Screen 2" }
+            ]
+        }
+    ]
+}
 ```
 
-> **Note:** The `year`, `url`, and `genres` fields are optional. If `year` is provided, it is displayed in all film views. If `url` is provided, a link icon appears next to the film title linking to the film's page on the festival website. If `genres` is provided, genres are displayed beneath the film metadata and available as filter chips in the filter panel.
+Films carry theme and keyword **keys**, not labels; the two registries resolve a key to its Finnish and English name at render time. That is what lets a user's filter selections survive a language switch. The converter derives keys from the English value, falling back to Finnish, so the same source value always yields the same key.
+
+> **Note:** `id`, `title`, `duration`, `description` and `screenings` are required — give `description` empty strings (`{ "en": "", "fi": "" }`) if you have no text, as the converter does. `director`, `year`, `country`, `ageLimit`, `themeKey`, `keywords` and `urls` are all optional and should be **omitted entirely** rather than written as `""` or `null` — the app treats absence as absence. A field that no film in the dataset carries produces no UI at all: no theme anywhere means no theme badges, no theme filter and no contribution to the filter badge, and the same independently for keywords and age ratings.
+
+> **Legacy formats:** Older files still load. A bare array of films at the root is accepted, as are the previous `genres` object (converted to keywords) and a single `url` string (applied to both languages).
 
 ## Browser Support
 
